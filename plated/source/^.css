@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap');  /*https://fonts.google.com/specimen/Bitter*/
 
+html    {font-size:18px;}
 body	{background:#ffefef; font-family:'Bitter',serif; font-size:18px; font-weight:400; line-height:normal; color:#111; max-width:100%; overflow-x:hidden; padding:0; margin:0;}
 h1		{font-size:2.2em; font-weight:700; color:#736b62;}
 h2		{font-size:1.5em; font-weight:normal;}
@@ -68,6 +69,7 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .post_link_text:hover,
 .post_link_text:focus{background-color:#33682f; box-shadow:0px 0px #111; transform:translateY(0.20em);}
 .img_text       {padding:5px 10px; background-color:#fff; font-size:16px; line-height:20px; position:absolute; bottom:0;}
+.img_text span  {display:block; font-size:15px; font-weight:300;}
 
 .comment_list_wrap{display:flex; flex-flow:wrap; justify-content:space-around; margin-top:60px; width:90%; margin-left:auto; margin-right:auto;}
 .comment_wrap   {width:calc(50% - 30px); margin-bottom:30px;}
@@ -97,7 +99,7 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .blog.box1 .img {height:250px;}
 .blog.box1      {justify-content:space-between; height:100%;}
 .blog.box2      {align-items:center; height:100%;}
-.text_wrap      {padding:20px 35px;}
+.text_wrap      {padding:20px 35px; width:100%;}
 .type           {font-size:22px; font-style:italic; font-weight:300;}
 .text           {font-size:42px; letter-spacing:-2px; line-height:46px; margin-top:10px;}
 .text span      {display:block; font-size:28px; line-height:32px; padding-top:10px;}
@@ -110,7 +112,59 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .cc_wrap        {margin-top:30px; border-top:1px solid #918170; padding:20px 0 40px 0;}
 .cc_text        {font-size:16px;}
 .cc_text a      {color:#736b62;}
+a.cc_link       {display:inline-block;}
 .code           {font-size:16px;}
 .support        {display:flex; align-items:center; font-size:16px;}
 .support img    {width:40px; padding-left:10px;}
 
+
+
+@media (min-width: 360px) and (max-width: 767.98px) {
+html            {font-size:18px;}
+body            {padding:0.5em 2.0em; font-size:1.0rem;}
+.nav_content    {display:none;}
+.main_content   {padding-top:0;}
+.type,
+.more,
+.comment_text,
+.about_text     {font-size:1.0rem; line-height:inherit;}
+h1, h2,
+.comment_name,
+.text           {font-size:1.5rem; line-height:inherit;}
+.box2 .type     {height:20px;}
+.question       {width:100%;}
+.post_link_text,
+.post_text,
+.post_name      {font-size:1.4rem; line-height:inherit;}
+.blog .img,
+.blog.box1 .img {height:150px;}
+.current .blog .img,
+.current .blog.box1 .img {height:300px;}
+.comment_list_wrap,
+.current .blog,
+.info_wrap      {width:100%; flex-flow:column;}
+.item_text      {font-size:0.8rem;}
+.comment_wrap:nth-of-type(2n)   {margin:initial; margin-bottom:30px;}
+.comment_wrap   {width:100%;}
+.post_link_wrap {min-width:initial;}
+.post_wrap      {width:100%; margin-top:40px;}
+.post_foot_wrap {align-items:flex-start;}
+.post_info      {margin-top:20px;padding-right:20px; padding-left:0;}
+.cc_wrap        {display:block;}
+.cc_text,
+.support,
+.code           {margin-bottom:20px;}
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+body            {padding:0.5em 2.0em; font-size:1.0rem;}
+.nav_content    {padding:0;}
+a.cc_link       {display:block;}
+.cc_wrap        {align-items:baseline;}
+.cc_wrap > div  {font-size:0.8em;}
+.comment_list_wrap      {width:100%;}
+.info_wrap      {width:100%; flex-flow:wrap;}
+.post_foot_wrap {align-items:flex-start;}
+.post_info      {margin-top:20px;padding-right:20px; padding-left:0;}
+}
