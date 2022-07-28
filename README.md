@@ -1,4 +1,4 @@
-## Tok Stori
+## Tok Stori | Austausch | Sharing Stories
 
 This prototype is a collaboration from a digital residency to create a digital space for tok stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany.
 
