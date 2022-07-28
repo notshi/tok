@@ -2,7 +2,6 @@
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}article,footer,header,main,menu,nav,section,summary{display:block;}
 
-/*@font-face {font-family:'Bitter'; src:url('../data/font/Bitter-Regular.ttf') format('truetype');}*/
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap');  /*https://fonts.google.com/specimen/Bitter*/
 
 body	{background:#ffefef; font-family:'Bitter',serif; font-size:18px; font-weight:400; line-height:normal; color:#111; max-width:100%; overflow-x:hidden; padding:0; margin:0;}
@@ -28,7 +27,7 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .translate a    {background:#d2d2c6; padding:5px 20px; border-radius:6px; font-size:0.9rem; transition:all 0.5s ease-out;}
 .translate a:hover,
 .translate a:focus{background:#f2d3b8;}
-.on a           {font-style:italic; color:#736b62;}
+.on a           {font-style:italic; color:#736b62; font-weight:300;}
 .more a:hover   {color:#736b62;}
 .about a:hover  {color:#736b62;}
 .fam a:hover    {color:#4b99b0;}
@@ -36,7 +35,7 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .kul a:hover    {color:#6d3f86;}
 .ess a:hover    {color:#e67700;}
 
-.pillar_wrap    {text-align:center; width:100%; font-size:72px; margin-top:30px; margin-bottom:30px;}
+.pillar_wrap    {text-align:center; width:100%; font-size:72px; margin-bottom:30px;}
 .list_wrap      {margin-top:20px; flex-wrap:wrap; justify-content:space-between; display:flex; width:100%;}
 .info_wrap      {margin-top:20px; justify-content:center; display:flex; width:90%; margin-right:auto; margin-left:auto;}
 .question       {width:calc(50% - 15px); border:1px solid #918170; margin-bottom:30px; transition:all 0.5s ease-out;}
