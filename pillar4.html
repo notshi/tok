@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><title>Tok Stori</title>
+<head><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tok Stori</title>
 <style>
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}article,footer,header,main,menu,nav,section,summary{display:block;}
 
-/*@font-face {font-family:'Bitter'; src:url('../data/font/Bitter-Regular.ttf') format('truetype');}*/
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap');  /*https://fonts.google.com/specimen/Bitter*/
 
 body	{background:#ffefef; font-family:'Bitter',serif; font-size:18px; font-weight:400; line-height:normal; color:#111; max-width:100%; overflow-x:hidden; padding:0; margin:0;}
@@ -31,7 +30,7 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .translate a    {background:#d2d2c6; padding:5px 20px; border-radius:6px; font-size:0.9rem; transition:all 0.5s ease-out;}
 .translate a:hover,
 .translate a:focus{background:#f2d3b8;}
-.on a           {font-style:italic; color:#736b62;}
+.on a           {font-style:italic; color:#736b62; font-weight:300;}
 .more a:hover   {color:#736b62;}
 .about a:hover  {color:#736b62;}
 .fam a:hover    {color:#4b99b0;}
@@ -39,7 +38,7 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .kul a:hover    {color:#6d3f86;}
 .ess a:hover    {color:#e67700;}
 
-.pillar_wrap    {text-align:center; width:100%; font-size:72px; margin-top:30px; margin-bottom:30px;}
+.pillar_wrap    {text-align:center; width:100%; font-size:72px; margin-bottom:30px;}
 .list_wrap      {margin-top:20px; flex-wrap:wrap; justify-content:space-between; display:flex; width:100%;}
 .info_wrap      {margin-top:20px; justify-content:center; display:flex; width:90%; margin-right:auto; margin-left:auto;}
 .question       {width:calc(50% - 15px); border:1px solid #918170; margin-bottom:30px; transition:all 0.5s ease-out;}
@@ -122,20 +121,20 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 </style></head>
 <body><div class="main_wrap">
     <header class="head_content">
-        <div class="row">
-            <div class="nav_wrap">
-                <div class="logo"><a href="./index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="./data/logo.svg"></span><h2>Tok Stori</h2></a></div>
-                <nav class="nav_content">
-                    <div class="pillar fam"><a href="pillar1.html">Familie</a></div>
-                    <div class="pillar spi"><a href="pillar2.html">Spiritualität</a></div>
-                    <div class="pillar kul"><a href="pillar3.html">Kultur</a></div>
-                    <div class="pillar ess on"><a href="pillar4.html">Essen</a></div>
-                    <div class="about"><a href="#about_footer">About</a></div>
-                    <div class="translate"><a href="#">EN / DE</a></div>
-                </nav>
-            </div>
+    <div class="row">
+        <div class="nav_wrap">
+            <div class="logo"><a href="./index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="./data/logo.svg"></span><h2>Tok Stori</h2></a></div>
+            <nav class="nav_content">
+    <div class="pillar fam"><a href="pillar1.html">Familie</a></div>
+    <div class="pillar spi"><a href="pillar2.html">Spiritualität</a></div>
+    <div class="pillar kul"><a href="pillar3.html">Kultur</a></div>
+    <div class="pillar ess on"><a href="pillar4.html">Essen</a></div>
+    <div class="about"><a href="#about_footer">About</a></div>
+                <div class="translate"><a href="#">EN / DE</a></div>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
     <main class="main_content row">
         <div class="pillar_wrap">Food</div>
         <div class="list_wrap">
@@ -197,20 +196,20 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
         </div>
     </main>
     <footer class="foot_content" id="about_footer">
-        <div class="row">
-            <div class="about_wrap">
-                <div class="about"><h1>About</h1></div>
-                <div class="about_text">
-                    This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany. <a href=""><i>Download and print this as a zine!</i></a>
-                </div>
-            </div>
-            <div class="cc_wrap">
-                <div class="cc_text"> <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">Tok Stori</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p> </div>
-                <div class="code">Code by shi Blank</div>
-                <div class="support">Supported by <span role="img" aria-label="A bright red log with thick white letters, U and M"><img src="./data/logo_ubersee.svg"/></span></div>
-                <div class="top"><a href="#">Back up</a></div>
+    <div class="row">
+        <div class="about_wrap">
+            <div class="about"><h1>About</h1></div>
+            <div class="about_text">
+                This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany. <a href=""><i>Download and print this as a zine!</i></a>
             </div>
         </div>
-    </footer>
+        <div class="cc_wrap">
+            <div class="cc_text"> <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">Tok Stori</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p> </div>
+            <div class="code">Code by shi Blank</div>
+            <div class="support">Supported by <span role="img" aria-label="A bright red log with thick white letters, U and M"><img src="./data/logo_ubersee.svg"/></span></div>
+            <div class="top"><a href="#">Back up</a></div>
+        </div>
+    </div>
+</footer>
 </div></body>
 </html>
