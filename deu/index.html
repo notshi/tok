@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tok Stori</title>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tok Stori | Austausch | Sharing Stories</title>
 <style>
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}article,footer,header,main,menu,nav,section,summary{display:block;}
@@ -34,10 +34,10 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .on a           {font-style:italic; color:#736b62; font-weight:300;}
 .more a:hover   {color:#736b62;}
 .about a:hover  {color:#736b62;}
-.fam a:hover    {color:#4b99b0;}
-.spi a:hover    {color:#5e8c51;}
-.kul a:hover    {color:#6d3f86;}
-.ess a:hover    {color:#e67700;}
+.p1 a:hover    {color:#4b99b0;}
+.p2 a:hover    {color:#5e8c51;}
+.p3 a:hover    {color:#6d3f86;}
+.p4 a:hover    {color:#e67700;}
 
 .pillar_wrap    {text-align:center; width:100%; font-size:72px; margin-bottom:30px;}
 .list_wrap      {margin-top:20px; flex-wrap:wrap; justify-content:space-between; display:flex; width:100%;}
@@ -50,19 +50,19 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 
 .blog           {display:flex;}
 .blog.full      {display:flex; flex-flow:column;}
-.blog .img      {background:url('./data/image01.jpg'); background-size:cover; width:100%; height:400px; position:relative;}
-.blog.fq1 .img  {background:url('./data/fam.svg'); background-size:cover;}
-.blog.fq3 .img  {background:url('./data/fam1.svg'); background-size:cover;}
-.blog.fq5 .img  {background:url('./data/fam.svg'); background-size:cover;}
-.blog.eq1 .img  {background:url('./data/ess.svg'); background-size:cover;}
-.blog.eq3 .img  {background:url('./data/ess1.svg'); background-size:cover;}
-.blog.eq4 .img  {background:url('./data/eq4.jpg'); background-size:cover;}
-.blog.kq1 .img  {background:url('./data/kul.svg'); background-size:cover;}
-.blog.kq3 .img  {background:url('./data/kul1.svg'); background-size:cover;}
-.blog.kq5 .img  {background:url('./data/kul.svg'); background-size:cover;}
-.blog.sq1 .img  {background:url('./data/spi.svg'); background-size:cover;}
-.blog.sq4 .img  {background:url('./data/spi1.svg'); background-size:cover;}
-.blog.sq5 .img  {background:url('./data/spi.jpg'); background-size:cover;}
+.blog .img      {background:url('../data/image01.jpg'); background-size:cover; width:100%; height:400px; position:relative;}
+.blog.p1q1 .img {background:url('../data/p1.svg'); background-size:cover;}
+.blog.p1q3 .img {background:url('../data/p1_1.svg'); background-size:cover;}
+.blog.p1q5 .img {background:url('../data/p1.svg'); background-size:cover;}
+.blog.p2q1 .img {background:url('../data/p2.svg'); background-size:cover;}
+.blog.p2q4 .img {background:url('../data/p2_1.svg'); background-size:cover;}
+.blog.p2q5 .img {background:url('../data/p2_2.jpg'); background-size:cover;}
+.blog.p3q1 .img {background:url('../data/p3.svg'); background-size:cover;}
+.blog.p3q3 .img {background:url('../data/p3_1.svg'); background-size:cover;}
+.blog.p3q5 .img {background:url('../data/p3.svg'); background-size:cover;}
+.blog.p4q1 .img {background:url('../data/p4.svg'); background-size:cover;}
+.blog.p4q3 .img {background:url('../data/p4_1.svg'); background-size:cover;}
+.blog.p4q4 .img {background:url('../data/p4q4.jpg'); background-size:cover;}
 
 .item_wrap      {display:flex; align-items:flex-start;}
 .item_text      {width:300px; margin-right:30px; background-color:#eee6e6; padding:5px 10px;}
@@ -80,7 +80,7 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .comment        {background-color:#fff; padding:30px; box-shadow:3px 3px 3px #e1c5c51c;}
 .comment_name   {font-weight:700; font-size:46px; line-height:52px;}
 .comment_text   {margin-top:20px; font-size:24px; line-height:32px; letter-spacing:-1.2px;}
-.comment_image  {background:url('./data/image01.jpg'); background-size:cover; width:100%; height:200px;}
+.comment_image  {background:url('../data/image01.jpg'); background-size:cover; width:100%; height:200px;}
 .comment_media  {background-color:#fff; padding:20px 20px 0 20px;}
 .comment_play   {border:5px solid #d2d2c6; border-radius:12px; padding:15px 20px;}
 
@@ -90,8 +90,8 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .post_more      {display:flex;}
 .post_name      {font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px; width:100%; padding-right:35px;}
 .post_data      {display:flex; align-items:center; justify-content:space-between; width:130px;}
-.post_media     {background:url('./data/media_post.svg'); background-size:cover; width:30px; height:33px;}
-.post_image     {background:url('./data/image_post.svg'); background-size:cover; width:50px; height:44px;}
+.post_media     {background:url('../data/media_post.svg'); background-size:cover; width:30px; height:33px;}
+.post_image     {background:url('../data/image_post.svg'); background-size:cover; width:50px; height:44px;}
 .post_foot_wrap {display:flex; width:100%; justify-content:space-between; align-items:baseline;}
 .post_info      {padding-left:20px; font-size:16px; line-height:20px; font-style:italic;}
 .post_button    {text-align:right; margin-top:30px;}
@@ -112,10 +112,11 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 
 .about_wrap     {margin-top:30px;}
 .about_text     {font-size:24px; padding-top:20px;letter-spacing:-0.6px; line-height:30px;}
-.cc_wrap        {margin-top:30px; border-top:1px solid #918170; padding:20px 0 40px 0;}
+.cc_wrap        {align-items:baseline; margin-top:30px; border-top:1px solid #918170; padding:20px 0 40px 0;}
 .cc_text        {font-size:16px;}
+.cc_text img    {height:22px; margin-left:3px; vertical-align:text-bottom;}
 .cc_text a      {color:#736b62;}
-a.cc_link       {display:inline-block;}
+a.cc_link       {display:block;}
 .code           {font-size:16px;}
 .support        {display:flex; align-items:center; font-size:16px;}
 .support img    {width:40px; padding-left:10px;}
@@ -124,13 +125,15 @@ a.cc_link       {display:inline-block;}
 
 @media (min-width: 360px) and (max-width: 767.98px) {
 html            {font-size:18px;}
-body            {padding:0.5em 2.0em; font-size:1.0rem;}
+body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .nav_content    {display:none;}
 .main_content   {padding-top:0;}
 .type,
 .more,
 .comment_text,
+.text span,
 .about_text     {font-size:1.0rem; line-height:inherit;}
+.text span      {letter-spacing:-1px;}
 h1, h2,
 .comment_name,
 .text           {font-size:1.5rem; line-height:inherit;}
@@ -139,10 +142,13 @@ h1, h2,
 .post_link_text,
 .post_text,
 .post_name      {font-size:1.4rem; line-height:inherit;}
+.pillar_wrap    {font-size:2.5rem; line-height:inherit;}
+.wide .blog     {display:flex; flex-flow:column;}
 .blog .img,
 .blog.box1 .img {height:150px;}
 .current .blog .img,
 .current .blog.box1 .img {height:300px;}
+.text_wrap      {padding:20px;}
 .comment_list_wrap,
 .current .blog,
 .info_wrap      {width:100%; flex-flow:column;}
@@ -151,7 +157,7 @@ h1, h2,
 .comment_wrap   {width:100%;}
 .post_link_wrap {min-width:initial;}
 .post_wrap      {width:100%; margin-top:40px;}
-.post_foot_wrap {align-items:flex-start;}
+.post_foot_wrap {align-items:flex-start; width:90%;}
 .post_info      {margin-top:20px;padding-right:20px; padding-left:0;}
 .cc_wrap        {display:block;}
 .cc_text,
@@ -161,15 +167,25 @@ h1, h2,
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-body            {padding:0.5em 2.0em; font-size:1.0rem;}
+body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .nav_content    {padding:0;}
-a.cc_link       {display:block;}
-.cc_wrap        {align-items:baseline;}
+.wide .blog .img{height:initial;}
+.blog.full .img,
+.blog.box1 .img {height:150px;}
+h1, h2,
+.comment_name   {font-size:1.5rem; line-height:inherit;}
+.text           {font-size:1.8rem; line-height:inherit;}
+.about_text     {font-size:1.0rem; line-height:inherit;}
+.text span      {font-size:1.0rem; letter-spacing:-1px;}
+.box2 .type     {height:40px;}
+a.cc_link       {display:inline;}
 .cc_wrap > div  {font-size:0.8em;}
+.cc_text        {width:50%;}
 .comment_list_wrap      {width:100%;}
 .info_wrap      {width:100%; flex-flow:wrap;}
 .post_foot_wrap {align-items:flex-start;}
 .post_info      {margin-top:20px;padding-right:20px; padding-left:0;}
+.support        {flex-flow:wrap;}
 }
 
 </style></head>
@@ -177,110 +193,113 @@ a.cc_link       {display:block;}
     <header class="head_content">
     <div class="row">
         <div class="nav_wrap">
-            <div class="logo"><a href="./index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="./data/logo.svg"></span><h2>Tok Stori</h2></a></div>
+            <div class="logo"><a href="../deu/index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="../data/logo.svg"></span><h2>Tok Stori
+</h2></a></div>
             <nav class="nav_content">
-    <div class="pillar fam"><a href="pillar1.html">Familie</a></div>
-    <div class="pillar spi"><a href="pillar2.html">Spiritualität</a></div>
-    <div class="pillar kul"><a href="pillar3.html">Kultur</a></div>
-    <div class="pillar ess on"><a href="pillar4.html">Essen</a></div>
-    <div class="about"><a href="#about_footer">About</a></div>
-                <div class="translate"><a href="#">EN / DE</a></div>
+                <div class="pillar p1"><a href="pillar1.html">Familie
+</a></div>
+                <div class="pillar p2"><a href="pillar2.html">Spiritualität
+</a></div>
+                <div class="pillar p3"><a href="pillar3.html">Kultur
+</a></div>
+                <div class="pillar p4"><a href="pillar4.html">Essen
+</a></div>
+                <div class="about"><a href="#about_footer">About
+</a></div>
+                <div class="translate"><a href="../index.html">EN / DE</a></div>
             </nav>
         </div>
     </div>
 </header>
     <main class="main_content row">
         <div class="list_wrap">
-             <div class="question wide current">
-                <div class="blog eq4">
-                    <div class="text_wrap">
-                        <div class="type">Question 4</div>
-                        <div class="text">Is there a specific type of utensil you would only find in a German kitchen?</div>
+            <div class="question wide">
+                <a href="#">
+                    <div class="blog full">
+                        <div class="text_wrap">
+                            <div class="type">Announcement
+</div>
+                            <div class="text">A dialogue space for German users to share their collective understanding of German identity
+</div>
+                        </div>
+                        <div class="img"></div>
                     </div>
-                    <div class="img">
-                        <span role="img" aria-label="The coconut scraper is a three legged contraption made of wood with a curved top for sitting on and a seashell attached by rope at the tip"></span>
-                        <div class="img_text">D07600 Papua New Guinea Coconut scraper, Manus Province<span>CC BY-SA 4.0 Übersee-Museum Bremen</span></div>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="info_wrap">
-                <div class="item_wrap">
-                    <div class="item_star">*</div>
-                    <div class="item_text">A short description of the role and use of the <i>kina</i> in Papua New Guinea communities.</div>
-                </div>
-                <div class="post_link_wrap">
-                    <a href="#reply">
-                        <div class="post_link_text">Share <b>your</b> knowledge</div>
-                    </a>
-                </div>
+            <div class="question">
+                <a href="#">
+                    <div class="blog p1q1 box1">
+                        <div class="text_wrap">
+                            <div class="type">Familie
+</div>
+                            <div class="text">What are important moments for your family to gather?</div>
+                        </div>
+                        <div class="img"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="question">
+                <a href="#">
+                    <div class="blog box2">
+                        <div class="text_wrap">
+                            <div class="type">Spiritualität
+</div>
+                            <div class="text">What are your thoughts about German missionaries travelling to the Pacific to share their ideas of spirituality?</div>
+                            <div class="type"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="question">
+                <a href="#">
+                    <div class="blog box2">
+                        <div class="text_wrap">
+                            <div class="type">Kultur
+</div>
+                            <div class="text">Is Oktoberfest a cultural event for German’s or tourists?</div>
+                            <div class="type"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="question">
+                <a href="p4q4.html">
+                    <div class="blog p4q4 box1">
+                        <div class="text_wrap">
+                            <div class="type">Essen
+</div>
+                            <div class="text">Is there a specific type of utensil you would only find in a German kitchen?</div>
+                        </div>
+                        <div class="img"></div>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="comment_list_wrap">
-            <div class="comment_wrap">
-                <div class="comment">
-                    <div class="comment_name">Peter</div>
-                    <div class="comment_text">I remember a song from a long time ago that my grandmother used to sing to me. It's usually when she was knitting something for someone and only during festive occassions, like someone's birthday. It was called ...</div>
-                </div>
-            </div>
-            <div class="comment_wrap">
-                <div class="comment">
-                    <div class="comment_name">Sue</div>
-                    <div class="comment_text">There was this one time when we were little, we used to play this song on the piano and all the family members would gather round and start to sing this tune. I don't think I can remember it but I could try to recollect it if I had a piano.</div>
-                </div>
-            </div>
-            <div class="comment_wrap">
-                <div class="comment_media">
-                    <div class="comment_play">
-                        <span role="img" aria-label="An almost black vector graphic of a rounded triangle pointing to the right"><img src="./data/play.svg"/></span>
-                    </div>
-                </div>
-                <div class="comment">
-                    <div class="comment_name">Siegfried</div>
-                    <div class="comment_text">Yes, I think it goes something like this, if I remember correctly!</div>
-                </div>
-            </div>
-            <div class="comment_wrap">
-                <div class="comment_image"><span role="img" aria-label="A Pacific Islander man blowing through a conch shell and white woman with short, light hair holding and listening to a conch shell"></span></div>
-                <div class="comment">
-                    <div class="comment_name">Dieter</div>
-                    <div class="comment_text">I have a score, if that helps.</div>
-                </div>
-            </div>
-        </div>
-        <div class="post_wrap" id="reply">
-            <div class="post_area">
-                <div class="post_text">Is there a specific type of utensil you would only find in a German kitchen?</div>
-                <div class="post_more">
-                    <div class="post_name">What's your name?</div>
-                    <div class="post_data">
-                        <div class="post_media"><a href="#reply"></a></div>
-                        <div class="post_image"><a href="#reply"></a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="post_foot_wrap">
-                <div class="post_info">
-                    By sharing your knowledge, your responses will be available to the public. Please share responsibly.
-                </div>
-                <div class="post_button">
-                    <a href="#reply">Post</a>
-                </div>
-            </div>
-        </div>
+        <div class="more"><a href="">Show more questions
+</a></div>
     </main>
     <footer class="foot_content" id="about_footer">
     <div class="row">
         <div class="about_wrap">
-            <div class="about"><h1>About</h1></div>
+            <div class="about"><h1>About
+</h1></div>
             <div class="about_text">
                 This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany. <a href=""><i>Download and print this as a zine!</i></a>
+
             </div>
         </div>
         <div class="cc_wrap">
-            <div class="cc_text"> <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">Tok Stori</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p> </div>
-            <div class="code">Design &amp; code by shi Blank</div>
-            <div class="support">Supported by <span role="img" aria-label="A bright red log with thick white letters, U and M"><img src="./data/logo_ubersee.svg"/></span></div>
-            <div class="top"><a href="#">Back up</a></div>
+            <div class="cc_text">
+                <a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">Tok Stori
+ | Austausch | Sharing Stories</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
+                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-NC-ND 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
+            </div>
+            <div class="code">Site by shi Blank
+</div>
+            <div class="support">Supported by
+ <span role="img" aria-label="A bright red log with thick white letters, U and M"><img src="../data/logo_ubersee.svg"/></span></div>
+            <div class="top"><a href="#">Back up
+</a></div>
         </div>
     </div>
 </footer>

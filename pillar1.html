@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tok Stori</title>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tok Stori
+ | Family
+</title>
 <style>
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}article,footer,header,main,menu,nav,section,summary{display:block;}
@@ -34,10 +36,10 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .on a           {font-style:italic; color:#736b62; font-weight:300;}
 .more a:hover   {color:#736b62;}
 .about a:hover  {color:#736b62;}
-.fam a:hover    {color:#4b99b0;}
-.spi a:hover    {color:#5e8c51;}
-.kul a:hover    {color:#6d3f86;}
-.ess a:hover    {color:#e67700;}
+.p1 a:hover    {color:#4b99b0;}
+.p2 a:hover    {color:#5e8c51;}
+.p3 a:hover    {color:#6d3f86;}
+.p4 a:hover    {color:#e67700;}
 
 .pillar_wrap    {text-align:center; width:100%; font-size:72px; margin-bottom:30px;}
 .list_wrap      {margin-top:20px; flex-wrap:wrap; justify-content:space-between; display:flex; width:100%;}
@@ -51,18 +53,18 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .blog           {display:flex;}
 .blog.full      {display:flex; flex-flow:column;}
 .blog .img      {background:url('./data/image01.jpg'); background-size:cover; width:100%; height:400px; position:relative;}
-.blog.fq1 .img  {background:url('./data/fam.svg'); background-size:cover;}
-.blog.fq3 .img  {background:url('./data/fam1.svg'); background-size:cover;}
-.blog.fq5 .img  {background:url('./data/fam.svg'); background-size:cover;}
-.blog.eq1 .img  {background:url('./data/ess.svg'); background-size:cover;}
-.blog.eq3 .img  {background:url('./data/ess1.svg'); background-size:cover;}
-.blog.eq4 .img  {background:url('./data/eq4.jpg'); background-size:cover;}
-.blog.kq1 .img  {background:url('./data/kul.svg'); background-size:cover;}
-.blog.kq3 .img  {background:url('./data/kul1.svg'); background-size:cover;}
-.blog.kq5 .img  {background:url('./data/kul.svg'); background-size:cover;}
-.blog.sq1 .img  {background:url('./data/spi.svg'); background-size:cover;}
-.blog.sq4 .img  {background:url('./data/spi1.svg'); background-size:cover;}
-.blog.sq5 .img  {background:url('./data/spi.jpg'); background-size:cover;}
+.blog.p1q1 .img {background:url('./data/p1.svg'); background-size:cover;}
+.blog.p1q3 .img {background:url('./data/p1_1.svg'); background-size:cover;}
+.blog.p1q5 .img {background:url('./data/p1.svg'); background-size:cover;}
+.blog.p2q1 .img {background:url('./data/p2.svg'); background-size:cover;}
+.blog.p2q4 .img {background:url('./data/p2_1.svg'); background-size:cover;}
+.blog.p2q5 .img {background:url('./data/p2_2.jpg'); background-size:cover;}
+.blog.p3q1 .img {background:url('./data/p3.svg'); background-size:cover;}
+.blog.p3q3 .img {background:url('./data/p3_1.svg'); background-size:cover;}
+.blog.p3q5 .img {background:url('./data/p3.svg'); background-size:cover;}
+.blog.p4q1 .img {background:url('./data/p4.svg'); background-size:cover;}
+.blog.p4q3 .img {background:url('./data/p4_1.svg'); background-size:cover;}
+.blog.p4q4 .img {background:url('./data/p4q4.jpg'); background-size:cover;}
 
 .item_wrap      {display:flex; align-items:flex-start;}
 .item_text      {width:300px; margin-right:30px; background-color:#eee6e6; padding:5px 10px;}
@@ -112,10 +114,11 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 
 .about_wrap     {margin-top:30px;}
 .about_text     {font-size:24px; padding-top:20px;letter-spacing:-0.6px; line-height:30px;}
-.cc_wrap        {margin-top:30px; border-top:1px solid #918170; padding:20px 0 40px 0;}
+.cc_wrap        {align-items:baseline; margin-top:30px; border-top:1px solid #918170; padding:20px 0 40px 0;}
 .cc_text        {font-size:16px;}
+.cc_text img    {height:22px; margin-left:3px; vertical-align:text-bottom;}
 .cc_text a      {color:#736b62;}
-a.cc_link       {display:inline-block;}
+a.cc_link       {display:block;}
 .code           {font-size:16px;}
 .support        {display:flex; align-items:center; font-size:16px;}
 .support img    {width:40px; padding-left:10px;}
@@ -124,13 +127,15 @@ a.cc_link       {display:inline-block;}
 
 @media (min-width: 360px) and (max-width: 767.98px) {
 html            {font-size:18px;}
-body            {padding:0.5em 2.0em; font-size:1.0rem;}
+body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .nav_content    {display:none;}
 .main_content   {padding-top:0;}
 .type,
 .more,
 .comment_text,
+.text span,
 .about_text     {font-size:1.0rem; line-height:inherit;}
+.text span      {letter-spacing:-1px;}
 h1, h2,
 .comment_name,
 .text           {font-size:1.5rem; line-height:inherit;}
@@ -139,10 +144,13 @@ h1, h2,
 .post_link_text,
 .post_text,
 .post_name      {font-size:1.4rem; line-height:inherit;}
+.pillar_wrap    {font-size:2.5rem; line-height:inherit;}
+.wide .blog     {display:flex; flex-flow:column;}
 .blog .img,
 .blog.box1 .img {height:150px;}
 .current .blog .img,
 .current .blog.box1 .img {height:300px;}
+.text_wrap      {padding:20px;}
 .comment_list_wrap,
 .current .blog,
 .info_wrap      {width:100%; flex-flow:column;}
@@ -151,7 +159,7 @@ h1, h2,
 .comment_wrap   {width:100%;}
 .post_link_wrap {min-width:initial;}
 .post_wrap      {width:100%; margin-top:40px;}
-.post_foot_wrap {align-items:flex-start;}
+.post_foot_wrap {align-items:flex-start; width:90%;}
 .post_info      {margin-top:20px;padding-right:20px; padding-left:0;}
 .cc_wrap        {display:block;}
 .cc_text,
@@ -161,15 +169,25 @@ h1, h2,
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-body            {padding:0.5em 2.0em; font-size:1.0rem;}
+body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .nav_content    {padding:0;}
-a.cc_link       {display:block;}
-.cc_wrap        {align-items:baseline;}
+.wide .blog .img{height:initial;}
+.blog.full .img,
+.blog.box1 .img {height:150px;}
+h1, h2,
+.comment_name   {font-size:1.5rem; line-height:inherit;}
+.text           {font-size:1.8rem; line-height:inherit;}
+.about_text     {font-size:1.0rem; line-height:inherit;}
+.text span      {font-size:1.0rem; letter-spacing:-1px;}
+.box2 .type     {height:40px;}
+a.cc_link       {display:inline;}
 .cc_wrap > div  {font-size:0.8em;}
+.cc_text        {width:50%;}
 .comment_list_wrap      {width:100%;}
 .info_wrap      {width:100%; flex-flow:wrap;}
 .post_foot_wrap {align-items:flex-start;}
 .post_info      {margin-top:20px;padding-right:20px; padding-left:0;}
+.support        {flex-flow:wrap;}
 }
 
 </style></head>
@@ -177,27 +195,36 @@ a.cc_link       {display:block;}
     <header class="head_content">
     <div class="row">
         <div class="nav_wrap">
-            <div class="logo"><a href="./index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="./data/logo.svg"></span><h2>Tok Stori</h2></a></div>
+            <div class="logo"><a href="./index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="./data/logo.svg"></span><h2>Tok Stori
+</h2></a></div>
             <nav class="nav_content">
-    <div class="pillar fam on"><a href="pillar1.html">Familie</a></div>
-    <div class="pillar spi"><a href="pillar2.html">Spiritualität</a></div>
-    <div class="pillar kul"><a href="pillar3.html">Kultur</a></div>
-    <div class="pillar ess"><a href="pillar4.html">Essen</a></div>
-    <div class="about"><a href="#about_footer">About</a></div>
-                <div class="translate"><a href="#">EN / DE</a></div>
+    <div class="pillar p1 on"><a href="pillar1.html">Family
+</a></div>
+    <div class="pillar p2"><a href="pillar2.html">Spirituality
+</a></div>
+    <div class="pillar p3"><a href="pillar3.html">Culture
+</a></div>
+    <div class="pillar p4"><a href="pillar4.html">Food
+</a></div>
+    <div class="about"><a href="#about_footer">About
+</a></div>
+                <div class="translate"><a href="./deu/pillar1.html">EN / DE</a></div>
             </nav>
         </div>
     </div>
 </header>
     <main class="main_content row">
-        <div class="pillar_wrap">Family</div>
+        <div class="pillar_wrap">Family
+</div>
         <div class="list_wrap">
             <div class="question">
                 <a href="#">
-                    <div class="blog fq1 box1">
+                    <div class="blog p1q1 box1">
                         <div class="text_wrap">
-                            <div class="type">Question 1</div>
-                            <div class="text">Who do you classify as people in your family?</div>
+                            <div class="type">Question
+ 1</div>
+                            <div class="text">Who do you classify as people in your family?
+</div>
                         </div>
                         <div class="img"></div>
                     </div>
@@ -207,8 +234,10 @@ a.cc_link       {display:block;}
                 <a href="#">
                     <div class="blog box2">
                         <div class="text_wrap">
-                            <div class="type">Question 2</div>
-                            <div class="text">What are important moments for your family to gather?</div>
+                            <div class="type">Question
+ 2</div>
+                            <div class="text">What are important moments for your family to gather?
+</div>
                             <div class="type"></div>
                         </div>
                     </div>
@@ -216,10 +245,12 @@ a.cc_link       {display:block;}
             </div>
             <div class="question wide">
                 <a href="#">
-                    <div class="blog fq3">
+                    <div class="blog p1q3">
                         <div class="text_wrap">
-                            <div class="type">Question 3</div>
-                            <div class="text">How far back can you trace your ancestry?<span>Parents, Grandparents, Great grandparents, Several generations</span></div>
+                            <div class="type">Question
+ 3</div>
+                            <div class="text">How far back can you trace your ancestry?<span>Parents, Grandparents, Great grandparents, Several generations</span>
+</div>
                         </div>
                         <div class="img"></div>
                     </div>
@@ -229,8 +260,10 @@ a.cc_link       {display:block;}
                 <a href="#">
                     <div class="blog box2">
                         <div class="text_wrap">
-                            <div class="type">Question 4</div>
-                            <div class="text">Has your family always lived in Germany?<span>If not, where did they migrate from?</span></div>
+                            <div class="type">Question
+ 4</div>
+                            <div class="text">Has your family always lived in Germany?<span>If not, where did they migrate from?</span>
+</div>
                             <div class="type"></div>
                         </div>
                     </div>
@@ -238,10 +271,12 @@ a.cc_link       {display:block;}
             </div>
             <div class="question">
                 <a href="#">
-                    <div class="blog fq5 box1">
+                    <div class="blog p1q5 box1">
                         <div class="text_wrap">
-                            <div class="type">Question 5</div>
-                            <div class="text">Who is someone in your family that is important to you and why?</div>
+                            <div class="type">Question
+ 5</div>
+                            <div class="text">Who is someone in your family that is important to you and why?
+</div>
                         </div>
                         <div class="img"></div>
                     </div>
@@ -252,16 +287,25 @@ a.cc_link       {display:block;}
     <footer class="foot_content" id="about_footer">
     <div class="row">
         <div class="about_wrap">
-            <div class="about"><h1>About</h1></div>
+            <div class="about"><h1>About
+</h1></div>
             <div class="about_text">
                 This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany. <a href=""><i>Download and print this as a zine!</i></a>
+
             </div>
         </div>
         <div class="cc_wrap">
-            <div class="cc_text"> <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">Tok Stori</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p> </div>
-            <div class="code">Design &amp; code by shi Blank</div>
-            <div class="support">Supported by <span role="img" aria-label="A bright red log with thick white letters, U and M"><img src="./data/logo_ubersee.svg"/></span></div>
-            <div class="top"><a href="#">Back up</a></div>
+            <div class="cc_text">
+                <a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">Tok Stori
+ | Austausch | Sharing Stories</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
+                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-NC-ND 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
+            </div>
+            <div class="code">Site by shi Blank
+</div>
+            <div class="support">Supported by
+ <span role="img" aria-label="A bright red log with thick white letters, U and M"><img src="./data/logo_ubersee.svg"/></span></div>
+            <div class="top"><a href="#">Back up
+</a></div>
         </div>
     </div>
 </footer>
