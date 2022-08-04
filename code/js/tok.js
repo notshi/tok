@@ -2,8 +2,11 @@
 var tok=exports
 
 
-let $ = require( "jquery" );
 
+let $ = require( "jquery" )
+
+let db = require( "./db.js" )
+let plate = require( "./plate.js" )
 
 
 tok.setup=function(args)

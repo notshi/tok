@@ -17,7 +17,9 @@
   "bin": {},
   "directories": {},
   "dependencies": {
-    "jquery": "^3.6.0"
+    "idb": "^7.0.2",
+    "jquery": "^3.6.0",
+    "plated": "^0.0.85"
   },
   "devDependencies": {
     "brfs": "^2.0.2",
