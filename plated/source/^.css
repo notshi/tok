@@ -172,8 +172,8 @@ input#add_name  {font-size:1.2rem; line-height:inherit;}
 .post_wrap      {width:100%; margin-top:40px;}
 .post_area      {padding:20px;}
 .post_more      {flex-flow:column;}
-.post_data      {justify-content:space-around; width:100%;}
 .post_name      {padding:0;}
+.post_data      {justify-content:space-around; width:100%;}
 .post_foot_wrap {align-items:center; flex-flow:column-reverse;}
 .post_info      {margin-top:20px; padding-right:20px; padding-left:0;}
 input#add_submit{margin-top:20px; width:100%;}
