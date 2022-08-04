@@ -28,10 +28,12 @@ tok.start=function()
 
 tok.add_form=function(event)
 {
-	let post=$("#add_post").value()
-	let name=$("#add_name").value()
+	let post=$("#add_post").val()
+	let name=$("#add_name").val()
+	let que =$("#add_que ").val()
 
 	console.log("name = "+name)
 	console.log("post = "+post)
-	console.log("form submited")
+	console.log("que  = "+que )
+	console.log("form submitted")
 }
