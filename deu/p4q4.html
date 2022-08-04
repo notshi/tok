@@ -100,11 +100,13 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 ::-ms-input-placeholder { /* Microsoft Edge */color:#bbb;}
 
 textarea#add_post,
-input#add_name                  {border:0; background-color:transparent; min-height:200px; font-family:'Bitter',serif; font-size:30px; line-height:36px;}
+input#add_name                  {border:0; background-color:transparent; min-height:150px; font-family:'Bitter',serif; font-size:26px; line-height:30px;}
 input#add_name                  {min-height:50px; width:100%;}
 textarea#add_post::placeholder,
 input#add_name::placeholder     {font-family:'Bitter',serif; font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px;}
 textarea:focus, input:focus     {outline:0;}
+input#add_submit                {font-family:'Bitter',serif; background:#111; color:#fff; padding:5px 30px; border:0; border-radius:6px; font-size:26px; transition:all 0.5s ease-out; margin-top:30px;}
+input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 
 .post_wrap      {margin-top:80px; margin-bottom:40px; width:90%; margin-left:auto; margin-right:auto;}
 .post_area      {border:2px solid #777; border-radius:20px; padding:30px; display:flex; flex-flow:column;}
@@ -117,10 +119,6 @@ textarea:focus, input:focus     {outline:0;}
 .post_image     {background:url('../data/image_post.svg'); background-size:cover; width:50px; height:44px;}
 .post_foot_wrap {display:flex; width:100%; justify-content:space-between; align-items:baseline;}
 .post_info      {padding-left:20px; font-size:16px; line-height:20px; font-style:italic;}
-.post_button    {text-align:right; margin-top:30px;}
-.post_button a  {background:#111; color:#fff; padding:5px 30px; border-radius:6px; font-size:26px; transition:all 0.5s ease-out;}
-.post_button a:hover,
-.post_button a:focus{background:#7b5330;}
 
 .blog.box1 .img {height:250px;}
 .blog.box1      {justify-content:space-between; height:100%;}
@@ -315,17 +313,16 @@ a.cc_link       {display:inline;}
                         </div>
                     </div>
                 </div>
-            </form>
-            <div class="post_foot_wrap">
-                <div class="post_info">
-                    By sharing your knowledge, your responses will be available to the public. Please share responsibly.
+                <div class="post_foot_wrap">
+                    <div class="post_info">
+                        By sharing your knowledge, your responses will be available to the public. Please share responsibly.
 
+                    </div>
+                    <input type="hidden" id="add_que" value="p4q4">
+                    <input type="submit" id="add_submit" value="Kommentar
+">
                 </div>
-                <div class="post_button">
-                    <a href="#reply">Kommentar
-</a>
-                </div>
-            </div>
+            </form>
         </div>
     </main>
     <footer class="foot_content" id="about_footer">
