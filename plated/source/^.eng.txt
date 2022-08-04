@@ -115,6 +115,9 @@ A favorite meal from my childhood is ...?
 #^share
 Share <b>your</b> knowledge
 
+#^share1
+Type your comment here
+
 #^post_name
 What's your name?
 
