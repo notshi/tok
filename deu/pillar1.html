@@ -2,6 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <script src="../js/tok.js"></script>
     <script type="text/javascript">
         require("tok").setup({})
@@ -110,9 +113,9 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 
 .post_wrap      {margin-top:80px; margin-bottom:40px; width:90%; margin-left:auto; margin-right:auto;}
 .post_area      {border:2px solid #777; border-radius:20px; padding:30px; display:flex; flex-flow:column;}
-.post_question  {padding-bottom:20px;}
+.post_question  {padding-bottom:20px; color:#444;}
 .post_question span {font-style:italic; font-weight:300;}
-.post_more      {display:flex;}
+.post_more      {display:flex; padding-top:20px;}
 .post_name      {font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px; width:100%; padding-right:35px;}
 .post_data      {display:flex; align-items:center; justify-content:space-between; width:130px;}
 .post_media     {background:url('../data/media_post.svg'); background-size:cover; width:30px; height:33px;}
@@ -149,6 +152,7 @@ html            {font-size:18px;}
 body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .nav_content    {display:none;}
 .main_content   {padding-top:0;}
+.logo           {height:60px;}
 .type,
 .more,
 .comment_text,
@@ -160,9 +164,11 @@ h1, h2,
 .text           {font-size:1.5rem; line-height:inherit;}
 .box2 .type     {height:20px;}
 .question       {width:100%;}
-.post_link_text,
-.post_text,
-.post_name      {font-size:1.4rem; line-height:inherit;}
+textarea#add_post::placeholder,
+input#add_name::placeholder,
+textarea#add_post,
+input#add_name  {font-size:1.2rem; line-height:inherit;}
+.post_link_text {font-size:1.4rem; line-height:inherit;}
 .pillar_wrap    {font-size:2.5rem; line-height:inherit;}
 .wide .blog     {display:flex; flex-flow:column;}
 .blog .img,
@@ -178,8 +184,13 @@ h1, h2,
 .comment_wrap   {width:100%;}
 .post_link_wrap {min-width:initial;}
 .post_wrap      {width:100%; margin-top:40px;}
-.post_foot_wrap {align-items:flex-start; width:90%;}
-.post_info      {margin-top:20px;padding-right:20px; padding-left:0;}
+.post_area      {padding:20px;}
+.post_more      {flex-flow:column;}
+.post_data      {justify-content:space-around; width:100%;}
+.post_name      {padding:0;}
+.post_foot_wrap {align-items:center; flex-flow:column-reverse;}
+.post_info      {margin-top:20px; padding-right:20px; padding-left:0;}
+input#add_submit{margin-top:20px; width:100%;}
 .cc_wrap        {display:block;}
 .cc_text,
 .support,
