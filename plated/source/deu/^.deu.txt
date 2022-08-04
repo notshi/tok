@@ -43,22 +43,22 @@ Kultur
 Essen
 
 #^about
-About
+Über
 
 #^iso
 EN / DE
 
 #^announce
-Announcement
+Ankündigung
 
 #^announce_text
 A dialogue space for German users to share their collective understanding of German identity
 
 #^show_more
-Show more questions
+Weitere Fragen anzeigen
 
 #^question
-Question
+Frage
 
 #^p1q1
 Wen zählst du zu deiner Famiie?
@@ -127,25 +127,28 @@ A short description of the role and use of the <i>kina</i> in Papua New Guinea c
 Mein Lieblingsessen aus meiner Kindheit ist …?
 
 #^share
-Share <b>your</b> knowledge
+Teilen <b>Sie Ihr</b> Wissen
+
+#^share1
+Geben Sie hier Ihren Kommentar ein
 
 #^post_name
-What's your name?
+Wie heißen Sie?
 
 #^post_info
 By sharing your knowledge, your responses will be available to the public. Please share responsibly.
 
 #^post
-Post
+Kommentar
 
 #^top
-Back up
+Top
 
 #^about_footer
 This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany. <a href=""><i>Download and print this as a zine!</i></a>
 
 #^cc_shi
-Site by shi Blank
+Website von shi Blank
 
 #^cc_ubersee
-Supported by
+Unterstützt durch
