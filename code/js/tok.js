@@ -43,7 +43,7 @@ tok.add_form=async function(event)
 	console.log("name = "+name)
 	console.log("post = "+post)
 	console.log("que  = "+que )
-	console.log("form submitted")
+	console.log("form submitted OKOKOK")
 	
 	let it={}
 	it.author=name
