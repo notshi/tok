@@ -1,0 +1,137 @@
+#^iso trim=ends
+eng
+
+#^iso_root trim=ends
+{_root}
+
+#^switch_root trim=ends
+{_root}deu/
+
+#^tok_stori
+Tok Stori
+
+#^austausch
+Austausch
+
+#^sharing_stories
+Sharing Stories
+
+#^pillar1
+Family
+
+#^pillar2
+Spirituality
+
+#^pillar3
+Culture
+
+#^pillar4
+Food
+
+#^about
+About
+
+#^iso
+EN / DE
+
+#^announce
+Announcement
+
+#^announce_text
+A dialogue space for German users to share their collective understanding of German identity
+
+#^show_more
+Show more questions
+
+#^question
+Question
+
+#^p1q1
+Who do you classify as people in your family?
+
+#^p1q2
+What are important moments for your family to gather?
+
+#^p1q3
+How far back can you trace your ancestry?<span>Parents, Grandparents, Great grandparents, Several generations</span>
+
+#^p1q4
+Has your family always lived in Germany?<span>If not, where did they migrate from?</span>
+
+#^p1q5
+Who is someone in your family that is important to you and why?
+
+#^p2q1
+Do you have a family tradition of religion or spirituality practice?<span>Explain why or why not?</span>
+
+#^p2q2
+I feel a sense of connection to the spiritual or a greater power when I …?
+
+#^p2q3
+What type of spiritual beliefs did German’s have pre-Christian times?
+
+#^p2q4
+Can you think of any physical or intangible things that are considered sacred to German folks?
+
+#^p2q5
+What are your thoughts about German missionaries travelling to the Pacific to share their ideas of spirituality?
+
+#^p3q1
+Is Oktoberfest a cultural event for German’s or tourists?
+
+#^p3q2
+What is your favorite German expression or idiom?<span>Explain what this means?</span>
+
+#^p3q3
+Do you have a strong connection to a particular place in Germany?<span>Describe where this is and why?</span>
+
+#^p3q4
+What are some typical German musical instruments?
+
+#^p3q5
+Are there any specific German rituals or customs related to birth or death?
+
+#^p4q1
+Explain why pretzels are important to Germany?
+
+#^p4q2
+What is the origin of beer in Germany?<span>Does it have an origin story?</span>
+
+#^p4q3
+Are there certain foods or drinks that are used for special or ceremonial purposes?
+
+#^p4q4
+Is there a specific type of utensil you would only find in a German kitchen?
+
+#^p4q4_cc
+D07600 Papua New Guinea Coconut scraper, Manus Province<span>CC BY-SA 4.0 Übersee-Museum Bremen</span>
+
+#^p4q4_item
+A short description of the role and use of the <i>kina</i> in Papua New Guinea communities.
+
+#^p4q5
+A favorite meal from my childhood is ...?
+
+#^share
+Share <b>your</b> knowledge
+
+#^post_name
+What's your name?
+
+#^post_info
+By sharing your knowledge, your responses will be available to the public. Please share responsibly.
+
+#^post
+Post
+
+#^top
+Back up
+
+#^about_footer
+This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany. <a href=""><i>Download and print this as a zine!</i></a>
+
+#^cc_shi
+Site by shi Blank
+
+#^cc_ubersee
+Supported by

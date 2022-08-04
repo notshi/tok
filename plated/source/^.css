@@ -31,10 +31,10 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .on a           {font-style:italic; color:#736b62; font-weight:300;}
 .more a:hover   {color:#736b62;}
 .about a:hover  {color:#736b62;}
-.fam a:hover    {color:#4b99b0;}
-.spi a:hover    {color:#5e8c51;}
-.kul a:hover    {color:#6d3f86;}
-.ess a:hover    {color:#e67700;}
+.p1 a:hover    {color:#4b99b0;}
+.p2 a:hover    {color:#5e8c51;}
+.p3 a:hover    {color:#6d3f86;}
+.p4 a:hover    {color:#e67700;}
 
 .pillar_wrap    {text-align:center; width:100%; font-size:72px; margin-bottom:30px;}
 .list_wrap      {margin-top:20px; flex-wrap:wrap; justify-content:space-between; display:flex; width:100%;}
@@ -48,18 +48,18 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .blog           {display:flex;}
 .blog.full      {display:flex; flex-flow:column;}
 .blog .img      {background:url('{_root}data/image01.jpg'); background-size:cover; width:100%; height:400px; position:relative;}
-.blog.fq1 .img  {background:url('{_root}data/fam.svg'); background-size:cover;}
-.blog.fq3 .img  {background:url('{_root}data/fam1.svg'); background-size:cover;}
-.blog.fq5 .img  {background:url('{_root}data/fam.svg'); background-size:cover;}
-.blog.eq1 .img  {background:url('{_root}data/ess.svg'); background-size:cover;}
-.blog.eq3 .img  {background:url('{_root}data/ess1.svg'); background-size:cover;}
-.blog.eq4 .img  {background:url('{_root}data/eq4.jpg'); background-size:cover;}
-.blog.kq1 .img  {background:url('{_root}data/kul.svg'); background-size:cover;}
-.blog.kq3 .img  {background:url('{_root}data/kul1.svg'); background-size:cover;}
-.blog.kq5 .img  {background:url('{_root}data/kul.svg'); background-size:cover;}
-.blog.sq1 .img  {background:url('{_root}data/spi.svg'); background-size:cover;}
-.blog.sq4 .img  {background:url('{_root}data/spi1.svg'); background-size:cover;}
-.blog.sq5 .img  {background:url('{_root}data/spi.jpg'); background-size:cover;}
+.blog.p1q1 .img {background:url('{_root}data/p1.svg'); background-size:cover;}
+.blog.p1q3 .img {background:url('{_root}data/p1_1.svg'); background-size:cover;}
+.blog.p1q5 .img {background:url('{_root}data/p1.svg'); background-size:cover;}
+.blog.p2q1 .img {background:url('{_root}data/p2.svg'); background-size:cover;}
+.blog.p2q4 .img {background:url('{_root}data/p2_1.svg'); background-size:cover;}
+.blog.p2q5 .img {background:url('{_root}data/p2_2.jpg'); background-size:cover;}
+.blog.p3q1 .img {background:url('{_root}data/p3.svg'); background-size:cover;}
+.blog.p3q3 .img {background:url('{_root}data/p3_1.svg'); background-size:cover;}
+.blog.p3q5 .img {background:url('{_root}data/p3.svg'); background-size:cover;}
+.blog.p4q1 .img {background:url('{_root}data/p4.svg'); background-size:cover;}
+.blog.p4q3 .img {background:url('{_root}data/p4_1.svg'); background-size:cover;}
+.blog.p4q4 .img {background:url('{_root}data/p4q4.jpg'); background-size:cover;}
 
 .item_wrap      {display:flex; align-items:flex-start;}
 .item_text      {width:300px; margin-right:30px; background-color:#eee6e6; padding:5px 10px;}
@@ -109,10 +109,11 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 
 .about_wrap     {margin-top:30px;}
 .about_text     {font-size:24px; padding-top:20px;letter-spacing:-0.6px; line-height:30px;}
-.cc_wrap        {margin-top:30px; border-top:1px solid #918170; padding:20px 0 40px 0;}
+.cc_wrap        {align-items:baseline; margin-top:30px; border-top:1px solid #918170; padding:20px 0 40px 0;}
 .cc_text        {font-size:16px;}
+.cc_text img    {height:22px; margin-left:3px; vertical-align:text-bottom;}
 .cc_text a      {color:#736b62;}
-a.cc_link       {display:inline-block;}
+a.cc_link       {display:block;}
 .code           {font-size:16px;}
 .support        {display:flex; align-items:center; font-size:16px;}
 .support img    {width:40px; padding-left:10px;}
@@ -121,13 +122,15 @@ a.cc_link       {display:inline-block;}
 
 @media (min-width: 360px) and (max-width: 767.98px) {
 html            {font-size:18px;}
-body            {padding:0.5em 2.0em; font-size:1.0rem;}
+body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .nav_content    {display:none;}
 .main_content   {padding-top:0;}
 .type,
 .more,
 .comment_text,
+.text span,
 .about_text     {font-size:1.0rem; line-height:inherit;}
+.text span      {letter-spacing:-1px;}
 h1, h2,
 .comment_name,
 .text           {font-size:1.5rem; line-height:inherit;}
@@ -136,10 +139,13 @@ h1, h2,
 .post_link_text,
 .post_text,
 .post_name      {font-size:1.4rem; line-height:inherit;}
+.pillar_wrap    {font-size:2.5rem; line-height:inherit;}
+.wide .blog     {display:flex; flex-flow:column;}
 .blog .img,
 .blog.box1 .img {height:150px;}
 .current .blog .img,
 .current .blog.box1 .img {height:300px;}
+.text_wrap      {padding:20px;}
 .comment_list_wrap,
 .current .blog,
 .info_wrap      {width:100%; flex-flow:column;}
@@ -148,7 +154,7 @@ h1, h2,
 .comment_wrap   {width:100%;}
 .post_link_wrap {min-width:initial;}
 .post_wrap      {width:100%; margin-top:40px;}
-.post_foot_wrap {align-items:flex-start;}
+.post_foot_wrap {align-items:flex-start; width:90%;}
 .post_info      {margin-top:20px;padding-right:20px; padding-left:0;}
 .cc_wrap        {display:block;}
 .cc_text,
@@ -158,13 +164,23 @@ h1, h2,
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-body            {padding:0.5em 2.0em; font-size:1.0rem;}
+body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .nav_content    {padding:0;}
-a.cc_link       {display:block;}
-.cc_wrap        {align-items:baseline;}
+.wide .blog .img{height:initial;}
+.blog.full .img,
+.blog.box1 .img {height:150px;}
+h1, h2,
+.comment_name   {font-size:1.5rem; line-height:inherit;}
+.text           {font-size:1.8rem; line-height:inherit;}
+.about_text     {font-size:1.0rem; line-height:inherit;}
+.text span      {font-size:1.0rem; letter-spacing:-1px;}
+.box2 .type     {height:40px;}
+a.cc_link       {display:inline;}
 .cc_wrap > div  {font-size:0.8em;}
+.cc_text        {width:50%;}
 .comment_list_wrap      {width:100%;}
 .info_wrap      {width:100%; flex-flow:wrap;}
 .post_foot_wrap {align-items:flex-start;}
 .post_info      {margin-top:20px;padding-right:20px; padding-left:0;}
+.support        {flex-flow:wrap;}
 }
