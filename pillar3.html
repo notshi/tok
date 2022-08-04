@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tok Stori
+<head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/tok.js"></script>
+    <script type="text/javascript">
+        require("tok").setup({})
+    </script>
+    <title>Tok Stori
  | Culture
 </title>
 <style>
@@ -86,9 +92,24 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .comment_media  {background-color:#fff; padding:20px 20px 0 20px;}
 .comment_play   {border:5px solid #d2d2c6; border-radius:12px; padding:15px 20px;}
 
+/*	Input placeholder font color	*/
+::-webkit-input-placeholder {/* WebKit, Blink, Edge */color:#bbb;}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:#bbb; opacity:1;}
+::-moz-placeholder { /* Mozilla Firefox 19+ */color:#bbb; opacity:1;}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */color:#ccc;}
+::-ms-input-placeholder { /* Microsoft Edge */color:#bbb;}
+
+textarea#add_post,
+input#add_name                  {border:0; background-color:transparent; min-height:200px; font-family:'Bitter',serif; font-size:30px; line-height:36px;}
+input#add_name                  {min-height:50px; width:100%;}
+textarea#add_post::placeholder,
+input#add_name::placeholder     {font-family:'Bitter',serif; font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px;}
+textarea:focus, input:focus     {outline:0;}
+
 .post_wrap      {margin-top:80px; margin-bottom:40px; width:90%; margin-left:auto; margin-right:auto;}
 .post_area      {border:2px solid #777; border-radius:20px; padding:30px; display:flex; flex-flow:column;}
-.post_text      {min-height:200px; font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px;}
+.post_question  {padding-bottom:20px;}
+.post_question span {font-style:italic; font-weight:300;}
 .post_more      {display:flex;}
 .post_name      {font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px; width:100%; padding-right:35px;}
 .post_data      {display:flex; align-items:center; justify-content:space-between; width:130px;}
@@ -190,7 +211,8 @@ a.cc_link       {display:inline;}
 .support        {flex-flow:wrap;}
 }
 
-</style></head>
+</style>
+</head>
 <body><div class="main_wrap">
     <header class="head_content">
     <div class="row">

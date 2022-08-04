@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tok Stori
+<head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../js/tok.js"></script>
+    <script type="text/javascript">
+        require("tok").setup({})
+    </script>
+    <title>Tok Stori
  | Familie
 </title>
 <style>
@@ -86,9 +92,24 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .comment_media  {background-color:#fff; padding:20px 20px 0 20px;}
 .comment_play   {border:5px solid #d2d2c6; border-radius:12px; padding:15px 20px;}
 
+/*	Input placeholder font color	*/
+::-webkit-input-placeholder {/* WebKit, Blink, Edge */color:#bbb;}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:#bbb; opacity:1;}
+::-moz-placeholder { /* Mozilla Firefox 19+ */color:#bbb; opacity:1;}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */color:#ccc;}
+::-ms-input-placeholder { /* Microsoft Edge */color:#bbb;}
+
+textarea#add_post,
+input#add_name                  {border:0; background-color:transparent; min-height:200px; font-family:'Bitter',serif; font-size:30px; line-height:36px;}
+input#add_name                  {min-height:50px; width:100%;}
+textarea#add_post::placeholder,
+input#add_name::placeholder     {font-family:'Bitter',serif; font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px;}
+textarea:focus, input:focus     {outline:0;}
+
 .post_wrap      {margin-top:80px; margin-bottom:40px; width:90%; margin-left:auto; margin-right:auto;}
 .post_area      {border:2px solid #777; border-radius:20px; padding:30px; display:flex; flex-flow:column;}
-.post_text      {min-height:200px; font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px;}
+.post_question  {padding-bottom:20px;}
+.post_question span {font-style:italic; font-weight:300;}
 .post_more      {display:flex;}
 .post_name      {font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px; width:100%; padding-right:35px;}
 .post_data      {display:flex; align-items:center; justify-content:space-between; width:130px;}
@@ -190,7 +211,8 @@ a.cc_link       {display:inline;}
 .support        {flex-flow:wrap;}
 }
 
-</style></head>
+</style>
+</head>
 <body><div class="main_wrap">
     <header class="head_content">
     <div class="row">
@@ -206,7 +228,7 @@ a.cc_link       {display:inline;}
 </a></div>
     <div class="pillar p4"><a href="pillar4.html">Essen
 </a></div>
-    <div class="about"><a href="#about_footer">About
+    <div class="about"><a href="#about_footer">Über
 </a></div>
                 <div class="translate"><a href="../pillar1.html">EN / DE</a></div>
             </nav>
@@ -221,7 +243,7 @@ a.cc_link       {display:inline;}
                 <a href="#">
                     <div class="blog p1q1 box1">
                         <div class="text_wrap">
-                            <div class="type">Question
+                            <div class="type">Frage
  1</div>
                             <div class="text">Wen zählst du zu deiner Famiie?
 </div>
@@ -234,7 +256,7 @@ a.cc_link       {display:inline;}
                 <a href="#">
                     <div class="blog box2">
                         <div class="text_wrap">
-                            <div class="type">Question
+                            <div class="type">Frage
  2</div>
                             <div class="text">Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
 </div>
@@ -247,7 +269,7 @@ a.cc_link       {display:inline;}
                 <a href="#">
                     <div class="blog p1q3">
                         <div class="text_wrap">
-                            <div class="type">Question
+                            <div class="type">Frage
  3</div>
                             <div class="text">Wie weit kannst du deine Vorfahren zurückverfolgen?<span>Eltern, Großeltern, Urgroßeltern, weitere Generationen</span>
 </div>
@@ -260,7 +282,7 @@ a.cc_link       {display:inline;}
                 <a href="#">
                     <div class="blog box2">
                         <div class="text_wrap">
-                            <div class="type">Question
+                            <div class="type">Frage
  4</div>
                             <div class="text">Hat deine Familie immer in Deutschland gelebt?<span>Wenn nicht, woher sind sie gekommen?</span>
 </div>
@@ -273,7 +295,7 @@ a.cc_link       {display:inline;}
                 <a href="#">
                     <div class="blog p1q5 box1">
                         <div class="text_wrap">
-                            <div class="type">Question
+                            <div class="type">Frage
  5</div>
                             <div class="text">Wer in deiner Familie ist dir wichtig, und warum?
 </div>
@@ -287,7 +309,7 @@ a.cc_link       {display:inline;}
     <footer class="foot_content" id="about_footer">
     <div class="row">
         <div class="about_wrap">
-            <div class="about"><h1>About
+            <div class="about"><h1>Über
 </h1></div>
             <div class="about_text">
                 This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany. <a href=""><i>Download and print this as a zine!</i></a>
@@ -300,11 +322,11 @@ a.cc_link       {display:inline;}
  | Austausch | Sharing Stories</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
                 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-NC-ND 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
             </div>
-            <div class="code">Site by shi Blank
+            <div class="code">Website von shi Blank
 </div>
-            <div class="support">Supported by
+            <div class="support">Unterstützt durch
  <span role="img" aria-label="A bright red log with thick white letters, U and M"><img src="../data/logo_ubersee.svg"/></span></div>
-            <div class="top"><a href="#">Back up
+            <div class="top"><a href="#">Top
 </a></div>
         </div>
     </div>
