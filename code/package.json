@@ -14,10 +14,10 @@
     "url": "https://github.com/notshi/tok",
     "directory": "live"
   },
-  "bin": {
-  },
+  "bin": {},
   "directories": {},
   "dependencies": {
+    "jquery": "^3.6.0"
   },
   "devDependencies": {
     "brfs": "^2.0.2",
