@@ -121,3 +121,33 @@ You might want to go <a href="{iso_root}index.html">home</a>.
         </div>
     </div>
 </footer>
+
+
+#^answers form=json
+[
+	{
+		author: "dave",
+		body: "This is a test post",
+		question: "p1q1",
+	},
+	{
+		author: "other dave",
+		body: "This is also a test post",
+		question: "p1q1",
+	},
+]
+
+#^show_answers
+<div>
+
+{answers:show_answer}
+
+</div>
+
+#^show_answer
+<div>
+	<p>question {_it.question}</p>
+	<p>author {_it.author}</p>
+	<p>date {_it.date_fix}</p>
+	<p>body {_it.body}</p>
+<div>

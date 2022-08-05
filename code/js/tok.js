@@ -53,5 +53,13 @@ tok.add_form=async function(event)
 	
 	await db.add(it)
 
-	console.log( await db.list({question:que}) )
+	let answers = await db.list({question:que})	
+	answers.reverse()
+	for(v of answers)
+	{
+		v.date_fix=v.date.toISOString().split('T')[0]
+	}
+	plate.chunks.answers=answers // a json array of answers
+	$("#put_answers_here").html( plate.replace("{show_answers}") )
+	
 }
