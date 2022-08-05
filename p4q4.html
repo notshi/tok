@@ -24,13 +24,10 @@ h1		{font-size:2.2em; font-weight:700; color:#736b62;}
 h2		{font-size:1.5em; font-weight:normal;}
 b		{font-weight:700;}
 i		{font-style:italic;}
-
 a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 
 .row            {max-width:1170px; margin-right:auto; margin-left:auto; display:flex; flex-flow:row wrap;}
-.col            {flex-flow:column;}
 .head_content   {position:sticky; top:0; background-color:#ffefef; z-index:3;}
-.mob_content    {overflow:hidden; display:flex; flex-direction:column; background:#ffefef; position:fixed; top:0px; left:0px; z-index:19; width:100%; height:100vh; max-height:100vh; display:none;}
 .main_content   {min-height:400px; padding-top:20px; padding-bottom:20px;}
 .foot_content   {border-top:1px solid #918170;}
 .nav_wrap,
@@ -52,6 +49,8 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .p3 a:hover     {color:#6d3f86;}
 .p4 a:hover     {color:#e67700;}
 
+/*	Mobile Navigation	*/
+.mob_content    {overflow:hidden; display:flex; flex-direction:column; background:#ffefef; position:fixed; top:0px; left:0px; z-index:19; width:100%; height:100vh; max-height:100vh; display:none;}
 .mob_nav_content{display:flex; flex-direction:column; margin-top:1.5rem; margin-left:1.5rem; margin-right:1.5rem;}
 .mob_link       {font-size:1.5rem; margin-bottom:1.5rem;}
 
@@ -68,17 +67,25 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .blog.full      {display:flex; flex-flow:column;}
 .blog .img      {background:url('./data/image01.jpg'); background-size:cover; width:100%; height:400px; position:relative;}
 .blog.p1q1 .img {background:url('./data/p1.svg'); background-size:cover;}
-.blog.p1q3 .img {background:url('./data/p1_1.svg'); background-size:cover;}
+.blog.p1q2 .img {background:url('./data/p1_1.svg'); background-size:cover;}
+.blog.p1q3 .img {background:url('./data/p1.svg'); background-size:cover;}
+.blog.p1q4 .img {background:url('./data/p1_1.svg'); background-size:cover;}
 .blog.p1q5 .img {background:url('./data/p1.svg'); background-size:cover;}
 .blog.p2q1 .img {background:url('./data/p2.svg'); background-size:cover;}
+.blog.p2q2 .img {background:url('./data/p2_1.svg'); background-size:cover;}
+.blog.p2q3 .img {background:url('./data/p2.svg'); background-size:cover;}
 .blog.p2q4 .img {background:url('./data/p2_1.svg'); background-size:cover;}
 .blog.p2q5 .img {background:url('./data/p2_2.jpg'); background-size:cover;}
 .blog.p3q1 .img {background:url('./data/p3.svg'); background-size:cover;}
-.blog.p3q3 .img {background:url('./data/p3_1.svg'); background-size:cover;}
+.blog.p3q2 .img {background:url('./data/p3_1.svg'); background-size:cover;}
+.blog.p3q3 .img {background:url('./data/p3.svg'); background-size:cover;}
+.blog.p3q4 .img {background:url('./data/p3_1.svg'); background-size:cover;}
 .blog.p3q5 .img {background:url('./data/p3.svg'); background-size:cover;}
 .blog.p4q1 .img {background:url('./data/p4.svg'); background-size:cover;}
-.blog.p4q3 .img {background:url('./data/p4_1.svg'); background-size:cover;}
+.blog.p4q2 .img {background:url('./data/p4_1.svg'); background-size:cover;}
+.blog.p4q3 .img {background:url('./data/p4.svg'); background-size:cover;}
 .blog.p4q4 .img {background:url('./data/p4q4.jpg'); background-size:cover;}
+.blog.p4q5 .img {background:url('./data/p4_1.svg'); background-size:cover;}
 
 .item_wrap      {display:flex; align-items:flex-start;}
 .item_text      {width:300px; margin-right:30px; background-color:#eee6e6; padding:5px 10px;}
@@ -90,11 +97,11 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .img_text       {padding:5px 10px; background-color:#fff; font-size:16px; line-height:20px; position:absolute; bottom:0;}
 .img_text span  {display:block; font-size:15px; font-weight:300;}
 
-.comment_list_wrap{display:flex; flex-flow:wrap; justify-content:space-around; margin-top:60px; width:90%; margin-left:auto; margin-right:auto;}
+.comment_list_wrap{display:flex; flex-flow:wrap; justify-content:space-around; align-items:center; margin-top:60px; width:90%; margin-left:auto; margin-right:auto;}
 .comment_wrap   {width:calc(50% - 30px); margin-bottom:30px;}
 .comment_wrap:nth-of-type(2n) {margin-top:55px; margin-bottom:-20px;}
 .comment        {background-color:#fff; padding:30px; box-shadow:3px 3px 3px #e1c5c51c;}
-.comment_name   {font-weight:700; font-size:46px; line-height:52px;}
+.comment_name   {font-weight:700; font-size:40px; line-height:46px;}
 .comment_text   {margin-top:20px; font-size:24px; line-height:32px; letter-spacing:-1.2px;}
 .comment_image  {background:url('./data/image01.jpg'); background-size:cover; width:100%; height:200px;}
 .comment_media  {background-color:#fff; padding:20px 20px 0 20px;}
@@ -134,6 +141,7 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .text_wrap      {padding:20px 35px; width:100%;}
 .type           {font-size:22px; font-style:italic; font-weight:300;}
 .text           {font-size:42px; letter-spacing:-2px; line-height:46px; margin-top:10px;}
+.type span      {font-weight:400; font-style:normal; color:#777;}
 .text span      {display:block; font-size:28px; line-height:32px; padding-top:10px;}
 .box1           {flex-flow:column;}
 .box2 .type     {width:50%; border-left:1px solid; margin-left:auto; padding-left:20px; height:100px;}
@@ -252,26 +260,27 @@ a.cc_link       {display:inline;}
     <main class="main_content row">
         <div class="list_wrap">
              <div class="question wide current">
-                <div class="blog p4q4">
-                    <div class="text_wrap">
-                        <div class="type">Question
+    <div class="blog p4q4">
+        <div class="text_wrap">
+            <div class="type"><span>Food
+</span> Question
  4</div>
-                        <div class="text">Is there a specific type of utensil you would only find in a German kitchen?
+            <div class="text">Is there a specific type of utensil you would only find in a German kitchen?
 </div>
-                    </div>
-                    <div class="img">
-                        <span role="img" aria-label="The coconut scraper is a three legged contraption made of wood with a curved top for sitting on and a seashell attached by rope at the tip"></span>
-                        <div class="img_text">D07600 Papua New Guinea Coconut scraper, Manus Province<span>CC BY-SA 4.0 Übersee-Museum Bremen</span>
+        </div>
+        <div class="img">
+            <span role="img" aria-label="The coconut scraper is a three legged contraption made of wood with a curved top for sitting on and a seashell attached by rope at the tip"></span>
+            <div class="img_text">D07600 Papua New Guinea Coconut scraper, Manus Province<span>CC BY-SA 4.0 Übersee-Museum Bremen</span>
 </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+    </div>
+    </div>
             <div class="info_wrap">
                 <div class="item_wrap">
                     <div class="item_star">*</div>
-                    <div class="item_text">A short description of the role and use of the <i>kina</i> in Papua New Guinea communities.
+    <div class="item_text">A short description of the role and use of the <i>kina</i> in Papua New Guinea communities.
 </div>
-                </div>
+    </div>
                 <div class="post_link_wrap">
                     <a href="#reply">
                         <div class="post_link_text">Share <b>your</b> knowledge
@@ -280,45 +289,27 @@ a.cc_link       {display:inline;}
                 </div>
             </div>
         </div>
-        <div class="comment_list_wrap">
-            <div class="comment_wrap">
-                <div class="comment">
-                    <div class="comment_name">Peter</div>
-                    <div class="comment_text">I remember a song from a long time ago that my grandmother used to sing to me. It's usually when she was knitting something for someone and only during festive occassions, like someone's birthday. It was called ...</div>
-                </div>
-            </div>
-            <div class="comment_wrap">
-                <div class="comment">
-                    <div class="comment_name">Sue</div>
-                    <div class="comment_text">There was this one time when we were little, we used to play this song on the piano and all the family members would gather round and start to sing this tune. I don't think I can remember it but I could try to recollect it if I had a piano.</div>
-                </div>
-            </div>
-            <div class="comment_wrap">
-                <div class="comment_media">
-                    <div class="comment_play">
-                        <span role="img" aria-label="An almost black vector graphic of a rounded triangle pointing to the right"><img src="./data/play.svg"/></span>
-                    </div>
-                </div>
-                <div class="comment">
-                    <div class="comment_name">Siegfried</div>
-                    <div class="comment_text">Yes, I think it goes something like this, if I remember correctly!</div>
-                </div>
-            </div>
-            <div class="comment_wrap">
-                <div class="comment_image"><span role="img" aria-label="A Pacific Islander man blowing through a conch shell and white woman with short, light hair holding and listening to a conch shell"></span></div>
-                <div class="comment">
-                    <div class="comment_name">Dieter</div>
-                    <div class="comment_text">I have a score, if that helps.</div>
-                </div>
-            </div>
-        </div>
-        <div class="post_wrap" id="reply">
+    <div id="show_answers"><div class="comment_list_wrap"><div class="comment_wrap">
+    <div class="comment">
+        <div class="comment_name">dave</div>
+        <div class="comment_text">This is a test post</div>
+    </div>
+</div>
+<div class="comment_wrap">
+    <div class="comment">
+        <div class="comment_name">other dave</div>
+        <div class="comment_text">This is also a test post</div>
+    </div>
+</div>
+</div>
+</div>
+    <div class="post_wrap" id="reply">
             <form id="add_form">
                 <div class="post_area">
-                    <div class="post_question"><span>Question
+    <div class="post_question"><span>Question
 : </span> Is there a specific type of utensil you would only find in a German kitchen?
 </div>
-                    <textarea type="text" id="add_post" name="add_post" placeholder="Type your comment here
+    <textarea type="text" id="add_post" name="add_post" placeholder="Type your comment here
 "></textarea>
                     <div class="post_more">
                         <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="What's your name?
@@ -334,8 +325,8 @@ a.cc_link       {display:inline;}
                         By sharing your knowledge, your responses will be available to the public. Please share responsibly.
 
                     </div>
-                    <input type="hidden" id="add_que" value="p4q4">
-                    <input type="submit" id="add_submit" value="Post
+    <input type="hidden" id="add_que" value="p4q4">
+    <input type="submit" id="add_submit" value="Post
 ">
                 </div>
             </form>
