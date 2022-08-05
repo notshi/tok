@@ -14,7 +14,9 @@ i		{font-style:italic;}
 a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 
 .row            {max-width:1170px; margin-right:auto; margin-left:auto; display:flex; flex-flow:row wrap;}
+.col            {flex-flow:column;}
 .head_content   {position:sticky; top:0; background-color:#ffefef; z-index:3;}
+.mob_content    {overflow:hidden; display:flex; flex-direction:column; background:#ffefef; position:fixed; top:0px; left:0px; z-index:19; width:100%; height:100vh; max-height:100vh; display:none;}
 .main_content   {min-height:400px; padding-top:20px; padding-bottom:20px;}
 .foot_content   {border-top:1px solid #918170;}
 .nav_wrap,
@@ -31,10 +33,13 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .on a           {font-style:italic; color:#736b62; font-weight:300;}
 .more a:hover   {color:#736b62;}
 .about a:hover  {color:#736b62;}
-.p1 a:hover    {color:#4b99b0;}
-.p2 a:hover    {color:#5e8c51;}
-.p3 a:hover    {color:#6d3f86;}
-.p4 a:hover    {color:#e67700;}
+.p1 a:hover     {color:#4b99b0;}
+.p2 a:hover     {color:#5e8c51;}
+.p3 a:hover     {color:#6d3f86;}
+.p4 a:hover     {color:#e67700;}
+
+.mob_nav_content{display:flex; flex-direction:column; margin-top:1.5rem; margin-left:1.5rem; margin-right:1.5rem;}
+.mob_link       {font-size:1.5rem; margin-bottom:1.5rem;}
 
 .pillar_wrap    {text-align:center; width:100%; font-size:72px; margin-bottom:30px;}
 .list_wrap      {margin-top:20px; flex-wrap:wrap; justify-content:space-between; display:flex; width:100%;}
