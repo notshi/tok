@@ -21,6 +21,7 @@ tok.start=async function()
 	await plate.setup()
 
 	tok.binds()
+	await tok.show_answers()
 	
 	console.log("TOK has started")
 }
@@ -43,7 +44,7 @@ tok.add_form=async function(event)
 	console.log("name = "+name)
 	console.log("post = "+post)
 	console.log("que  = "+que )
-	console.log("form submitted OKOKOK")
+	console.log("form submitted")
 	
 	let it={}
 	it.author=name
@@ -52,14 +53,18 @@ tok.add_form=async function(event)
 	it.question=que
 	
 	await db.add(it)
+	await tok.show_answers()
+	$("#show_answers")[0].scrollIntoView();
+}
 
-	let answers = await db.list({question:que})	
+tok.show_answers=async function(event)
+{
+	let answers = await db.list({question:"p4q4"})
 	answers.reverse()
 	for(v of answers)
 	{
 		v.date_fix=v.date.toISOString().split('T')[0]
 	}
 	plate.chunks.answers=answers // a json array of answers
-	$("#put_answers_here").html( plate.replace("{show_answers}") )
-	
+	$("#show_answers").html( plate.replace("{show_answers}") )
 }

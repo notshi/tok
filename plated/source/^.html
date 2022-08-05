@@ -101,6 +101,29 @@ You might want to go <a href="{iso_root}index.html">home</a>.
     </nav>
 </div>
 
+#^more_que1 trim=ends
+<div class="row">
+    <div><h2>{more}</h2></div>
+    <div class="list_wrap">
+        <div class="question">
+
+#^more_que2 trim=ends
+                    </div>
+                    <div class="img"></div>
+                </div>
+            </a>
+        </div>
+        <div class="question">
+
+#^more_que3 trim=ends
+                        <div class="type"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
 #^footer trim=ends
 <footer class="foot_content" id="about_footer">
     <div class="row">
@@ -122,6 +145,55 @@ You might want to go <a href="{iso_root}index.html">home</a>.
     </div>
 </footer>
 
+#^que1 trim=ends
+<main class="main_content row">
+        <div class="list_wrap">
+             <div class="question wide current">
+
+#^que2 trim=ends
+            </div>
+            <div class="info_wrap">
+                <div class="item_wrap">
+                    <div class="item_star">*</div>
+
+#^que3 trim=ends
+                </div>
+                <div class="post_link_wrap">
+                    <a href="#reply">
+                        <div class="post_link_text">{share}</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+#^que4 trim=ends
+        <div class="post_wrap" id="reply">
+            <form id="add_form">
+                <div class="post_area">
+
+#^que5 trim=ends
+                    <textarea type="text" id="add_post" name="add_post" placeholder="{share1}"></textarea>
+                    <div class="post_more">
+                        <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="{post_name}"></input></div>
+                        <div class="post_data">
+                            <div class="post_media"><a href="#reply"></a></div>
+                            <div class="post_image"><a href="#reply"></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post_foot_wrap">
+                    <div class="post_info">
+                        {post_info}
+                    </div>
+
+#^que6 trim=ends
+                    <input type="submit" id="add_submit" value="{post}">
+                </div>
+            </form>
+            <div id="put_answers_here"></div>
+        </div>
+    </main>
+
 
 #^answers form=json
 [
@@ -138,13 +210,17 @@ You might want to go <a href="{iso_root}index.html">home</a>.
 ]
 
 #^show_answers
-<div>
-
-{answers:show_answer}
-
-</div>
+<div class="comment_list_wrap">{answers:show_answer}</div>
 
 #^show_answer
+<div class="comment_wrap">
+    <div class="comment">
+        <div class="comment_name">{_it.author}</div>
+        <div class="comment_text">{_it.body}</div>
+    </div>
+</div>
+
+#^answer_example
 <div>
 	<p>question {_it.question}</p>
 	<p>author {_it.author}</p>
