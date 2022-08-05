@@ -54,7 +54,7 @@ tok.add_form=async function(event)
 	
 	await db.add(it)
 	await tok.show_answers()
-	$("#show_answers")[0].scrollIntoView();
+	$("#answer_wrap")[0].scrollIntoView({behavior:"smooth"});
 }
 
 tok.show_answers=async function(event)

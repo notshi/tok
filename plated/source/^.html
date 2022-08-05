@@ -34,7 +34,7 @@
 #^------------------------------
 #^body trim=ends
 
-You might want to go <a href="{iso_root}index.html">home</a>.
+{home1} <a href="{iso_root}index.html">{home2}</a>.
 
 #^header trim=ends
 <header class="head_content">
@@ -101,29 +101,6 @@ You might want to go <a href="{iso_root}index.html">home</a>.
     </nav>
 </div>
 
-#^more_que1 trim=ends
-<div class="row">
-    <div><h2>{more}</h2></div>
-    <div class="list_wrap">
-        <div class="question">
-
-#^more_que2 trim=ends
-                    </div>
-                    <div class="img"></div>
-                </div>
-            </a>
-        </div>
-        <div class="question">
-
-#^more_que3 trim=ends
-                        <div class="type"></div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-
 #^footer trim=ends
 <footer class="foot_content" id="about_footer">
     <div class="row">
@@ -135,7 +112,7 @@ You might want to go <a href="{iso_root}index.html">home</a>.
         </div>
         <div class="cc_wrap">
             <div class="cc_text">
-                <a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">{tok_stori} | Austausch | Sharing Stories</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
+                <a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">{tok_stori_cc} | {sharing_stories}</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
                 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-NC-ND 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
             </div>
             <div class="code">{cc_shi}</div>
@@ -145,55 +122,89 @@ You might want to go <a href="{iso_root}index.html">home</a>.
     </div>
 </footer>
 
-#^que1 trim=ends
+#^more_questions trim=ends
+<div class="row">
+    <div><h2>{more}</h2></div>
+    <div class="list_wrap">
+        <div class="question">
+            <a href="{question_code_prev}.html">
+                <div class="blog {question_code_prev} box1">
+                    <div class="text_wrap">
+                        <div class="type">{pillar_text_prev}</div>
+                        <div class="text">{question_text_prev}</div>
+                    </div>
+                    <div class="img"></div>
+                </div>
+            </a>
+        </div>
+        <div class="question">
+            <a href="{question_code_next}.html">
+                <div class="blog box2">
+                    <div class="text_wrap">
+                        <div class="type">{pillar_text_next}</div>
+                        <div class="text">{question_text_next}</div>
+                        <div class="type"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+#^main_question trim=ends
 <main class="main_content row">
-        <div class="list_wrap">
-             <div class="question wide current">
-
-#^que2 trim=ends
-            </div>
-            <div class="info_wrap">
-                <div class="item_wrap">
-                    <div class="item_star">*</div>
-
-#^que3 trim=ends
+    <div class="list_wrap">
+            <div class="question wide current">
+            <div class="blog {main_question_code}">
+                <div class="text_wrap">
+                    <div class="type"><span>{main_pillar_text}</span> {question} {main_question_num}</div>
+                    <div class="text">{main_question_text}</div>
                 </div>
-                <div class="post_link_wrap">
-                    <a href="#reply">
-                        <div class="post_link_text">{share}</div>
-                    </a>
+                <div class="img">
+                    <span role="img" aria-label="{main_img_alt_text}"></span>
+                    <div class="img_text">{main_cc_text}</div>
                 </div>
             </div>
         </div>
-
-#^que4 trim=ends
-        <div class="post_wrap" id="reply">
-            <form id="add_form">
-                <div class="post_area">
-
-#^que5 trim=ends
-                    <textarea type="text" id="add_post" name="add_post" placeholder="{share1}"></textarea>
-                    <div class="post_more">
-                        <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="{post_name}"></input></div>
-                        <div class="post_data">
-                            <div class="post_media"><a href="#reply"></a></div>
-                            <div class="post_image"><a href="#reply"></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="post_foot_wrap">
-                    <div class="post_info">
-                        {post_info}
-                    </div>
-
-#^que6 trim=ends
-                    <input type="submit" id="add_submit" value="{post}">
-                </div>
-            </form>
-            <div id="put_answers_here"></div>
+        <div class="info_wrap">
+            <div class="item_wrap">
+                <div class="item_star">*</div>
+                <div class="item_text">{main_item_text}</div>
+            </div>
+            <div class="post_link_wrap">
+                <a href="#reply">
+                    <div class="post_link_text"><img src="{_root}data/post_icon.svg"/>{share}</div>
+                </a>
+            </div>
         </div>
-    </main>
-
+    </div>
+    <span id="answer_wrap"></span>
+    <div id="show_answers">{show_answers}</div>
+    <span id="reply"></span>
+    <div class="post_wrap">
+        <form id="add_form">
+            <div class="post_area">
+                <div class="post_question"><span>{question}: </span> {main_question_text}</div>
+                <textarea type="text" id="add_post" name="add_post" placeholder="{share1}"></textarea>
+                <div class="post_more">
+                    <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="{post_name}"></input></div>
+                    <div class="post_data">
+                        <div class="post_media"><a href="#reply"></a></div>
+                        <div class="post_image"><a href="#reply"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="post_foot_wrap">
+                <div class="post_info">
+                    {post_info}
+                </div>
+                <input type="hidden" id="add_que" value="{main_question_code}">
+                <input type="submit" id="add_submit" value="{post}">
+            </div>
+        </form>
+        <div id="put_answers_here"></div>
+    </div>
+</main>
 
 #^answers form=json
 [
