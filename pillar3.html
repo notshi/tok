@@ -91,12 +91,15 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .item_text      {width:300px; margin-right:30px; background-color:#eee6e6; padding:5px 10px;}
 .item_star      {font-size:100px; line-height:80px; margin-right:10px; color:#e6ba66;}
 .post_link_wrap {min-width:500px;}
-.post_link_text {color:#fff; background-color:#3f823a; padding:5px 30px 10px 30px; border-radius:6px; font-size:38px; border:1px solid #224f31; box-shadow:10px 10px #111; text-align:center; transition:all 0.2s ease-out;}
+.post_link_text {color:#fff; background-color:#3f823a; padding:15px 30px; border-radius:12px; font-size:38px; border:1px solid #224f31; box-shadow:10px 10px #111; text-align:center; transition:all 0.2s ease-out;}
+.post_link_text img     {width:45px; margin-right:10px;}
 .post_link_text:hover,
-.post_link_text:focus{background-color:#33682f; box-shadow:0px 0px #111; transform:translateY(0.20em);}
+.post_link_text:focus   {background-color:#32992a; box-shadow:0px 0px #111; transform:translateY(0.20em);}
 .img_text       {padding:5px 10px; background-color:#fff; font-size:16px; line-height:20px; position:absolute; bottom:0;}
 .img_text span  {display:block; font-size:15px; font-weight:300;}
 
+span#answer_wrap,
+span#reply      {display:block; height:100px; margin-top:-100px; visibility:hidden;}
 .comment_list_wrap{display:flex; flex-flow:wrap; justify-content:space-around; align-items:center; margin-top:60px; width:90%; margin-left:auto; margin-right:auto;}
 .comment_wrap   {width:calc(50% - 30px); margin-bottom:30px;}
 .comment_wrap:nth-of-type(2n) {margin-top:55px; margin-bottom:-20px;}
@@ -120,7 +123,7 @@ input#add_name                  {min-height:50px; width:100%;}
 textarea#add_post::placeholder,
 input#add_name::placeholder     {font-family:'Bitter',serif; font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px;}
 textarea:focus, input:focus     {outline:0;}
-input#add_submit                {font-family:'Bitter',serif; background:#111; color:#fff; padding:5px 30px; border:0; border-radius:6px; font-size:26px; transition:all 0.5s ease-out; margin-top:30px;}
+input#add_submit                {font-family:'Bitter',serif; background:#111; color:#fff; padding:10px 40px; border:0; border-radius:6px; font-size:26px; transition:all 0.5s ease-out; margin-top:30px;}
 input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 
 .post_wrap      {margin-top:80px; margin-bottom:40px; width:90%; margin-left:auto; margin-right:auto;}
@@ -164,6 +167,7 @@ a.cc_link       {display:block;}
 html            {font-size:18px;}
 body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .nav_content    {display:none;}
+.mob_content    {display:flex;}
 .main_content   {padding-top:0;}
 .logo           {height:60px;}
 .type,
@@ -181,7 +185,7 @@ textarea#add_post::placeholder,
 input#add_name::placeholder,
 textarea#add_post,
 input#add_name  {font-size:1.2rem; line-height:inherit;}
-.post_link_text {font-size:1.4rem; line-height:inherit;}
+.post_link_text {font-size:2.5rem; line-height:inherit; padding:15px 5px;}
 .pillar_wrap    {font-size:2.5rem; line-height:inherit;}
 .wide .blog     {display:flex; flex-flow:column;}
 .blog .img,
@@ -192,6 +196,7 @@ input#add_name  {font-size:1.2rem; line-height:inherit;}
 .comment_list_wrap,
 .current .blog,
 .info_wrap      {width:100%; flex-flow:column;}
+.info_wrap      {margin-top:0;}
 .item_text      {font-size:0.8rem;}
 .comment_wrap:nth-of-type(2n)   {margin:initial; margin-bottom:30px;}
 .comment_wrap   {width:100%;}
@@ -262,7 +267,7 @@ a.cc_link       {display:inline;}
 </div>
         <div class="list_wrap">
             <div class="question">
-                <a href="#">
+                <a href="p3q1.html">
                     <div class="blog p3q1 box1">
                         <div class="text_wrap">
                             <div class="type">Question
@@ -275,12 +280,12 @@ a.cc_link       {display:inline;}
                 </a>
             </div>
             <div class="question">
-                <a href="#">
+                <a href="p3q2.html">
                     <div class="blog box2">
                         <div class="text_wrap">
                             <div class="type">Question
  2</div>
-                            <div class="text">What is your favorite German expression or idiom?<span>Explain what this means?</span>
+                            <div class="text">What is your favorite German expression or idiom? <span>Explain what this means?</span>
 </div>
                             <div class="type"></div>
                         </div>
@@ -288,12 +293,12 @@ a.cc_link       {display:inline;}
                 </a>
             </div>
             <div class="question wide">
-                <a href="#">
+                <a href="p3q3.html">
                     <div class="blog p3q3">
                         <div class="text_wrap">
                             <div class="type">Question
  3</div>
-                            <div class="text">Do you have a strong connection to a particular place in Germany?<span>Describe where this is and why?</span>
+                            <div class="text">Do you have a strong connection to a particular place in Germany? <span>Describe where this is and why?</span>
 </div>
                         </div>
                         <div class="img"></div>
@@ -301,7 +306,7 @@ a.cc_link       {display:inline;}
                 </a>
             </div>
             <div class="question">
-                <a href="#">
+                <a href="p3q4.html">
                     <div class="blog box2">
                         <div class="text_wrap">
                             <div class="type">Question
@@ -314,7 +319,7 @@ a.cc_link       {display:inline;}
                 </a>
             </div>
             <div class="question">
-                <a href="#">
+                <a href="p3q5.html">
                     <div class="blog p3q5 box1">
                         <div class="text_wrap">
                             <div class="type">Question
@@ -341,7 +346,8 @@ a.cc_link       {display:inline;}
         <div class="cc_wrap">
             <div class="cc_text">
                 <a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">Tok Stori
- | Austausch | Sharing Stories</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
+ | Sharing Stories
+</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
                 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-NC-ND 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
             </div>
             <div class="code">Site by shi Blank

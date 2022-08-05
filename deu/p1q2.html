@@ -91,12 +91,15 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .item_text      {width:300px; margin-right:30px; background-color:#eee6e6; padding:5px 10px;}
 .item_star      {font-size:100px; line-height:80px; margin-right:10px; color:#e6ba66;}
 .post_link_wrap {min-width:500px;}
-.post_link_text {color:#fff; background-color:#3f823a; padding:5px 30px 10px 30px; border-radius:6px; font-size:38px; border:1px solid #224f31; box-shadow:10px 10px #111; text-align:center; transition:all 0.2s ease-out;}
+.post_link_text {color:#fff; background-color:#3f823a; padding:15px 30px; border-radius:12px; font-size:38px; border:1px solid #224f31; box-shadow:10px 10px #111; text-align:center; transition:all 0.2s ease-out;}
+.post_link_text img     {width:45px; margin-right:10px;}
 .post_link_text:hover,
-.post_link_text:focus{background-color:#33682f; box-shadow:0px 0px #111; transform:translateY(0.20em);}
+.post_link_text:focus   {background-color:#32992a; box-shadow:0px 0px #111; transform:translateY(0.20em);}
 .img_text       {padding:5px 10px; background-color:#fff; font-size:16px; line-height:20px; position:absolute; bottom:0;}
 .img_text span  {display:block; font-size:15px; font-weight:300;}
 
+span#answer_wrap,
+span#reply      {display:block; height:100px; margin-top:-100px; visibility:hidden;}
 .comment_list_wrap{display:flex; flex-flow:wrap; justify-content:space-around; align-items:center; margin-top:60px; width:90%; margin-left:auto; margin-right:auto;}
 .comment_wrap   {width:calc(50% - 30px); margin-bottom:30px;}
 .comment_wrap:nth-of-type(2n) {margin-top:55px; margin-bottom:-20px;}
@@ -120,7 +123,7 @@ input#add_name                  {min-height:50px; width:100%;}
 textarea#add_post::placeholder,
 input#add_name::placeholder     {font-family:'Bitter',serif; font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px;}
 textarea:focus, input:focus     {outline:0;}
-input#add_submit                {font-family:'Bitter',serif; background:#111; color:#fff; padding:5px 30px; border:0; border-radius:6px; font-size:26px; transition:all 0.5s ease-out; margin-top:30px;}
+input#add_submit                {font-family:'Bitter',serif; background:#111; color:#fff; padding:10px 40px; border:0; border-radius:6px; font-size:26px; transition:all 0.5s ease-out; margin-top:30px;}
 input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 
 .post_wrap      {margin-top:80px; margin-bottom:40px; width:90%; margin-left:auto; margin-right:auto;}
@@ -164,6 +167,7 @@ a.cc_link       {display:block;}
 html            {font-size:18px;}
 body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .nav_content    {display:none;}
+.mob_content    {display:flex;}
 .main_content   {padding-top:0;}
 .logo           {height:60px;}
 .type,
@@ -181,7 +185,7 @@ textarea#add_post::placeholder,
 input#add_name::placeholder,
 textarea#add_post,
 input#add_name  {font-size:1.2rem; line-height:inherit;}
-.post_link_text {font-size:1.4rem; line-height:inherit;}
+.post_link_text {font-size:2.5rem; line-height:inherit; padding:15px 5px;}
 .pillar_wrap    {font-size:2.5rem; line-height:inherit;}
 .wide .blog     {display:flex; flex-flow:column;}
 .blog .img,
@@ -192,6 +196,7 @@ input#add_name  {font-size:1.2rem; line-height:inherit;}
 .comment_list_wrap,
 .current .blog,
 .info_wrap      {width:100%; flex-flow:column;}
+.info_wrap      {margin-top:0;}
 .item_text      {font-size:0.8rem;}
 .comment_wrap:nth-of-type(2n)   {margin:initial; margin-bottom:30px;}
 .comment_wrap   {width:100%;}
@@ -258,35 +263,43 @@ a.cc_link       {display:inline;}
     </div>
 </header>
     <main class="main_content row">
-        <div class="list_wrap">
-             <div class="question wide current">
-    <div class="blog p1q2">
-        <div class="text_wrap">
-            <div class="type"><span>Familie
+    <div class="list_wrap">
+            <div class="question wide current">
+            <div class="blog p1q2
+">
+                <div class="text_wrap">
+                    <div class="type"><span>Familie
+
 </span> Frage
- 2</div>
-            <div class="text">Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
+ 2
 </div>
-        </div>
-        <div class="img">
-            <span role="img" aria-label="The coconut scraper is a three legged contraption made of wood with a curved top for sitting on and a seashell attached by rope at the tip"></span>
-            <div class="img_text">{p1q2_cc}</div>
-        </div>
-    </div>
-    </div>
-            <div class="info_wrap">
-                <div class="item_wrap">
-                    <div class="item_star">*</div>
-    <div class="item_text">{p1q2_item}</div>
-    </div>
-                <div class="post_link_wrap">
-                    <a href="#reply">
-                        <div class="post_link_text">Teilen <b>Sie Ihr</b> Wissen
+                    <div class="text">Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
+
 </div>
-                    </a>
+                </div>
+                <div class="img">
+                    <span role="img" aria-label="{p1q2_alt}
+"></span>
+                    <div class="img_text">{p1q2_cc}
+</div>
                 </div>
             </div>
         </div>
+        <div class="info_wrap">
+            <div class="item_wrap">
+                <div class="item_star">*</div>
+                <div class="item_text">{p1q2_item}
+</div>
+            </div>
+            <div class="post_link_wrap">
+                <a href="#reply">
+                    <div class="post_link_text"><img src="../data/post_icon.svg"/>Antworten
+</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <span id="answer_wrap"></span>
     <div id="show_answers"><div class="comment_list_wrap"><div class="comment_wrap">
     <div class="comment">
         <div class="comment_name">dave</div>
@@ -301,63 +314,72 @@ a.cc_link       {display:inline;}
 </div>
 </div>
 </div>
-    <div class="post_wrap" id="reply">
-            <form id="add_form">
-                <div class="post_area">
-    <div class="post_question"><span>Familie
- Frage
- </span> Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
-</div>
-    <textarea type="text" id="add_post" name="add_post" placeholder="Geben Sie hier Ihren Kommentar ein
-"></textarea>
-                    <div class="post_more">
-                        <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="Wie heißen Sie?
-"></input></div>
-                        <div class="post_data">
-                            <div class="post_media"><a href="#reply"></a></div>
-                            <div class="post_image"><a href="#reply"></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="post_foot_wrap">
-                    <div class="post_info">
-                        By sharing your knowledge, your responses will be available to the public. Please share responsibly.
+    <span id="reply"></span>
+    <div class="post_wrap">
+        <form id="add_form">
+            <div class="post_area">
+                <div class="post_question"><span>Frage
+: </span> Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
 
+</div>
+                <textarea type="text" id="add_post" name="add_post" placeholder="Geben Sie hier Ihre Antwort ein
+"></textarea>
+                <div class="post_more">
+                    <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="Wie heißen Sie?
+"></input></div>
+                    <div class="post_data">
+                        <div class="post_media"><a href="#reply"></a></div>
+                        <div class="post_image"><a href="#reply"></a></div>
                     </div>
-    <input type="hidden" id="add_que" value="p1q2">
-    <input type="submit" id="add_submit" value="Kommentar
-">
                 </div>
-            </form>
-            <div id="put_answers_here"></div>
-        </div>
-    </main>
+            </div>
+            <div class="post_foot_wrap">
+                <div class="post_info">
+                    By sharing your knowledge, your responses will be available to the public. Please share responsibly.
+
+                </div>
+                <input type="hidden" id="add_que" value="p1q2
+">
+                <input type="submit" id="add_submit" value="Kommentar
+">
+            </div>
+        </form>
+        <div id="put_answers_here"></div>
+    </div>
+</main>
     <div class="row">
     <div><h2>Mehr Fragen
 </h2></div>
     <div class="list_wrap">
         <div class="question">
-    <a href="p1q1.html">
-        <div class="blog p1q1 box1">
-            <div class="text_wrap">
-                <div class="type">Familie
+            <a href="p1q1
+.html">
+                <div class="blog p1q1
+ box1">
+                    <div class="text_wrap">
+                        <div class="type">Familie
+
 </div>
-                <div class="text">Wen zählst du zu deiner Famiie?
+                        <div class="text">Wen zählst du zu deiner Famiie?
+
 </div>
-    </div>
+                    </div>
                     <div class="img"></div>
                 </div>
             </a>
         </div>
         <div class="question">
-    <a href="p1q3.html">
-        <div class="blog box2">
-            <div class="text_wrap">
-                <div class="type">Familie
+            <a href="p1q3
+.html">
+                <div class="blog box2">
+                    <div class="text_wrap">
+                        <div class="type">Familie
+
 </div>
-                <div class="text">Wie weit kannst du deine Vorfahren zurückverfolgen?<span>Eltern, Großeltern, Urgroßeltern, weitere Generationen</span>
+                        <div class="text">Wie weit kannst du deine Vorfahren zurückverfolgen? <span>Eltern, Großeltern, Urgroßeltern, weitere Generationen</span>
+
 </div>
-    <div class="type"></div>
+                        <div class="type"></div>
                     </div>
                 </div>
             </a>
@@ -376,11 +398,12 @@ a.cc_link       {display:inline;}
         </div>
         <div class="cc_wrap">
             <div class="cc_text">
-                <a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">Tok Stori
- | Austausch | Sharing Stories</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
+                <a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">Geschichten-Austausch
+ | Sharing Stories
+</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
                 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-NC-ND 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
             </div>
-            <div class="code">Website von shi Blank
+            <div class="code">Webseite von shi Blank
 </div>
             <div class="support">Unterstützt durch
  <span role="img" aria-label="A bright red log with thick white letters, U and M"><img src="../data/logo_ubersee.svg"/></span></div>
