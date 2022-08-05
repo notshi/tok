@@ -2,6 +2,9 @@
  "_dirname": "{_root}deu",
  "_filename": "{_root}deu/pillar3.html",
  "_flags": {
+  "answers": {
+   "form": "json"
+  },
   "body": {
    "trim": "ends"
   },
@@ -72,6 +75,18 @@
  "about_footer": "This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany. <a href=\"\"><i>Download and print this as a zine!</i></a>\n",
  "announce": "Ankündigung\n",
  "announce_text": "A dialogue space for German users to share their collective understanding of German identity\n",
+ "answers": [
+  {
+   "author": "dave",
+   "body": "This is a test post",
+   "question": "p1q1"
+  },
+  {
+   "author": "other dave",
+   "body": "This is also a test post",
+   "question": "p1q1"
+  }
+ ],
  "austausch": "Austausch\n",
  "body": "<div class=\"main_wrap\">\n    {header1}\n    {p1}\n    {p2}\n    {p3_on}\n    {p4}\n    {header2}\n    <main class=\"main_content row\">\n        <div class=\"pillar_wrap\">{pillar3}</div>\n        <div class=\"list_wrap\">\n            <div class=\"question\">\n                <a href=\"#\">\n                    <div class=\"blog p3q1 box1\">\n                        <div class=\"text_wrap\">\n                            <div class=\"type\">{question} 1</div>\n                            <div class=\"text\">{p3q1}</div>\n                        </div>\n                        <div class=\"img\"></div>\n                    </div>\n                </a>\n            </div>\n            <div class=\"question\">\n                <a href=\"#\">\n                    <div class=\"blog box2\">\n                        <div class=\"text_wrap\">\n                            <div class=\"type\">{question} 2</div>\n                            <div class=\"text\">{p3q2}</div>\n                            <div class=\"type\"></div>\n                        </div>\n                    </div>\n                </a>\n            </div>\n            <div class=\"question wide\">\n                <a href=\"#\">\n                    <div class=\"blog p3q3\">\n                        <div class=\"text_wrap\">\n                            <div class=\"type\">{question} 3</div>\n                            <div class=\"text\">{p3q3}</div>\n                        </div>\n                        <div class=\"img\"></div>\n                    </div>\n                </a>\n            </div>\n            <div class=\"question\">\n                <a href=\"#\">\n                    <div class=\"blog box2\">\n                        <div class=\"text_wrap\">\n                            <div class=\"type\">{question} 4</div>\n                            <div class=\"text\">{p3q4}</div>\n                            <div class=\"type\"></div>\n                        </div>\n                    </div>\n                </a>\n            </div>\n            <div class=\"question\">\n                <a href=\"#\">\n                    <div class=\"blog p3q5 box1\">\n                        <div class=\"text_wrap\">\n                            <div class=\"type\">{question} 5</div>\n                            <div class=\"text\">{p3q5}</div>\n                        </div>\n                        <div class=\"img\"></div>\n                    </div>\n                </a>\n            </div>\n        </div>\n    </main>\n    {footer}\n</div>",
  "cc_shi": "Website von shi Blank\n",
@@ -126,6 +141,8 @@
  "share": "Teilen <b>Sie Ihr</b> Wissen\n",
  "share1": "Geben Sie hier Ihren Kommentar ein\n",
  "sharing_stories": "Sharing Stories\n",
+ "show_answer": "<div>\n\t<p>question {_it.question}</p>\n\t<p>author {_it.author}</p>\n\t<p>date {_it.date_fix}</p>\n\t<p>body {_it.body}</p>\n<div>\n",
+ "show_answers": "<div>\n\n{answers:show_answer}\n\n</div>\n",
  "show_more": "Weitere Fragen anzeigen\n",
  "switch_root": "{_root}",
  "title": "{tok_stori} | {pillar3}",
