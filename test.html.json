@@ -1,6 +1,6 @@
 {
  "_dirname": "{_root}",
- "_filename": "{_root}p1q1.html",
+ "_filename": "{_root}test.html",
  "_flags": {
   "answers": {
    "form": "json"
@@ -79,10 +79,10 @@
   }
  },
  "_output_chunkname": "html",
- "_output_filename": "p1q1.html",
+ "_output_filename": "test.html",
  "_root": "./",
  "_site": "{_root}",
- "_sourcename": "p1q1.^.html",
+ "_sourcename": "test.^.html",
  "about": "About\n",
  "about_footer": "This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany. <a href=\"\"><i>Download and print this as a zine!</i></a>\n",
  "announce": "Announcement\n",
@@ -100,7 +100,7 @@
    "question": "p1q1"
   }
  ],
- "body": "<div class=\"main_wrap\">\n    {header1}\n    {p1_on}\n    {p2}\n    {p3}\n    {p4}\n    {header2}\n    {main_question}\n    {more_questions}\n    {footer}\n</div>",
+ "body": "<!-- window.location: Which page should user go to when this form sends data and succeeds -->\n<iframe name=\"iframe_redirect\" id=\"iframe_redirect\" style=\"display:none;\" onload=\"if(typeof sent_redirect!='undefined'){window.location='{_root}index.html';}\"></iframe>\n\n<!-- action=\"google form action ag value\" -->\n<form onsubmit=\"sent_redirect=true\" target=\"iframe_redirect\" action=\"https://docs.google.com/forms/u/0/d/e/1FAIpQLSc_ARXKahOmySfkDwxmTkLwtUj0f-IWOdz9Dml59RonqieNdQ/formResponse\" method=\"post\">\n  <div>\n    <!-- name=\"google forms input name\" -->\n    <input type=\"text\" name=\"entry.1959390788\" value=\"\">\n  </div>\n  <div>\n    <!-- answer=\"google forms input name\" -->\n    <input type=\"text\" name=\"entry.666967899\" value=\"\">\n  </div>\n  <div>\n    <!-- question=\"google forms input name\" -->\n    <input type=\"text\" name=\"entry.180249156\" value=\"\">\n  </div>\n  <button type=\"submit\" name=\"button\" value=\"submit\">Submit</button>\n</form>",
  "cc_lisa_1": "by\n",
  "cc_lisa_2": "is licensed under\n",
  "cc_shi": "Site by shi Blank\n",
@@ -118,14 +118,7 @@
  "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n    <link href=\"https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap\" rel=\"stylesheet\">\n    <script src=\"{_root}js/tok.js\"></script>\n    <script type=\"text/javascript\">\n        require(\"tok\").setup({})\n    </script>\n    {head}\n</head>\n<body>{body}</body>\n</html>",
  "iso": "EN / DE",
  "iso_root": "{_root}",
- "main_cc_text": "{p1q1_cc}\n",
- "main_img_alt_text": "{p1q1_alt}\n",
- "main_item_text": "{p1q1_item}\n",
- "main_pillar_text": "{pillar1}\n",
  "main_question": "<main class=\"main_content row\">\n    <div class=\"list_wrap\">\n            <div class=\"question wide current\">\n            <div class=\"blog {main_question_code}\">\n                <div class=\"text_wrap\">\n                    <div class=\"type\"><span>{main_pillar_text}</span> {question} {main_question_num}</div>\n                    <div class=\"text\">{main_question_text}</div>\n                </div>\n                <div class=\"img\">\n                    <span role=\"img\" aria-label=\"{main_img_alt_text}\"></span>\n                    <div class=\"img_text\">{main_cc_text}</div>\n                </div>\n            </div>\n        </div>\n        <div class=\"info_wrap\">\n            <div class=\"item_wrap\">\n                <div class=\"item_star\">*</div>\n                <div class=\"item_text\">{main_item_text}</div>\n            </div>\n            <div class=\"post_link_wrap\">\n                <a href=\"#reply\">\n                    <div class=\"post_link_text\"><img src=\"{_root}data/post_icon.svg\"/>{share}</div>\n                </a>\n            </div>\n        </div>\n    </div>\n    <span id=\"answer_wrap\"></span>\n    <div id=\"show_answers\">{show_answers}</div>\n    <span id=\"reply\"></span>\n    <div class=\"post_wrap\">\n        <form id=\"add_form\">\n            <div class=\"post_area\">\n                <div class=\"post_question\"><span>{question}: </span> {main_question_text}</div>\n                <textarea type=\"text\" id=\"add_post\" name=\"add_post\" placeholder=\"{share1}\"></textarea>\n                <div class=\"post_more\">\n                    <div class=\"post_name\"><input type=\"text\" id=\"add_name\" name=\"add_name\" placeholder=\"{post_name}\"></input></div>\n                    <div class=\"post_data\">\n                        <div class=\"post_media\"><a href=\"#reply\"></a></div>\n                        <div class=\"post_image\"><a href=\"#reply\"></a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"post_foot_wrap\">\n                <div class=\"post_info\">\n                    {post_info}\n                </div>\n                <input type=\"hidden\" id=\"add_que\" value=\"{main_question_code}\">\n                <input type=\"submit\" id=\"add_submit\" value=\"{post}\">\n            </div>\n        </form>\n        <div id=\"put_answers_here\"></div>\n    </div>\n</main>",
- "main_question_code": "p1q1\n",
- "main_question_num": "1\n",
- "main_question_text": "{p1q1}\n",
  "mob_about": "A dialogue space for Tok Stori (<i>sharing stories</i>) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany.\n",
  "mob_header": "<div class=\"mob_content\">\n    <nav class=\"mob_nav_wrap\" role=\"navigation\">\n        <div class=\"logo\"><a href=\"{iso_root}index.html\"><span role=\"img\" aria-label=\"A vector graphic resembling an outline of a conch shell\"><img src=\"{_root}data/logo.svg\"></span><h2>{tok_stori}</h2></a></div>\n        <div id=\"mob_toggle\">\n            <input type=\"checkbox\" />\n            <span></span>\n            <span></span>\n            <span></span>\n            <ul class=\"mob_nav_content\">\n            <li><div class=\"mob_link\"><a href=\"pillar1.html\">{pillar1}</a></div></li>\n            <li><div class=\"mob_link\"><a href=\"pillar2.html\">{pillar2}</a></div></li>\n            <li><div class=\"mob_link\"><a href=\"pillar3.html\">{pillar3}</a></div></li>\n            <li><div class=\"mob_link\"><a href=\"pillar4.html\">{pillar4}</a></div></li>\n            <li><div class=\"mob_link\"><a href=\"#about_footer\">{about}</a></div></li>\n            <li><div class=\"mob_link\"><a href=\"{switch_root}{_output_filename}\">{iso}</a></div></li>\n            <li><div class=\"mob_about\">{mob_about}</div>\n            <li><div class=\"mob_cc_wrap\">\n                <div class=\"mob_cc\">{tok_stori_cc} | {sharing_stories} {cc_lisa_1} Lisa Hilli {cc_lisa_2} CC BY-NC-ND 4.0</div>\n                <div class=\"mob_cc\">{cc_shi}</div>\n                <div class=\"mob_cc\">{cc_ubersee} {cc_ubersee_text}</div>\n            </div></li>\n            </ul>\n        </div>\n    </nav>\n</div>",
  "mob_header_no": "<div class=\"mob_content\">\n    <div class=\"logo\"><a href=\"{iso_root}index.html\"><span role=\"img\" aria-label=\"A vector graphic resembling an outline of a conch shell\"><img src=\"{_root}data/logo.svg\"></span><h2>{tok_stori}</h2></a></div>\n    <div id=\"mob_toggle\">\n        <input type=\"checkbox\"></input>\n        <span></span>\n        <span></span>\n        <span></span>\n    </div>\n    <nav class=\"mob_nav_content\">\n        <div class=\"mob_link\"><a href=\"pillar1.html\">{pillar1}</a></div>\n        <div class=\"mob_link\"><a href=\"pillar2.html\">{pillar2}</a></div>\n        <div class=\"mob_link\"><a href=\"pillar3.html\">{pillar3}</a></div>\n        <div class=\"mob_link\"><a href=\"pillar4.html\">{pillar4}</a></div>\n        <div class=\"mob_link\"><a href=\"#about_footer\">{about}</a></div>\n        <div class=\"mob_link\"><a href=\"{switch_root}{_output_filename}\">{iso}</a></div>\n        <div class=\"mob_about\">{mob_about}</div>\n        <div class=\"mob_cc_wrap\">\n            <div class=\"mob_cc\">{tok_stori_cc} | {sharing_stories} {cc_lisa_1} Lisa Hilli {cc_lisa_2} CC BY-NC-ND 4.0</div>\n            <div class=\"mob_cc\">{cc_shi}</div>\n            <div class=\"mob_cc\">{cc_ubersee} {cc_ubersee_text}</div>\n        </div>\n    </nav>\n</div>",
@@ -166,16 +159,10 @@
  "pillar2": "Spirituality\n",
  "pillar3": "Culture\n",
  "pillar4": "Food\n",
- "pillar_text_next": "{pillar1}\n",
- "pillar_text_prev": "{pillar4}\n",
  "post": "Post\n",
  "post_info": "By sharing your knowledge, your responses will be available to the public. Please share responsibly.\n",
  "post_name": "What's your name?\n",
  "question": "Question\n",
- "question_code_next": "p1q2\n",
- "question_code_prev": "p4q5\n",
- "question_text_next": "{p1q2}\n",
- "question_text_prev": "{p4q5}\n",
  "share": "Answer\n",
  "share1": "Type your answer here\n",
  "sharing_stories": "Sharing Stories\n",
@@ -183,7 +170,7 @@
  "show_answers": "<div class=\"comment_list_wrap\">{answers:show_answer}</div>\n",
  "show_more": "Show more questions\n",
  "switch_root": "{_root}deu/",
- "title": "{tok_stori} | {pillar1}",
+ "title": "{tok_stori} | {sharing_stories}",
  "tok_stori": "Tok Stori\n",
  "tok_stori_cc": "Tok Stori\n",
  "top": "Back up\n"

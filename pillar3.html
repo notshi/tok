@@ -50,9 +50,25 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .p4 a:hover     {color:#e67700;}
 
 /*	Mobile Navigation	*/
-.mob_content    {overflow:hidden; display:flex; flex-direction:column; background:#ffefef; position:fixed; top:0px; left:0px; z-index:19; width:100%; height:100vh; max-height:100vh; display:none;}
-.mob_nav_content{display:flex; flex-direction:column; margin-top:1.5rem; margin-left:1.5rem; margin-right:1.5rem;}
+.mob_content    {overflow:hidden; display:none; flex-direction:column; justify-content:space-between; position:fixed; top:0px; left:0px; z-index:6; width:100%; height:100vh; max-height:100vh;}
+.mob_nav_wrap   {background:#ffefef;}
+.mob_nav_content{display:flex; flex-direction:column; background:#ffefef; position:absolute; width:100vw; height:100vh; margin:50px 0 0 -100vw; -webkit-font-smoothing:antialiased; transform-origin:0% 0%; transform:translate(-100%, 0); transition:transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); padding:1.5rem; padding-top:0.5rem;}
 .mob_link       {font-size:1.5rem; margin-bottom:1.5rem;}
+.mob_about      {font-size:1.0rem; margin-bottom:1.5rem; border-top:1px solid #918170; padding-top:1.5rem;}
+.mob_cc_wrap    {margin-bottom:1.5rem;}
+.mob_cc         {font-size:0.8rem; line-height:initial; margin-top:0.3rem;}
+#mob_toggle     {display:flex; flex-direction:column; position:absolute; top:1.5rem; right:1.5rem; z-index:19; -webkit-user-select:none; user-select:none;}
+#mob_toggle input  {display:flex; width:40px; height:32px; position:absolute; cursor:pointer; opacity:0; z-index:23;}
+#mob_toggle span   {display:flex; width:29px; height:2px; margin-bottom:5px; position:relative; background:#000; border-radius:3px; z-index:19; transform-origin:5px 0px; transition:transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;}
+#mob_toggle span:first-child        {transform-origin:0% 0%;}
+#mob_toggle span:nth-last-child(2)  {transform-origin:0% 100%;}
+#mob_toggle input:checked ~ span    {opacity:1; transform:rotate(45deg) translate(-3px, -1px); background:#36383F;}
+#mob_toggle input:checked ~ span:nth-last-child(3)  {opacity:0; transform:rotate(0deg) scale(0.2, 0.2);}
+#mob_toggle input:checked ~ span:nth-last-child(2)  {transform:rotate(-45deg) translate(0, -1px);}
+.mob_nav_content li    {transition-delay:2s;}
+#mob_toggle input:checked ~ ul   {transform:none;}
+#mob_toggle input:checked ~ body {overflow:hidden;}
+
 
 .pillar_wrap    {text-align:center; width:100%; font-size:72px; margin-bottom:30px;}
 .list_wrap      {margin-top:20px; flex-wrap:wrap; justify-content:space-between; display:flex; width:100%;}
@@ -175,6 +191,7 @@ body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .comment_text,
 .text span,
 .about_text     {font-size:1.0rem; line-height:inherit;}
+.mob_content .logo  {justify-content:initial; margin-left:1.5rem; margin-top:0.5rem;}
 .text span      {letter-spacing:-1px;}
 h1, h2,
 .comment_name,
@@ -347,13 +364,16 @@ a.cc_link       {display:inline;}
             <div class="cc_text">
                 <a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">Tok Stori
  | Sharing Stories
-</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
+</a> by
+ <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
+
                 <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-NC-ND 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
             </div>
             <div class="code">Site by shi Blank
 </div>
             <div class="support">Supported by
- <span role="img" aria-label="A bright red log with thick white letters, U and M"><img src="./data/logo_ubersee.svg"/></span></div>
+ <span role="img" aria-label="A bright red log with thick white letters, U and M
+"><img src="./data/logo_ubersee.svg"/></span></div>
             <div class="top"><a href="#">Back up
 </a></div>
         </div>
