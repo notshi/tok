@@ -49,26 +49,29 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .p3 a:hover     {color:#6d3f86;}
 .p4 a:hover     {color:#e67700;}
 
-/*	Mobile Navigation	*/
-.mob_content    {overflow:hidden; display:none; flex-direction:column; justify-content:space-between; position:fixed; top:0px; left:0px; z-index:6; width:100%; height:100vh; max-height:100vh;}
-.mob_nav_wrap   {background:#ffefef;}
-.mob_nav_content{display:flex; flex-direction:column; background:#ffefef; position:absolute; width:100vw; height:100vh; margin:50px 0 0 -100vw; -webkit-font-smoothing:antialiased; transform-origin:0% 0%; transform:translate(-100%, 0); transition:transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); padding:1.5rem; padding-top:0.5rem;}
+/*	Mobile Navigation adapted from Copyright (c) 2022 by Julien Lejeune (https://codepen.io/jlnljn/pen/LZXoBb)*/
+.mob_content    {display:none;}
+.mob_logo       {position:fixed; top:0; left:1.5rem; z-index:6; height:80px;}
+.mob_logo a img {height:30px;}
 .mob_link       {font-size:1.5rem; margin-bottom:1.5rem;}
 .mob_about      {font-size:1.0rem; margin-bottom:1.5rem; border-top:1px solid #918170; padding-top:1.5rem;}
 .mob_cc_wrap    {margin-bottom:1.5rem;}
 .mob_cc         {font-size:0.8rem; line-height:initial; margin-top:0.3rem;}
-#mob_toggle     {display:flex; flex-direction:column; position:absolute; top:1.5rem; right:1.5rem; z-index:19; -webkit-user-select:none; user-select:none;}
-#mob_toggle input  {display:flex; width:40px; height:32px; position:absolute; cursor:pointer; opacity:0; z-index:23;}
-#mob_toggle span   {display:flex; width:29px; height:2px; margin-bottom:5px; position:relative; background:#000; border-radius:3px; z-index:19; transform-origin:5px 0px; transition:transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;}
-#mob_toggle span:first-child        {transform-origin:0% 0%;}
-#mob_toggle span:nth-last-child(2)  {transform-origin:0% 100%;}
-#mob_toggle input:checked ~ span    {opacity:1; transform:rotate(45deg) translate(-3px, -1px); background:#36383F;}
-#mob_toggle input:checked ~ span:nth-last-child(3)  {opacity:0; transform:rotate(0deg) scale(0.2, 0.2);}
-#mob_toggle input:checked ~ span:nth-last-child(2)  {transform:rotate(-45deg) translate(0, -1px);}
-.mob_nav_content li    {transition-delay:2s;}
-#mob_toggle input:checked ~ ul   {transform:none;}
-#mob_toggle input:checked ~ body {overflow:hidden;}
 
+#mob_nav input + label {position:fixed; top:1.5rem; right:40px; height:20px; width:15px; z-index:5;}
+#mob_nav input + label span {position:absolute; width:100%; height:2px; top:50%; margin-top:-1px; left:0; display:block; background:#444; transition:0s;}
+#mob_nav input + label span:first-child {top:3px;}
+#mob_nav input + label span:last-child {top:16px;}
+#mob_nav label:hover {cursor:pointer;}
+#mob_nav input:checked + label span {opacity:0; top:50%;}
+#mob_nav input:checked + label span:first-child {opacity:1; transform:rotate(405deg);}
+#mob_nav input:checked + label span:last-child {opacity:1; transform:rotate(-405deg);}
+#mob_nav input ~ nav {background:#ffefef; position:fixed; top:0; left:0; width:100%; height:80px; z-index:3; transition:0s; transition-delay:0s; overflow:hidden;}
+#mob_nav input ~ nav > ul {position:absolute; top:80px; left:1.5rem; right:1.5rem;}
+#mob_nav input ~ nav > ul > li {opacity:0; transition:0s; transition-delay:0s;}
+#mob_nav input ~ nav > ul > li > div > a {display:block;}
+#mob_nav input:checked ~ nav {height:100%; transition-delay:0s;}
+#mob_nav input:checked ~ nav > ul > li {opacity:1; transition-delay:0s;}
 
 .pillar_wrap    {text-align:center; width:100%; font-size:72px; margin-bottom:30px;}
 .list_wrap      {margin-top:20px; flex-wrap:wrap; justify-content:space-between; display:flex; width:100%;}
@@ -107,10 +110,10 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .item_text      {width:300px; margin-right:30px; background-color:#eee6e6; padding:5px 10px;}
 .item_star      {font-size:100px; line-height:80px; margin-right:10px; color:#e6ba66;}
 .post_link_wrap {min-width:500px;}
-.post_link_text {color:#fff; background-color:#3f823a; padding:15px 30px; border-radius:12px; font-size:38px; border:1px solid #224f31; box-shadow:10px 10px #111; text-align:center; transition:all 0.2s ease-out;}
+.post_link_text {color:#fff; background-color:#32992a; padding:15px 30px; border-radius:12px; font-size:38px; border:1px solid #224f31; box-shadow:10px 10px #111; text-align:center; transition:all 0.2s ease-out;}
 .post_link_text img     {width:45px; margin-right:10px;}
 .post_link_text:hover,
-.post_link_text:focus   {background-color:#32992a; box-shadow:0px 0px #111; transform:translateY(0.20em);}
+.post_link_text:focus   {background-color:#33682f; box-shadow:0px 0px #111; transform:translateY(0.20em);}
 .img_text       {padding:5px 10px; background-color:#fff; font-size:16px; line-height:20px; position:absolute; bottom:0;}
 .img_text span  {display:block; font-size:15px; font-weight:300;}
 
@@ -182,18 +185,17 @@ a.cc_link       {display:block;}
 @media (min-width: 360px) and (max-width: 767.98px) {
 html            {font-size:18px;}
 body            {padding:0.5em 1.5em; font-size:1.0rem;}
-.nav_content    {display:none;}
-.mob_content    {display:flex;}
-.main_content   {padding-top:0;}
-.logo           {height:60px;}
+.head_content   {display:none;}
+.mob_content    {display:block;}
+.main_content   {padding-top:40px;}
+h2              {font-size:1.2rem; line-height:inherit;}
 .type,
 .more,
 .comment_text,
 .text span,
 .about_text     {font-size:1.0rem; line-height:inherit;}
-.mob_content .logo  {justify-content:initial; margin-left:1.5rem; margin-top:0.5rem;}
 .text span      {letter-spacing:-1px;}
-h1, h2,
+h1,
 .comment_name,
 .text           {font-size:1.5rem; line-height:inherit;}
 .box2 .type     {height:20px;}
@@ -258,7 +260,48 @@ a.cc_link       {display:inline;}
 </style>
 </head>
 <body><div class="main_wrap">
-    <header class="head_content">
+    <header class="mob_content">
+<div id="mob_nav">
+    <div class="logo mob_logo"><a href="./index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="./data/logo.svg"></span><h2>Tok Stori
+</h2></a></div>
+    <input id="mob_toggle" type="checkbox" />
+    <label for="mob_toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav>
+        <ul class="mob_nav_content">
+        <li><div class="mob_link"><a href="pillar1.html">Family
+</a></div></li>
+        <li><div class="mob_link"><a href="pillar2.html">Spirituality
+</a></div></li>
+        <li><div class="mob_link"><a href="pillar3.html">Culture
+</a></div></li>
+        <li><div class="mob_link"><a href="pillar4.html">Food
+</a></div></li>
+        <li><div class="mob_link"><a href="p4q5.html#about_footer">About
+</a></div></li>
+        <li><div class="mob_link"><a href="./deu/p4q5.html">EN / DE</a></div></li>
+        <li><div class="mob_about">A dialogue space for Tok Stori (<i>sharing stories</i>) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany.
+</div>
+        <li><div class="mob_cc_wrap">
+            <div class="mob_cc">Tok Stori
+ | Sharing Stories
+ by
+ Lisa Hilli is licensed under
+ CC BY-NC-ND 4.0</div>
+            <div class="mob_cc">Site by shi Blank
+</div>
+            <div class="mob_cc">Supported by
+ Übersee-Museum Bremen
+</div>
+        </div></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<header class="head_content">
     <div class="row">
         <div class="nav_wrap">
             <div class="logo"><a href="./index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="./data/logo.svg"></span><h2>Tok Stori
@@ -333,16 +376,16 @@ a.cc_link       {display:inline;}
 </div>
     <span id="reply"></span>
     <div class="post_wrap">
-        <form id="add_form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc_ARXKahOmySfkDwxmTkLwtUj0f-IWOdz9Dml59RonqieNdQ/formResponse" method="post">
+        <form id="add_form">
             <div class="post_area">
                 <div class="post_question"><span>Question
 : </span> A favorite meal from my childhood is ...?
 
 </div>
-                <textarea type="text" id="add_post" name="entry.666967899" placeholder="Type your answer here
+                <textarea type="text" id="add_post" name="add_post" placeholder="Type your answer here
 "></textarea>
                 <div class="post_more">
-                    <div class="post_name"><input type="text" id="add_name" name="entry.1959390788" placeholder="What's your name?
+                    <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="What's your name?
 "></input></div>
                     <div class="post_data">
                         <div class="post_media"><a href="#reply"></a></div>
@@ -355,7 +398,7 @@ a.cc_link       {display:inline;}
                     By sharing your knowledge, your responses will be available to the public. Please share responsibly.
 
                 </div>
-                <input type="hidden" id="add_que" name="entry.180249156" value="p4q5
+                <input type="hidden" id="add_que" value="p4q5
 ">
                 <input type="submit" id="add_submit" value="Post
 ">
