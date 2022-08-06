@@ -1,0 +1,29 @@
+
+#^------------------------------
+#^title trim=ends
+
+{tok_stori} | {sharing_stories}
+
+#^------------------------------
+#^body trim=ends
+
+<!-- window.location: Which page should user go to when this form sends data and succeeds -->
+<iframe name="iframe_redirect" id="iframe_redirect" style="display:none;" onload="if(typeof sent_redirect!='undefined'){window.location='{_root}index.html';}"></iframe>
+
+<!-- action="google form action ag value" -->
+<form onsubmit="sent_redirect=true" target="iframe_redirect" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc_ARXKahOmySfkDwxmTkLwtUj0f-IWOdz9Dml59RonqieNdQ/formResponse" method="post">
+  <div>
+    <!-- name="google forms input name" -->
+    <input type="text" name="entry.1959390788" value="">
+  </div>
+  <div>
+    <!-- answer="google forms input name" -->
+    <input type="text" name="entry.666967899" value="">
+  </div>
+  <div>
+    <!-- question="google forms input name" -->
+    <input type="text" name="entry.180249156" value="">
+  </div>
+  <button type="submit" name="button" value="submit">Submit</button>
+</form>
+
