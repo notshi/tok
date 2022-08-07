@@ -141,7 +141,7 @@
         <div class="about_wrap">
             <div class="about"><h1>{about}</h1></div>
             <div class="about_text">
-                {about_footer}<a class="print_link" onclick="window.print()"><i>{about_zine}</i></a>
+                {about_footer}{zine_link}{zine_link_mob}
             </div>
         </div>
         <div class="cc_wrap">
@@ -155,6 +155,12 @@
         </div>
     </div>
 </footer>
+
+#^zine_link trim=ends
+<a class="print_link" onclick="window.print()"><i>{about_zine}</i></a>
+
+#^zine_link_mob trim=ends
+<a class="mob_print_link" href="{_root}data/Tok_Stori.pdf"><i>{about_zine_mob}</i></a>
 
 #^more_questions trim=ends
 <div class="row">
