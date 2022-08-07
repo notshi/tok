@@ -145,7 +145,7 @@ textarea:focus, input:focus     {outline:0;}
 input#add_submit                {font-family:'Bitter',serif; background:#111; color:#fff; padding:10px 40px; border:0; border-radius:6px; font-size:26px; transition:all 0.5s ease-out; margin-top:30px;}
 input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 
-.post_wrap      {margin-top:80px; margin-bottom:40px; width:90%; margin-left:auto; margin-right:auto;}
+.post_wrap      {scroll-margin-top:1.5rem; margin-top:80px; margin-bottom:40px; width:90%; margin-left:auto; margin-right:auto;}
 .post_area      {border:2px solid #777; border-radius:20px; padding:30px; display:flex; flex-flow:column;}
 .post_question  {padding-bottom:20px; color:#444;}
 .post_question span {font-style:italic; font-weight:300;}
@@ -181,7 +181,9 @@ a.cc_link       {display:block;}
 .support img    {width:40px; padding-left:10px;}
 
 /*  Print CSS */
+a.mob_print_link:hover,
 a.print_link:hover  {cursor:pointer;}
+a.mob_print_link    {display:none;}
 .print >  div       {color:#000;}
 .print_cover_title  {font-size:32px; line-height:34px; padding:30px 0;}
 .print_cover_by     {font-size:16px; font-weight:300;}
@@ -247,6 +249,8 @@ input#add_submit{margin-top:20px; width:100%;}
 .cc_text,
 .support,
 .code           {margin-bottom:20px;}
+a.print_link    {display:none;}
+a.mob_print_link{display:inline;}
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -634,7 +638,8 @@ body            {background:#fff; color:#000; visibility:hidden;}
 </h1></div>
             <div class="about_text">
                 This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany.
-<a class="print_link" onclick="window.print()"><i>Download and print this as a zine!
+<a class="print_link" onclick="window.print()"><i>Download or print the PDF!
+</i></a><a class="mob_print_link" href="../data/Tok_Stori.pdf"><i>Download the PDF!
 </i></a>
             </div>
         </div>
