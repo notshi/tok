@@ -275,10 +275,10 @@
 <div>
 
 #^print_pdf
-{print_cover}{print_chunks}{print_footer}
+<div class="print">{print_cover}{print_chunks}{print_footer}</div>
 
 #^print_cover
-<div class="print_cover print">
+<div class="print_cover">
     <img src="{_root}data/logo.svg">
     <div class="print_cover_title">{mob_about}</div>
     <div class="print_cover_by">By Lisa Hilli &amp; shi Blank (August, 2022)</div>
@@ -393,13 +393,13 @@
 {page_content:print_chunk}
 
 #^print_chunk trim=ends
-<div id="{_it.id}" class="print_chap print">
+<div id="{_it.id}" class="print_chap">
     <div class="print_subtitle">{_it.sub}</div>
     <div class="print_title">{_it.title}</div>
 </div>
 
 #^print_footer trim=ends
-<div class="print_footer print">
+<div class="print_footer">
     <div class="print_cc">
         {tok_stori_cc} | Geschichten-Austausch | {sharing_stories}<br/>
         {cc_lisa_1} Lisa Hilli {cc_lisa_2} CC BY-NC-ND 4.0
