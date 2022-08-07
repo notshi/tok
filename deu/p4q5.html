@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="print" href="../print.css" />
     <script src="../js/tok.js"></script>
     <script type="text/javascript">
         require("tok").setup({})
@@ -180,7 +181,23 @@ a.cc_link       {display:block;}
 .support        {display:flex; align-items:center; font-size:16px;}
 .support img    {width:40px; padding-left:10px;}
 
-
+/*  Print CSS */
+a.print_link:hover  {cursor:pointer;}
+.print_cover_title  {font-size:32px; line-height:34px; padding:30px 0;}
+.print_cover_by     {font-size:16px; font-weight:300;}
+.print_cover_cc     {font-size:14px; padding-top:5px;}
+.print_chap         {page-break-before:always; page-break-after:avoid; page-break-inside:avoid;}
+.print_subtitle     {font-style:italic; font-weight:300;}
+.print_title span   {display:block; font-size:19px; line-height:24px; padding-top:10px;}
+.print_title        {font-size:38px; line-height:36px; padding:10px 0;}
+.print_answers      {}
+.print_name         {font-weight:700; padding-top:20px;}
+.print_post         {}
+.print_footer       {display:flex; justify-content:space-between; border-top:1px solid #000; padding-top:20px; position:fixed; left:0; bottom:0; width:100%; height:15mm;}
+.print_cc           {font-size:11px;}
+.print_cover,
+.print_footer,
+.print_chap         {display:none;}
 
 @media (min-width: 360px) and (max-width: 767.98px) {
 html            {font-size:18px;}
@@ -234,7 +251,6 @@ input#add_submit{margin-top:20px; width:100%;}
 .code           {margin-bottom:20px;}
 }
 
-
 @media (min-width: 768px) and (max-width: 991.98px) {
 body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .nav_content    {padding:0;}
@@ -255,6 +271,14 @@ a.cc_link       {display:inline;}
 .post_foot_wrap {align-items:flex-start;}
 .post_info      {margin-top:20px;padding-right:20px; padding-left:0;}
 .support        {flex-flow:wrap;}
+}
+
+@media print {
+@page           {size:148mm 210mm; margin-top:20mm; margin-bottom:10mm;}
+body            {background:#fff; color:#000; visibility:hidden;}
+.main_wrap      {display:none;}
+.print          {display:block;}
+.print_footer   {display:flex;}
 }
 
 </style>
@@ -278,7 +302,148 @@ a.cc_link       {display:inline;}
   });
 </script>
 
-<body><div class="main_wrap">
+<body><div class="print_cover print">
+    <img src="../data/logo.svg">
+    <div class="print_cover_title">A dialogue space for Tok Stori (<i>sharing stories</i>) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany.
+</div>
+    <div class="print_cover_by">By Lisa Hilli &amp; shi Blank (August, 2022)</div>
+    <div class="print_cover_cc">Unterstützt durch
+ Übersee-Museum Bremen
+</div>
+</div>
+<div id="p1q1" class="print_chap print">
+    <div class="print_subtitle">Familie
+ Frage
+ 1</div>
+    <div class="print_title">Wen zählst du zu deiner Famiie?
+</div>
+</div><div id="p1q2" class="print_chap print">
+    <div class="print_subtitle">Familie
+ Frage
+ 2</div>
+    <div class="print_title">Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
+</div>
+</div><div id="p1q3" class="print_chap print">
+    <div class="print_subtitle">Familie
+ Frage
+ 3</div>
+    <div class="print_title">Wie weit kannst du deine Vorfahren zurückverfolgen? <span>Eltern, Großeltern, Urgroßeltern, weitere Generationen</span>
+</div>
+</div><div id="p1q4" class="print_chap print">
+    <div class="print_subtitle">Familie
+ Frage
+ 4</div>
+    <div class="print_title">Hat deine Familie immer in Deutschland gelebt? <span>Wenn nicht, woher sind sie gekommen?</span>
+</div>
+</div><div id="p1q5" class="print_chap print">
+    <div class="print_subtitle">Familie
+ Frage
+ 5</div>
+    <div class="print_title">Wer in deiner Familie ist dir wichtig, und warum?
+</div>
+</div><div id="p2q1" class="print_chap print">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 1</div>
+    <div class="print_title">Wird in deiner Familie eine bestimmte religiöse oder spirituelle Praxis ausgeübt? <span>Warum ist das so oder warum nicht?</span>
+</div>
+</div><div id="p2q2" class="print_chap print">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 2</div>
+    <div class="print_title">Ich fühle eine Verbindung zu einer höheren Macht, wenn ich …?
+</div>
+</div><div id="p2q3" class="print_chap print">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 3</div>
+    <div class="print_title">Welche Glaubensvorstellungen oder Religion gab es in Deutschland zu vorchristlicher Zeit?
+</div>
+</div><div id="p2q4" class="print_chap print">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 4</div>
+    <div class="print_title">Was sind Gegenstände oder nicht-materielle Dinge, die deiner Meinung nach für Deutsche heilig sind?
+</div>
+</div><div id="p2q5" class="print_chap print">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 5</div>
+    <div class="print_title">Was denkst du über deutsche Missionare, die zu den pazifischen Inseln gereist sind, um ihre religiösen Ideen zu verbreiten?
+</div>
+</div><div id="p3q1" class="print_chap print">
+    <div class="print_subtitle">Kultur
+ Frage
+ 1</div>
+    <div class="print_title">Ist das Oktoberfest ein kulturelles Ereignis für Touristen oder für Deutsche?
+</div>
+</div><div id="p3q2" class="print_chap print">
+    <div class="print_subtitle">Kultur
+ Frage
+ 2</div>
+    <div class="print_title">Was ist dein Lieblingswort oder -ausdruck in der deutschen Sprache? <span>Was ist damit gemeint?</span>
+</div>
+</div><div id="p3q3" class="print_chap print">
+    <div class="print_subtitle">Kultur
+ Frage
+ 3</div>
+    <div class="print_title">Gibt es einen Ort in Deutschland, zu dem du eine besondere Verbindung hast? <span>Warum ist das so und wo liegt dieser Ort?</span>
+</div>
+</div><div id="p3q4" class="print_chap print">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 4</div>
+    <div class="print_title">Was sind typisch deutsche Musikinstrumente?
+</div>
+</div><div id="p3q5" class="print_chap print">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 5</div>
+    <div class="print_title">Gibt es spezifisch deutsche Rituale oder Gebräuche zu Geburt und Tod?
+</div>
+</div><div id="p4q1" class="print_chap print">
+    <div class="print_subtitle">Essen
+ Frage
+ 1</div>
+    <div class="print_title">Erkläre, warum Brezeln für Deutsche wichtig sind?
+</div>
+</div><div id="p4q2" class="print_chap print">
+    <div class="print_subtitle">Essen
+ Frage
+ 2</div>
+    <div class="print_title">Was ist der Ursprung von Bier in Deutschland? <span>Gibt es eine Geschichte dazu?</span>
+</div>
+</div><div id="p4q3" class="print_chap print">
+    <div class="print_subtitle">Essen
+ Frage
+ 3</div>
+    <div class="print_title">Gibt es ein Lebensmittel, ein Gericht oder ein Getränk, das für besondere Anlässe oder Zeremonien gedacht ist?
+</div>
+</div><div id="p4q4" class="print_chap print">
+    <div class="print_subtitle">Essen
+ Frage
+ 4</div>
+    <div class="print_title">Gibt es einen Gegenstand, den man nur in einer deutschen Küche findet?
+</div>
+</div><div id="p4q5" class="print_chap print">
+    <div class="print_subtitle">Essen
+ Frage
+ 5</div>
+    <div class="print_title">Mein Lieblingsessen aus meiner Kindheit ist …?
+</div>
+</div>
+<div class="print_footer print">
+    <div class="print_cc">
+        Geschichten-Austausch
+ | Geschichten-Austausch | Sharing Stories
+<br/>
+        von
+ Lisa Hilli ist lizenziert unter
+ CC BY-NC-ND 4.0
+    </div>
+    <div class="print_cc">https://notshi.github.io/tok</div>
+</div>
+<div class="main_wrap">
     <header class="mob_content">
 <div id="mob_nav">
     <div class="logo mob_logo"><a href="../deu/index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="../data/logo.svg"></span><h2>Tok Stori
@@ -403,7 +568,7 @@ a.cc_link       {display:inline;}
 "></textarea>
                 <div class="post_more">
                     <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="Wie heißen Sie?
-"></input></div>
+"></div>
                     <div class="post_data">
                         <div class="post_media"><a href="#reply"></a></div>
                         <div class="post_image"><a href="#reply"></a></div>
@@ -470,8 +635,9 @@ a.cc_link       {display:inline;}
             <div class="about"><h1>Über
 </h1></div>
             <div class="about_text">
-                This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany. <a href=""><i>Download and print this as a zine!</i></a>
-
+                This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany.
+<a class="print_link" onclick="window.print()"><i>Download and print this as a zine!
+</i></a>
             </div>
         </div>
         <div class="cc_wrap">
