@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="print" href="{_root}print.css" />
     <script src="{_root}js/tok.js"></script>
     <script type="text/javascript">
         require("tok").setup({})
@@ -33,7 +34,7 @@
   });
 </script>
 
-<body>{body}</body>
+<body>{print_pdf}{body}</body>
 </html>
 
 
@@ -52,8 +53,7 @@
 
 #^------------------------------
 #^body trim=ends
-
-{home1} <a href="{iso_root}index.html">{home2}</a>.
+<div class="home">{home1} <a href="{iso_root}index.html">{home2}</a>.</div>
 
 #^header trim=ends
 <header class="head_content">
@@ -142,7 +142,7 @@
         <div class="about_wrap">
             <div class="about"><h1>{about}</h1></div>
             <div class="about_text">
-                {about_footer}
+                {about_footer}<a class="print_link" onclick="window.print()"><i>{about_zine}</i></a>
             </div>
         </div>
         <div class="cc_wrap">
@@ -222,7 +222,7 @@
                 <div class="post_question"><span>{question}: </span> {main_question_text}</div>
                 <textarea type="text" id="add_post" name="add_post" placeholder="{share1}"></textarea>
                 <div class="post_more">
-                    <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="{post_name}"></input></div>
+                    <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="{post_name}"></div>
                     <div class="post_data">
                         <div class="post_media"><a href="#reply"></a></div>
                         <div class="post_image"><a href="#reply"></a></div>
@@ -273,3 +273,136 @@
 	<p>date {_it.date_fix}</p>
 	<p>body {_it.body}</p>
 <div>
+
+#^print_pdf
+{print_cover}{print_chunks}{print_footer}
+
+#^print_cover
+<div class="print_cover print">
+    <img src="{_root}data/logo.svg">
+    <div class="print_cover_title">{mob_about}</div>
+    <div class="print_cover_by">By Lisa Hilli &amp; shi Blank (August, 2022)</div>
+    <div class="print_cover_cc">{cc_ubersee} {cc_ubersee_text}</div>
+</div>
+
+#^page_content form=json
+[
+	{
+		title: "{p1q1}",
+		sub: "{pillar1} {question} 1",
+		id: "p1q1",
+	},
+	{
+		title: "{p1q2}",
+		sub: "{pillar1} {question} 2",
+		id: "p1q2",
+	},
+	{
+		title: "{p1q3}",
+		sub: "{pillar1} {question} 3",
+		id: "p1q3",
+	},
+	{
+		title: "{p1q4}",
+		sub: "{pillar1} {question} 4",
+		id: "p1q4",
+	},
+	{
+		title: "{p1q5}",
+		sub: "{pillar1} {question} 5",
+		id: "p1q5",
+	},
+	{
+		title: "{p2q1}",
+		sub: "{pillar2} {question} 1",
+		id: "p2q1",
+	},
+	{
+		title: "{p2q2}",
+		sub: "{pillar2} {question} 2",
+		id: "p2q2",
+	},
+	{
+		title: "{p2q3}",
+		sub: "{pillar2} {question} 3",
+		id: "p2q3",
+	},
+	{
+		title: "{p2q4}",
+		sub: "{pillar2} {question} 4",
+		id: "p2q4",
+	},
+	{
+		title: "{p2q5}",
+		sub: "{pillar2} {question} 5",
+		id: "p2q5",
+	},
+	{
+		title: "{p3q1}",
+		sub: "{pillar3} {question} 1",
+		id: "p3q1",
+	},
+	{
+		title: "{p3q2}",
+		sub: "{pillar3} {question} 2",
+		id: "p3q2",
+	},
+	{
+		title: "{p3q3}",
+		sub: "{pillar3} {question} 3",
+		id: "p3q3",
+	},
+	{
+		title: "{p3q4}",
+		sub: "{pillar2} {question} 4",
+		id: "p3q4",
+	},
+	{
+		title: "{p3q5}",
+		sub: "{pillar2} {question} 5",
+		id: "p3q5",
+	},
+	{
+		title: "{p4q1}",
+		sub: "{pillar4} {question} 1",
+		id: "p4q1",
+	},
+	{
+		title: "{p4q2}",
+		sub: "{pillar4} {question} 2",
+		id: "p4q2",
+	},
+	{
+		title: "{p4q3}",
+		sub: "{pillar4} {question} 3",
+		id: "p4q3",
+	},
+	{
+		title: "{p4q4}",
+		sub: "{pillar4} {question} 4",
+		id: "p4q4",
+	},
+	{
+		title: "{p4q5}",
+		sub: "{pillar4} {question} 5",
+		id: "p4q5",
+	},
+]
+
+#^print_chunks
+{page_content:print_chunk}
+
+#^print_chunk trim=ends
+<div id="{_it.id}" class="print_chap print">
+    <div class="print_subtitle">{_it.sub}</div>
+    <div class="print_title">{_it.title}</div>
+</div>
+
+#^print_footer trim=ends
+<div class="print_footer print">
+    <div class="print_cc">
+        {tok_stori_cc} | Geschichten-Austausch | {sharing_stories}<br/>
+        {cc_lisa_1} Lisa Hilli {cc_lisa_2} CC BY-NC-ND 4.0
+    </div>
+    <div class="print_cc">https://notshi.github.io/tok</div>
+</div>

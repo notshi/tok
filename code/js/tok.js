@@ -59,12 +59,12 @@ tok.add_form=async function(event)
 
 tok.show_answers=async function(event)
 {
-	let answers = await db.list({question:"{main_question_code}"})
+	let answers = await db.list({question:"p1q1"})
 	answers.reverse()
 	for(v of answers)
 	{
 		v.date_fix=v.date.toISOString().split('T')[0]
 	}
 	plate.chunks.answers=answers // a json array of answers
-	$("#answer_wrap").html( plate.replace("{show_answers}") )
+//	$("#answer_wrap").html( plate.replace("{show_answers}") )
 }
