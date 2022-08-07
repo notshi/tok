@@ -1,11 +1,7 @@
 #^css same=append
 
-/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}article,footer,header,main,menu,nav,section,summary{display:block;}
-
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap');  /*https://fonts.google.com/specimen/Bitter*/
-
 html    {font-size:18px;}
-body	{background:#ffefef; font-family:'Bitter',serif; font-size:18px; font-weight:400; line-height:normal; color:#111; max-width:100%; overflow-x:hidden; padding:0; margin:0;}
+body	{background:#ffefef; font-family:serif; font-size:18px; font-weight:400; line-height:normal; color:#111; max-width:100%; overflow-x:hidden; padding:0; margin:0;}
 h1		{font-size:2.2em; font-weight:700; color:#736b62;}
 h2		{font-size:1.5em; font-weight:normal;}
 b		{font-weight:700;}
@@ -261,6 +257,6 @@ a.cc_link       {display:inline;}
 @page           {size:148mm 210mm; margin-top:20mm; margin-bottom:10mm;}
 body            {background:#fff; color:#000; visibility:hidden;}
 .main_wrap      {display:none;}
-.print          {display:block;}
+.print          {display:block; visibility:visible;}
 .print_footer   {display:flex;}
 }
