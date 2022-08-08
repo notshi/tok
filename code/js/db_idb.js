@@ -22,10 +22,12 @@ db.setup=async function()
 	})
 	
 	db.uuid=await db.handle.get("keyval", "uuid" )
+console.log("OLD: "+db.uuid)
 	if(!db.uuid) // need to create 
 	{
 		db.uuid=require("uuid").v4()
-		await db.handle.put("keyval", "uuid" , db.uuid )
+		await db.handle.put("keyval", db.uuid , "uuid" )
+console.log("NEW: "+db.uuid)
 	}
 }
 

@@ -57,14 +57,19 @@ tok.add_form=async function(event)
 	console.log("form submitted")
 	
 	let it={}
+	it.question=que
 	it.author=name
 	it.body=post
 	it.date=new Date()
-	it.question=que
 	
 	await db.add(it)
 	await tok.show_answers(que)
-	$("#answer_wrap_"+que)[0].scrollIntoView({behavior:"smooth"});
+
+	let w=$("#answer_wrap_"+que)
+	if(w.length>0)
+	{
+		w[0].scrollIntoView({behavior:"smooth"});
+	}
 }
 
 tok.show_answers=async function(que)

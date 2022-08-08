@@ -78,6 +78,7 @@ sheet.send=async function(it)
 		}
 	}
 
+// this posts OK but will generate errors... so we ignore them
 	$.ajax({
 		type: "POST",
 		url: sheet.googleform.posturl,
