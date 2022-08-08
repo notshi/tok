@@ -41,7 +41,7 @@ db.add=async function(it)
 /* I got bored reading the documentation (and it looks dumb) so lets just be dumb */
 db.list=async function(filter)
 {
-	it=it || {}
+	filter=filter || {}
 	let its = await db.handle.getAllFromIndex('answers', 'date')
 	let rs=[]
 	for(let v of its) // look at all objects
