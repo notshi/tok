@@ -9,25 +9,26 @@ let sheet = require( "./sheet.js" )
 db.setup=async function()
 {
 
-	db.handle = await idb.openDB("tok", 1, {
+	db.handle = await idb.openDB("tok", 3, {
 		upgrade(handle) {
-			let keyval=handle.createObjectStore('keyval')
-
-			let answers=handle.createObjectStore("answers", {
-				keyPath: "id",
-				autoIncrement: true,
-			})
-			answers.createIndex("date", "date")
+			try{
+				let keyval=handle.createObjectStore('keyval')
+			}catch(e){console.error(e)}
+			try{
+				let answers=handle.createObjectStore("answers", {
+					keyPath: "id",
+					autoIncrement: true,
+				})
+				answers.createIndex("date", "date")
+			}catch(e){console.error(e)}
 		},
 	})
 	
 	db.uuid=await db.handle.get("keyval", "uuid" )
-console.log("OLD: "+db.uuid)
 	if(!db.uuid) // need to create 
 	{
 		db.uuid=require("uuid").v4()
 		await db.handle.put("keyval", db.uuid , "uuid" )
-console.log("NEW: "+db.uuid)
 	}
 }
 
