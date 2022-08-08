@@ -218,9 +218,9 @@
             </div>
         </div>
     </div>
-    <span id="answer_wrap_{main_question_code}"></span>
-    {show_answers}
-    <div class="post_wrap"><span id="reply"></span>
+    <div id="answer_{main_question_code}" class="comment_list_wrap">{show_answers}</div>
+    <div class="post_wrap">
+        <span id="reply"></span>
         <form id="add_form">
             <div class="post_area">
                 <div class="post_question"><span>{question}: </span> {main_question_text}</div>
@@ -260,7 +260,7 @@
 ]
 
 #^show_answers
-<div class="comment_list_wrap">{answers:show_answer}</div>
+{answers:show_answer}
 
 #^show_answer
 <div class="comment_wrap">
