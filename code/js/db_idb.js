@@ -1,9 +1,9 @@
 
 var db=exports
 
-
-
 let idb = require( "idb" )
+
+let sheet = require( "./sheet.js" )
 
 
 db.setup=async function()
@@ -11,25 +11,48 @@ db.setup=async function()
 
 	db.handle = await idb.openDB("tok", 1, {
 		upgrade(handle) {
-			const store = handle.createObjectStore("answers", {
+			let keyval=handle.createObjectStore('keyval')
+
+			let answers=handle.createObjectStore("answers", {
 				keyPath: "id",
 				autoIncrement: true,
 			})
-			store.createIndex("date", "date");
+			answers.createIndex("date", "date")
 		},
 	})
-
+	
+	db.uuid=await db.handle.get("keyval", "uuid" )
+	if(!db.uuid) // need to create 
+	{
+		db.uuid=require("uuid").v4()
+		await db.handle.put("keyval", "uuid" , db.uuid )
+	}
 }
 
 db.add=async function(it)
 {
+	it.uuid=db.uuid // always sign our data
 	await db.handle.add('answers', it )
+	sheet.send(it)
 }
 
-
-db.list=async function(it)
+/* I got bored reading the documentation (and it looks dumb) so lets just be dumb */
+db.list=async function(filter)
 {
+	it=it || {}
 	let its = await db.handle.getAllFromIndex('answers', 'date')
-
-	return its
+	let rs=[]
+	for(let v of its) // look at all objects
+	{
+		let ok=true
+		for(let t in filter) // check filter object
+		{
+			if(filter[t]!==v[t]) { ok=false } // all filters must be true
+		}
+		if(ok) // add filtered objects to result
+		{
+			rs.push(v)
+		}
+	}
+	return rs // filtered only, sorted by date
 }
