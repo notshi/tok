@@ -56,8 +56,8 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .mob_logo       {position:absolute; top:0; left:1.5rem; z-index:6; height:80px;}
 .mob_logo a img {height:30px;}
 .mob_link       {font-size:1.5rem; margin-bottom:1.5rem;}
-.mob_about      {font-size:1.0rem; margin-bottom:1.5rem; border-top:1px solid #918170; padding-top:1.5rem;}
-.mob_cc_wrap    {margin-bottom:1.5rem;}
+.mob_about      {font-size:1.0rem; margin-bottom:1.0rem; border-top:1px solid #918170; border-bottom:1px solid #918170; padding:1.0rem 0;}
+.mob_cc_wrap    {margin-top:2.5rem;}
 .mob_cc         {font-size:0.8rem; line-height:initial; margin-top:0.3rem;}
 
 #mob_nav input + label {position:absolute; top:1.5rem; right:20px; height:40px; width:40px; z-index:5;}
@@ -65,11 +65,11 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 #mob_nav input + label span:first-child {top:4px;}
 #mob_nav input + label span:last-child {top:16px;}
 #mob_nav label:hover {cursor:pointer;}
-#mob_nav input:checked + label span {opacity:0; top:50%;}
+#mob_nav input:checked + label span {opacity:0; top:25%;}
 #mob_nav input:checked + label span:first-child {opacity:1; transform:rotate(405deg);}
 #mob_nav input:checked + label span:last-child {opacity:1; transform:rotate(-405deg);}
 #mob_nav input ~ nav {background:#ffefef; position:absolute; top:0; left:0; width:100%; height:80px; z-index:3; transition:0s; transition-delay:0s; overflow:hidden;}
-#mob_nav input ~ nav > ul {position:absolute; top:80px; left:1.5rem; right:1.5rem;}
+#mob_nav input ~ nav > ul {position:absolute; top:100px; left:1.5rem; right:1.5rem;}
 #mob_nav input ~ nav > ul > li {opacity:0; transition:0s; transition-delay:0s;}
 #mob_nav input ~ nav > ul > li > div > a {display:block;}
 #mob_nav input:checked ~ nav {height:100%; transition-delay:0s;}
@@ -185,7 +185,7 @@ a.cc_link       {display:block;}
 /*  Print CSS */
 a.mob_print_link:hover,
 a.print_link:hover  {cursor:pointer;}
-a.mob_print_link    {display:none;}
+a.mob_print_link    {display:none; padding-top:10px;}
 .print >  div       {color:#000;}
 .print_cover_title  {font-size:32px; line-height:34px; padding:30px 0;}
 .print_cover_by     {font-size:16px; font-weight:300;}
@@ -252,7 +252,7 @@ input#add_submit{margin-top:20px; width:100%;}
 .support,
 .code           {margin-bottom:20px;}
 a.print_link    {display:none;}
-a.mob_print_link{display:inline;}
+a.mob_print_link{display:block;}
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -544,8 +544,7 @@ body            {background:#fff; color:#000; visibility:hidden;}
             </div>
         </div>
     </div>
-    <span id="answer_wrap_p3q3"></span>
-    <div class="comment_list_wrap"><div class="comment_wrap">
+    <div id="answer_p3q3" class="comment_list_wrap"><div class="comment_wrap">
     <div class="comment">
         <div class="comment_name">dave</div>
         <div class="comment_text">This is a test post</div>
@@ -557,9 +556,10 @@ body            {background:#fff; color:#000; visibility:hidden;}
         <div class="comment_text">This is also a test post</div>
     </div>
 </div>
-</div>
 
-    <div class="post_wrap"><span id="reply"></span>
+</div>
+    <div class="post_wrap">
+        <span id="reply"></span>
         <form id="add_form">
             <div class="post_area">
                 <div class="post_question"><span>Frage
