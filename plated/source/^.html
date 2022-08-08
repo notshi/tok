@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <script src="{_root}js/tok.js"></script>
-    <script type="text/javascript">
+    <script>
         require("tok").setup({})
     </script>
     {head}
@@ -213,15 +213,14 @@
             </div>
             <div class="post_link_wrap">
                 <a href="#reply">
-                    <div class="post_link_text"><img src="{_root}data/post_icon.svg"/>{share}</div>
+                    <div class="post_link_text"><img src="{_root}data/post_icon.svg">{share}</div>
                 </a>
             </div>
         </div>
     </div>
     <span id="answer_wrap"></span>
     {show_answers}
-    <span id="reply"></span>
-    <div class="post_wrap">
+    <div class="post_wrap"><span id="reply"></span>
         <form id="add_form">
             <div class="post_area">
                 <div class="post_question"><span>{question}: </span> {main_question_text}</div>

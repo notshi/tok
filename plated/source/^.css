@@ -2,7 +2,7 @@
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}article,footer,header,main,menu,nav,section,summary{display:block;}
 
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap');  /*https://fonts.google.com/specimen/Bitter*/
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
 html    {font-size:18px;}
 body	{background:#ffefef; font-family:'Bitter',serif; font-size:18px; font-weight:400; line-height:normal; color:#111; max-width:100%; overflow-x:hidden; padding:0; margin:0;}
@@ -104,7 +104,7 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .img_text span  {display:block; font-size:15px; font-weight:300;}
 
 span#answer_wrap,
-span#reply      {display:block; height:100px; margin-top:-100px; visibility:hidden; scroll-margin-top:1.5rem;}
+span#reply      {display:block; padding-top:100px; margin-top:-100px;}
 .comment_list_wrap{display:flex; flex-flow:wrap; justify-content:space-around; align-items:center; margin-top:60px; width:90%; margin-left:auto; margin-right:auto;}
 .comment_wrap   {width:calc(50% - 30px); margin-bottom:30px;}
 .comment_wrap:nth-of-type(2n) {margin-top:55px; margin-bottom:-20px;}
@@ -223,7 +223,7 @@ input#add_name  {font-size:1.2rem; line-height:inherit;}
 .comment_wrap:nth-of-type(2n)   {margin:initial; margin-bottom:30px;}
 .comment_wrap   {width:100%;}
 .post_link_wrap {min-width:initial;}
-.post_wrap      {width:100%; margin-top:40px;}
+.post_wrap      {width:100%; margin-top:0;}
 .post_area      {padding:20px;}
 .post_more      {flex-flow:column;}
 .post_name      {padding:0;}
