@@ -65,7 +65,7 @@ tok.add_form=async function(event)
 	await db.add(it)
 	await tok.show_answers(que)
 
-	let w=$("#answer_wrap_"+que)
+	let w=$("#answer_"+que)
 	if(w.length>0)
 	{
 		w[0].scrollIntoView({behavior:"smooth"});
@@ -74,7 +74,7 @@ tok.add_form=async function(event)
 
 tok.show_answers=async function(que)
 {
-	let w=$("#answer_wrap_"+que)
+	let w=$("#answer_"+que)
 	if(w.length>0)
 	{
 		let answers = await db.list({question:que})
