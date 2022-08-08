@@ -17,25 +17,31 @@ let ques=[
 ]
 tok.setup=function(args)
 {
+	window.tok=tok
 	tok.args=args || {}		// remember args
 	$(tok.start)			// wait for page to load then call start
 }
 
 tok.start=async function()
 {
+
 	await db.setup()
 	await plate.setup()
 	await sheet.setup()
 
 	tok.binds()
-	for(let que of ques) // try and fill in all questions on page
-	{
-		await tok.show_answers(que)
-	}
+	await tok.show_all_answers()
 	
 	console.log("TOK has started")
 }
 
+tok.show_all_answers=async function()
+{
+	for(let que of ques) // try and fill in all questions on page
+	{
+		await tok.show_answers(que)
+	}
+}
 
 tok.binds=function()
 {

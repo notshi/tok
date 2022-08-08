@@ -3,6 +3,7 @@ var sheet=exports
 
 let $ = require( "jquery" )
 
+let db = require( "./db_idb.js" )
 
 // https://stackoverflow.com/questions/33713084/download-link-for-google-spreadsheets-csv-export-with-multiple-sheets
 
@@ -36,9 +37,18 @@ sheet.googleform={
 
 sheet.setup=async function()
 {
-	
-	sheet.fetch()
-	
+	let gotcsv = await db.handle.get("keyval", "gotcsv" )
+	if( gotcsv )
+	{
+		if( gotcsv < ( Date.now() - ( 1000 * 60 * 60 ) ) ) // auto fetch if data is older than an hour
+		{
+			sheet.fetch()
+		}
+	}
+	else // first time go fetch
+	{
+		sheet.fetch()
+	}
 }
 
 /*
@@ -52,10 +62,58 @@ sheet.fetch=async function()
 	window.google={}
 	window.google.visualization={}
 	window.google.visualization.Query={}
-	window.google.visualization.Query.setResponse=function(data) // this function name is hard coded?
+	window.google.visualization.Query.setResponse=async function(data) // this function name is hard coded?
 	{
 		console.log("GOT CSV")
 		console.log(data)
+		
+		let head={}
+		for(let i in data.table.cols)
+		{
+			let c=data.table.cols[i]
+			if(c.label)
+			{
+				head[i]=c.label
+				head[c.label]=i
+			}
+		}
+		let rows=[]
+		for(let r of data.table.rows)
+		{
+			let it={}
+			for(let i in r.c)
+			{
+				let d=r.c[i]
+				if(d && d.v)
+				{
+					it[ head[i]||"" ]=d.v
+				}
+			}
+			if(it.Timestamp)
+			{
+				let s=it.Timestamp
+				s=s.split("Date(").join("")
+				s=s.split(")").join("")
+				s=s.split(",")
+				let t=new Date(s[0],s[1],s[2],s[3],s[4],s[5])
+				it.date=t
+			}
+			if(it.uuid)
+			{
+				rows.push(it)
+			}
+		}
+		console.log(rows)
+		for(let r of rows)
+		{
+			r.uuid=db.uuid // always sign our data
+			await db.handle.add('answers', r )
+		}
+		await db.remove_duplicates()
+		
+		await db.handle.put("keyval", Date.now() , "gotcsv" )
+		
+		await tok.show_all_answers()
 	}
 	$.getScript( sheet.googlesheet.jsonurl+"&_="+(new Date).getTime() ) // time stamp cache breaker
 }
