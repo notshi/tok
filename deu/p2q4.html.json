@@ -306,7 +306,7 @@
  "show_answers": "<div class=\"comment_list_wrap\">{answers:show_answer}</div>\n",
  "show_more": "Weitere Fragen anzeigen\n",
  "switch_root": "{_root}",
- "title": "{tok_stori} | {pillar2}",
+ "title": "{tok_stori} | {pillar2} | {question} {main_question_num}",
  "tok_stori": "Tok Stori\n",
  "tok_stori_cc": "Geschichten-Austausch\n",
  "top": "Top\n",
