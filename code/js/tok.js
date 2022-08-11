@@ -50,16 +50,19 @@ tok.add_form=async function(event)
 	let post=$("#add_post").val()
 	let name=$("#add_name").val()
 	let que =$("#add_que ").val()
+	let url =$("#add_url ").val()
 
 	console.log("name = "+name)
 	console.log("post = "+post)
 	console.log("que  = "+que )
+	console.log("url  = "+url )
 	console.log("form submitted")
 	
 	let it={}
 	it.question=que
 	it.author=name
 	it.body=post
+	it.url=url
 	it.date=new Date()
 	
 	await db.add(it)

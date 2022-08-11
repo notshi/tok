@@ -139,13 +139,19 @@ A short description of the role and use of the <i>kina</i> in Papua New Guinea c
 Mein Lieblingsessen aus meiner Kindheit ist …?
 
 #^share
-Antworten
+Antwort senden
 
 #^share1
 Geben Sie hier Ihre Antwort ein
 
 #^post_name
 Wie heißen Sie?
+
+#^post_url trim=ends
+Add a media link eg. https://web.com/image.jpg
+
+#^comment_link
+Media link
 
 #^post_info
 By sharing your knowledge, your responses will be available to the public. Please share responsibly.

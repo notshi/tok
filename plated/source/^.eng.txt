@@ -133,6 +133,12 @@ Type your answer here
 #^post_name trim=ends
 What's your name?
 
+#^post_url trim=ends
+Add a media link eg. https://web.com/image.jpg
+
+#^comment_link
+Media link
+
 #^post_info
 By sharing your knowledge, your responses will be available to the public. Please share responsibly.
 
