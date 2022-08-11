@@ -20,7 +20,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
-html    {font-size:18px;}
+html    {font-size:18px; scroll-behavior:smooth;}
 body	{background:#ffefef; font-family:'Bitter',serif; font-size:18px; font-weight:400; line-height:normal; color:#111; max-width:100%; overflow-x:hidden; padding:0; margin:0;}
 h1		{font-size:2.2em; font-weight:700; color:#736b62;}
 h2		{font-size:1.5em; font-weight:normal;}
@@ -121,12 +121,15 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 
 span#answer_wrap,
 span#reply      {display:block; padding-top:100px; margin-top:-100px;}
-.comment_list_wrap{display:flex; flex-flow:wrap; justify-content:space-around; align-items:center; margin-top:60px; width:90%; margin-left:auto; margin-right:auto;}
+.comment_list_wrap{display:flex; flex-flow:wrap; justify-content:space-around; align-items:center; margin-top:60px; width:90%; margin-left:auto; margin-right:auto; scroll-margin-top:6.5rem;}
 .comment_wrap   {width:calc(50% - 30px); margin-bottom:30px;}
-.comment_wrap:nth-of-type(2n) {margin-top:55px; margin-bottom:-20px;}
+.comment_wrap:nth-of-type(2n)   {margin-top:55px; margin-bottom:-20px;}
+.comment_wrap:last-of-type      {margin-top:30px; margin-bottom:0;}
 .comment        {background-color:#fff; padding:30px; box-shadow:3px 3px 3px #e1c5c51c;}
 .comment_name   {font-weight:700; font-size:36px; line-height:40px;}
 .comment_text   {margin-top:20px; font-size:24px; line-height:32px; letter-spacing:-1.2px;}
+.comment_url    {margin-top:20px; border-top:1px solid #918170; padding-top:10px;}
+.comment_url_text   {font-style:italic; font-weight:300; margin-bottom:5px;}
 .comment_image  {background:url('../data/image01.jpg'); background-size:cover; width:100%; height:200px;}
 .comment_media  {background-color:#fff; padding:20px 20px 0 20px;}
 .comment_play   {border:5px solid #d2d2c6; border-radius:12px; padding:15px 20px;}
@@ -139,10 +142,13 @@ span#reply      {display:block; padding-top:100px; margin-top:-100px;}
 ::-ms-input-placeholder { /* Microsoft Edge */color:#bbb;}
 
 textarea#add_post,
-input#add_name                  {border:0; background-color:transparent; min-height:150px; font-family:'Bitter',serif; font-size:26px; line-height:30px;}
-input#add_name                  {min-height:50px; width:100%;}
+input#add_url,
+input#add_name                  {border:0; background-color:transparent; min-height:50px; font-family:'Bitter',serif; font-size:26px; line-height:30px; width:100%;}
+textarea#add_post               {min-height:150px;}
 textarea#add_post::placeholder,
+input#add_url::placeholder,
 input#add_name::placeholder     {font-family:'Bitter',serif; font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px;}
+input#add_url::placeholder      {font-size:24px; line-height:26px;}
 textarea:focus, input:focus     {outline:0;}
 input#add_submit                {font-family:'Bitter',serif; background:#111; color:#fff; padding:10px 40px; border:0; border-radius:6px; font-size:26px; transition:all 0.5s ease-out; margin-top:30px;}
 input#add_submit:hover          {background:#7b5330; cursor:pointer;}
@@ -151,9 +157,8 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .post_area      {border:2px solid #777; border-radius:20px; padding:30px; display:flex; flex-flow:column;}
 .post_question  {padding-bottom:20px; color:#444;}
 .post_question span {font-style:italic; font-weight:300;}
-.post_more      {display:flex; padding-top:20px;}
+.post_more      {display:flex; flex-flow:column; padding-top:20px;}
 .post_name      {font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px; width:100%; padding-right:35px;}
-.post_data      {display:flex; align-items:center; justify-content:space-between; width:130px;}
 .post_media     {background:url('../data/media_post.svg'); background-size:cover; width:30px; height:33px;}
 .post_image     {background:url('../data/image_post.svg'); background-size:cover; width:50px; height:44px;}
 .post_foot_wrap {display:flex; width:100%; justify-content:space-between; align-items:baseline;}
@@ -243,7 +248,6 @@ input#add_name  {font-size:1.2rem; line-height:inherit;}
 .post_area      {padding:20px;}
 .post_more      {flex-flow:column;}
 .post_name      {padding:0;}
-.post_data      {justify-content:space-around; width:100%;}
 .post_foot_wrap {align-items:center; flex-flow:column-reverse;}
 .post_info      {margin-top:20px; padding-right:20px; padding-left:0;}
 input#add_submit{margin-top:20px; width:100%;}
@@ -538,7 +542,7 @@ body            {background:#fff; color:#000; visibility:hidden;}
             </div>
             <div class="post_link_wrap">
                 <a href="#reply">
-                    <div class="post_link_text"><img src="../data/post_icon.svg">Antworten
+                    <div class="post_link_text"><img src="../data/post_icon.svg">Antwort senden
 </div>
                 </a>
             </div>
@@ -548,12 +552,16 @@ body            {background:#fff; color:#000; visibility:hidden;}
     <div class="comment">
         <div class="comment_name">dave</div>
         <div class="comment_text">This is a test post</div>
+        <div class="comment_url"><div class="comment_url_text">Media link
+</div>{_it.url}</div>
     </div>
 </div>
 <div class="comment_wrap">
     <div class="comment">
         <div class="comment_name">other dave</div>
         <div class="comment_text">This is also a test post</div>
+        <div class="comment_url"><div class="comment_url_text">Media link
+</div>{_it.url}</div>
     </div>
 </div>
 
@@ -571,10 +579,7 @@ body            {background:#fff; color:#000; visibility:hidden;}
                 <div class="post_more">
                     <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="Wie heißen Sie?
 "></div>
-                    <div class="post_data">
-                        <div class="post_media"><a href=""></a></div>
-                        <div class="post_image"><a href=""></a></div>
-                    </div>
+                    <div class="post_data"><input type="text" id="add_url" name="add_url" placeholder="Add a media link eg. https://web.com/image.jpg"></div>
                 </div>
             </div>
             <div class="post_foot_wrap">
