@@ -9,7 +9,7 @@ Supported by the [Übersee-Museum Bremen](https://medium.com/neocollections/here
 
 ### Credits
 https://github.com/xriss/plated by Kriss & shi Blank  
-https://fonts.google.com/specimen/Bitter by Sol Matas for Huerta Tipográfica  
-https://fonts.google.com/specimen/Cambo by Carolina Giovagnoli and Andrés Torresi for Huerta Tipográfica  
+https://github.com/solmatas/Bitter by Sol Matas for Huerta Tipográfica  
+https://www.huertatipografica.com/en/fonts/cambo-ht by Carolina Giovagnoli and Andrés Torresi for Huerta Tipográfica  
 Images are [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) Übersee-Museum Bremen  
 Additional graphics are created using free and open source tools [Inkscape](https://inkscape.org/) and [Gimp](https://www.gimp.org/)
