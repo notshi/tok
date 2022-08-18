@@ -43,8 +43,8 @@ A dialogue space for German users to share their collective understanding of Ger
 #^show_more
 Show more questions
 
-#^more
-More questions
+#^next
+Next question
 
 #^question
 Question
@@ -128,7 +128,7 @@ A favorite meal from my childhood is ...?
 Answer
 
 #^share1
-Type your answer here
+Type your answer here (we support links for images and video)
 
 #^post_name trim=ends
 What's your name?

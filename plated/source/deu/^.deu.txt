@@ -57,8 +57,8 @@ A dialogue space for German users to share their collective understanding of Ger
 #^show_more
 Weitere Fragen anzeigen
 
-#^more
-Mehr Fragen
+#^next
+Nächste Fragen
 
 #^question
 Frage
@@ -142,7 +142,7 @@ Mein Lieblingsessen aus meiner Kindheit ist …?
 Antwort senden
 
 #^share1
-Geben Sie hier Ihre Antwort ein
+Geben Sie hier Ihre Antwort ein (we support links for images and video)
 
 #^post_name
 Wie heißen Sie?

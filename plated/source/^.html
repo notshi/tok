@@ -5,15 +5,29 @@
 <html>
 <head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <script src="{_root}js/tok.js"></script>
     <script>
         require("tok").setup({})
     </script>
     {head}
 </head>
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.uebersee-museum.de/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//matomo.uebersee-museum.de/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEFJK0DRTG"></script>
@@ -162,9 +176,9 @@
 #^zine_link_mob trim=ends
 <a class="mob_print_link" href="{_root}data/Tok_Stori.pdf"><i>{about_zine_mob}</i></a>
 
-#^more_questions trim=ends
+#^more_questions_test trim=ends
 <div class="row">
-    <div><h2>{more}</h2></div>
+    <div><h2>{next}</h2></div>
     <div class="list_wrap">
         <div class="question">
             <a href="{question_code_prev}.html">
@@ -185,6 +199,24 @@
                         <div class="text">{question_text_next}</div>
                         <div class="type"></div>
                     </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+#^more_questions trim=ends
+<div class="row">
+    <div><h2>{next}</h2></div>
+    <div class="list_wrap">
+        <div class="question wide">
+            <a href="{question_code_next}.html">
+                <div class="blog {question_code_next} box1">
+                    <div class="text_wrap">
+                        <div class="type">{pillar_text_next}</div>
+                        <div class="text">{question_text_next}</div>
+                    </div>
+                    <div class="img"></div>
                 </div>
             </a>
         </div>
@@ -227,7 +259,6 @@
                 <textarea type="text" id="add_post" name="add_post" placeholder="{share1}"></textarea>
                 <div class="post_more">
                     <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="{post_name}"></div>
-                    <div class="post_data"><input type="text" id="add_url" name="add_url" placeholder="{post_url}"></div>
                 </div>
             </div>
             <div class="post_foot_wrap">
@@ -242,7 +273,7 @@
     </div>
 </main>
 
-#^answers form=json
+#^answers_example form=json
 [
 	{
 		author: "dave",
