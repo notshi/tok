@@ -155,7 +155,9 @@
         <div class="about_wrap">
             <div class="about"><h1>{about}</h1></div>
             <div class="about_text">
-                {about_footer}{zine_link}{zine_link_mob}
+                <div class="about_text_title">{about_footer1}</div>
+                {about_footer}
+                <div class="about_text_zine">{zine_link}{zine_link_mob}</div>
             </div>
         </div>
         <div class="cc_wrap">
@@ -171,39 +173,10 @@
 </footer>
 
 #^zine_link trim=ends
-<a class="print_link" onclick="window.print()"><i>{about_zine}</i></a>
+<a class="print_link" onclick="window.print()">{about_zine}</a>
 
 #^zine_link_mob trim=ends
-<a class="mob_print_link" href="{_root}data/Tok_Stori.pdf"><i>{about_zine_mob}</i></a>
-
-#^more_questions_test trim=ends
-<div class="row">
-    <div><h2>{next}</h2></div>
-    <div class="list_wrap">
-        <div class="question">
-            <a href="{question_code_prev}.html">
-                <div class="blog {question_code_prev} box1">
-                    <div class="text_wrap">
-                        <div class="type">{pillar_text_prev}</div>
-                        <div class="text">{question_text_prev}</div>
-                    </div>
-                    <div class="img"></div>
-                </div>
-            </a>
-        </div>
-        <div class="question">
-            <a href="{question_code_next}.html">
-                <div class="blog box2">
-                    <div class="text_wrap">
-                        <div class="type">{pillar_text_next}</div>
-                        <div class="text">{question_text_next}</div>
-                        <div class="type"></div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
+<a class="mob_print_link" href="{_root}data/Tok_Stori.pdf">{about_zine}</a>
 
 #^more_questions trim=ends
 <div class="row">
@@ -313,7 +286,8 @@
 #^print_cover
 <div class="print_cover">
     <img src="{_root}data/logo.svg">
-    <div class="print_cover_title">{mob_about}</div>
+    <div class="print_cover_subtitle">{about_footer1}</div>
+    <div class="print_cover_title">{about_footer}</div>
     <div class="print_cover_by">By Lisa Hilli &amp; shi Blank (August, 2022)</div>
     <div class="print_cover_cc">{cc_ubersee} {cc_ubersee_text}</div>
 </div>

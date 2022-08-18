@@ -162,13 +162,13 @@ Kommentar
 #^top
 Top
 
+#^about_footer1
+How would you explain Germany to people of the Pacific?
+
 #^about_footer
-This prototype is a collaboration from a digital residency to create a dialogue space for Tok Stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany.
+<b>Tok Stori</b> | <b>Geschichten-Austausch</b> is a digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.
 
 #^about_zine
-Download or print the PDF!
-
-#^about_zine_mob
 Download the PDF!
 
 #^mob_about
