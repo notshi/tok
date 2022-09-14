@@ -225,12 +225,12 @@ input#add_submit,
 span#answer_wrap,
 span#reply      {display:block; padding-top:100px; margin-top:-100px;}
 .comment_list_wrap{display:flex; flex-flow:wrap; justify-content:space-around; align-items:center; margin-top:60px; width:90%; margin-left:auto; margin-right:auto; scroll-margin-top:6.5rem;}
-.comment_wrap   {width:calc(50% - 30px); margin-bottom:30px;}
-.comment_wrap:nth-of-type(2n)   {margin-top:55px; margin-bottom:-20px;}
-.comment_wrap:last-of-type      {margin-top:30px; margin-bottom:0;}
+.comment_wrap   {width:80%; margin-bottom:30px;}
+.comment_wrap:nth-of-type(odd) {margin-left:auto;}
+.comment_wrap:nth-of-type(even) {margin-right:auto;}
 .comment        {background-color:#fff; padding:30px; box-shadow:3px 3px 3px #e1c5c51c;}
 .comment_name   {font-weight:700; font-size:36px; line-height:40px;}
-.comment_text   {margin-top:20px; font-size:24px; line-height:32px; letter-spacing:-1.2px;}
+.comment_text   {margin-top:20px; font-size:24px; line-height:32px; letter-spacing:-1.2px; overflow-wrap:break-word; word-break:break-word;}
 .comment_url    {margin-top:20px; border-top:1px solid #918170; padding-top:10px;}
 .comment_url_text   {font-style:italic; font-weight:300; margin-bottom:5px;}
 .comment_image  {background:url('./data/image01.jpg'); background-size:cover; width:100%; height:200px;}
@@ -353,7 +353,7 @@ input#add_name  {font-size:1.2rem; line-height:inherit;}
 .comment_list_wrap,
 .current .blog,
 .info_wrap      {width:100%; flex-flow:column;}
-.comment_list_wrap,
+.comment_list_wrap  {margin-top:40px;}
 .info_wrap      {margin-top:0;}
 input#add_url::placeholder,
 input#add_url,
@@ -707,7 +707,7 @@ body            {background:#fff; color:#000; visibility:hidden;}
             </div>
             <div class="post_foot_wrap">
                 <div class="post_info">
-                    By sharing your knowledge, your responses will be available to the public. Please share responsibly.<br/>
+                    By sharing your knowledge, your responses will be available to the public. Please share responsibly.
  <a href="https://www.uebersee-museum.de/en/privacy-policy/" target="_blank">Privacy Policy</a>
 
                 </div>
