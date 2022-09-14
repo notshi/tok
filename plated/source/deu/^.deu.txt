@@ -202,10 +202,10 @@ CC BY-SA 4.0 Übersee-Museum Bremen
 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>
 
 #^funder_text_1
-This prototype was developed as part of the <a href="https://medium.com/neocollections" target="_blank">NEO Collections</a> project.
+Dieser Prototyp wurde im Rahmen des Projekts <a href="https://medium.com/neocollections" target="_blank">NEO Collections</a> entwickelt.
 
 #^funder_text_2
-Funded by the <a href="https://www.kulturstiftung-des-bundes.de/de/projekte/film_und_neue_medien/detail/kultur_digital.html" target="_blank">Digital Culture Programme</a> of the <a href="https://www.kulturstiftung-des-bundes.de/de" target="_blank">Kulturstiftung des Bundes</a> (German Federal Cultural Foundation).
+Gefördert im <a href="https://www.kulturstiftung-des-bundes.de/de/projekte/film_und_neue_medien/detail/kultur_digital.html" target="_blank">Programm Kultur Digital</a> der <a href="https://www.kulturstiftung-des-bundes.de/de" target="_blank">Kulturstiftung des Bundes</a>.
 
 #^funder_text_3
-Funded by the <a href="https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/staatsministerin-fuer-kultur-und-medien" target="_blank">Beauftragte der Bundesregierung für Kultur und Medien</a> (Federal Government Commissioner for Culture and the Media).
+Gefördert von der <a href="https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/staatsministerin-fuer-kultur-und-medien" target="_blank">Beauftragte der Bundesregierung für Kultur und Medien</a>.
