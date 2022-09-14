@@ -140,7 +140,7 @@ Add a media link eg. https://web.com/image.jpg
 Media link
 
 #^post_info
-By sharing your knowledge, your responses will be available to the public. Please share responsibly.<br/>
+By sharing your knowledge, your responses will be available to the public. Please share responsibly.
 
 #^post_policy_link
 <a href="https://www.uebersee-museum.de/en/privacy-policy/" target="_blank">Privacy Policy</a>
