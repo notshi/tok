@@ -1,15 +1,17 @@
 ## Tok Stori | Geschichten-Austausch | Sharing Stories
 
-This prototype is a collaboration from a digital residency to create a digital space for tok stori (sharing stories) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany.
+A digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.
 
-Tok Stori by [Lisa Hilli](https://lisahilli.com/) is licensed under [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/)  
-Site design and code by shi Blank  
-Supported by the [Übersee-Museum Bremen](https://medium.com/neocollections/heres-how-our-museum-is-learning-to-work-with-an-international-network-of-critical-friends-5ce3ca6e884f)
+Tok Stori by [Lisa Hilli](https://lisahilli.com/), Shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+
+This prototype was developed as part of the <a href="https://medium.com/neocollections" target="_blank">NEO Collections</a> project.  
+Funded by the <a href="https://www.kulturstiftung-des-bundes.de/en/programmes_projects/film_and_new_media/detail/digital_culture.html" target="_blank">Digital Culture Programme</a> of the <a href="https://www.kulturstiftung-des-bundes.de/en" target="_blank">Kulturstiftung des Bundes</a> (German Federal Cultural Foundation).  
+Funded by the <a href="https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/staatsministerin-fuer-kultur-und-medien" target="_blank">Beauftragte der Bundesregierung für Kultur und Medien</a> (Federal Government Commissioner for Culture and the Media).
 
 
-### Credits
-https://github.com/xriss/plated by Kriss & shi Blank  
-https://github.com/solmatas/Bitter by Sol Matas for Huerta Tipográfica  
-https://www.huertatipografica.com/en/fonts/cambo-ht by Carolina Giovagnoli and Andrés Torresi for Huerta Tipográfica  
+-----------------
+https://github.com/xriss/plated Framework by Kriss & shi Blank  
+https://github.com/solmatas/Bitter Typeface by Sol Matas for Huerta Tipográfica  
+https://www.huertatipografica.com/en/fonts/cambo-ht Typeface by Carolina Giovagnoli and Andrés Torresi for Huerta Tipográfica  
 Images are [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) Übersee-Museum Bremen  
 Additional graphics are created using free and open source tools [Inkscape](https://inkscape.org/) and [Gimp](https://www.gimp.org/)
