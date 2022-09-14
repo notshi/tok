@@ -28,7 +28,7 @@ Tok Stori
 Geschichten-Austausch
 
 #^sharing_stories
-Sharing Stories
+Geschichten-Austausch
 
 #^pillar1
 Familie
@@ -70,7 +70,7 @@ Vielleicht möchten Sie nach
 Hause gehen
 
 #^p1q1
-Wen zählst du zu deiner Famiie?
+Wen zählst du zu deiner Familie?
 
 #^p1q2
 Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
@@ -130,7 +130,7 @@ Gibt es einen Gegenstand, den man nur in einer deutschen Küche findet?
 The coconut scraper is a three legged contraption made of wood with a curved top for sitting on and a seashell attached by rope at the tip
 
 #^p4q4_cc
-D07600 Papua New Guinea Coconut scraper, Manus Province<span>CC BY-SA 4.0 Übersee-Museum Bremen</span>
+D07600 Papua New Guinea Coconut scraper, Manus Province
 
 #^p4q4_item
 A short description of the role and use of the <i>kina</i> in Papua New Guinea communities.
@@ -142,10 +142,10 @@ Mein Lieblingsessen aus meiner Kindheit ist …?
 Antwort senden
 
 #^share1
-Geben Sie hier Ihre Antwort ein (we support links for images and video)
+Gib‘ hier bitte deine Antwort ein (Links zu Bildern und Videos sind erlaubt)
 
 #^post_name
-Wie heißen Sie?
+Wie heißt du?
 
 #^post_url trim=ends
 Add a media link eg. https://web.com/image.jpg
@@ -154,7 +154,10 @@ Add a media link eg. https://web.com/image.jpg
 Media link
 
 #^post_info
-By sharing your knowledge, your responses will be available to the public. Please share responsibly.
+Wenn du hier eine Antwort einträgst, wird sie für alle sichtbar sein. Bitte teile deine Meinung verantwortungsvoll.
+
+#^post_policy_link
+<a href="https://www.uebersee-museum.de/en/privacy-policy/">Datenschutzerklärung</a>
 
 #^post
 Kommentar
@@ -163,22 +166,22 @@ Kommentar
 Top
 
 #^about_footer1
-How would you explain Germany to people of the Pacific?
+Wir würdest du Menschen im Pazifik erklären, was Deutschland ist?
 
 #^about_footer
-<b>Tok Stori</b> | <b>Geschichten-Austausch</b> is a digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.
+<b>Tok-Stori</b> | <b>Geschichten-Austausch</b> ist ein digitales Geschichtenformat, mit dem wir Menschen aus Deutschland einladen wollen, ihr persönliches oder geteiltes Verständnis von deutscher Kultur und Identität zu teilen. Unsere Fragen orientieren sich daran, was Menschen im Pazifik für das Verständnis von Deutschland interessieren könnte.
 
 #^about_zine
-Download the PDF!
+PDF zum Download
 
 #^mob_about
-A dialogue space for Tok Stori (<i>sharing stories</i>) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany.
+Digitales Geschichtenformat, mit dem wir Menschen aus Deutschland einladen wollen, ihr persönliches oder geteiltes Verständnis von deutscher Kultur und Identität zu teilen. Unsere Fragen orientieren sich daran, was Menschen im Pazifik für das Verständnis von Deutschland interessieren könnte.
 
 #^cc_lisa_1
 von
 
 #^cc_lisa_2
-ist lizenziert unter
+
 
 #^cc_shi
 Webseite von shi Blank
@@ -191,3 +194,18 @@ Unterstützt durch
 
 #^cc_ubersee_alt
 A bright red log with thick white letters, U and M
+
+#^cc_image
+CC BY-SA 4.0 Übersee-Museum Bremen
+
+#^cc_link
+<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>
+
+#^funder_text_1
+This prototype was developed as part of the <a href="https://medium.com/neocollections" target="_blank">NEO Collections</a> project.
+
+#^funder_text_2
+Funded by the <a href="https://www.kulturstiftung-des-bundes.de/de/projekte/film_und_neue_medien/detail/kultur_digital.html" target="_blank">Digital Culture Programme</a> of the <a href="https://www.kulturstiftung-des-bundes.de/de" target="_blank">Kulturstiftung des Bundes</a> (German Federal Cultural Foundation).
+
+#^funder_text_3
+Funded by the <a href="https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/staatsministerin-fuer-kultur-und-medien" target="_blank">Beauftragte der Bundesregierung für Kultur und Medien</a> (Federal Government Commissioner for Culture and the Media).

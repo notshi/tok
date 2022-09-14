@@ -140,9 +140,8 @@
         <li><div class="mob_link"><a href="{switch_root}{_output_filename}">{iso}</a></div></li>
         <li><div class="mob_cc_wrap">
             <div class="mob_about">{mob_about}</div>
-            <div class="mob_cc">{tok_stori_cc} | {sharing_stories} {cc_lisa_1} Lisa Hilli {cc_lisa_2} CC BY-NC-ND 4.0</div>
-            <div class="mob_cc">{cc_shi}</div>
-            <div class="mob_cc">{cc_ubersee} {cc_ubersee_text}</div>
+            <div class="mob_cc">{tok_stori} | {sharing_stories} {cc_lisa_1} {cc_text}</div>
+
         </div></li>
         </ul>
     </nav>
@@ -153,24 +152,33 @@
 <footer class="foot_content" id="about_footer">
     <div class="row">
         <div class="about_wrap">
-            <div class="about"><h1>{about}</h1></div>
+            <div class="about"><h3>{about}</h3></div>
             <div class="about_text">
                 <div class="about_text_title">{about_footer1}</div>
                 {about_footer}
                 <div class="about_text_zine">{zine_link}{zine_link_mob}</div>
             </div>
         </div>
+        <div class="funder_wrap">
+            <div class="funder_img"><img src="{_root}data/logo_ksb.png"/></div>
+            <div class="funder_img"><img src="{_root}data/logo_bkm.svg"/></div>
+            <div class="funder_text">{funder_text_1} {funder_text_2} {funder_text_3}</div>
+        </div>
         <div class="cc_wrap">
             <div class="cc_text">
-                <a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">{tok_stori_cc} | {sharing_stories}</a> {cc_lisa_1} <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> {cc_lisa_2}
-                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-NC-ND 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
+                {tok_stori} | {sharing_stories}</a> {cc_lisa_1} Lisa Hilli, Shi Blank, Abhay Adhikari and Übersee-Museum Bremen
+                <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-SA 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a>
             </div>
-            <div class="code">{cc_shi}</div>
-            <div class="support">{cc_ubersee} <span role="img" aria-label="{cc_ubersee_alt}"><img src="{_root}data/logo_ubersee.svg"/></span></div>
             <div class="top"><a href="#">{top}</a></div>
         </div>
     </div>
 </footer>
+
+#^old_footer
+<div class="mob_cc">{cc_shi}</div>
+<div class="mob_cc">{cc_ubersee} {cc_ubersee_text}</div>
+<div class="code">{cc_shi}</div>
+<div class="support">{cc_ubersee} <span role="img" aria-label="{cc_ubersee_alt}"><img src="{_root}data/logo_ubersee.svg"/></span></div>
 
 #^zine_link trim=ends
 <a class="print_link" onclick="window.print()">{about_zine}</a>
@@ -236,7 +244,7 @@
             </div>
             <div class="post_foot_wrap">
                 <div class="post_info">
-                    {post_info}
+                    {post_info} {post_policy_link}
                 </div>
                 <input type="hidden" id="add_que" value="{main_question_code}">
                 <input type="submit" id="add_submit" value="{post}">
@@ -288,8 +296,8 @@
     <img src="{_root}data/logo.svg">
     <div class="print_cover_subtitle">{about_footer1}</div>
     <div class="print_cover_title">{about_footer}</div>
-    <div class="print_cover_by">By Lisa Hilli &amp; shi Blank (August, 2022)</div>
-    <div class="print_cover_cc">{cc_ubersee} {cc_ubersee_text}</div>
+    <div class="print_cover_by">By {cc_text}</div>
+    <div class="print_cover_cc">{funder_text_1} {funder_text_2} {funder_text_3}</div>
 </div>
 
 #^page_content form=json
@@ -408,8 +416,6 @@
 #^print_footer trim=ends
 <div class="print_footer">
     <div class="print_cc">
-        {tok_stori_cc} | Geschichten-Austausch | {sharing_stories}<br/>
-        {cc_lisa_1} Lisa Hilli {cc_lisa_2} CC BY-NC-ND 4.0
+        {tok_stori} | {sharing_stories} {cc_text}
     </div>
-    <div class="print_cc">https://notshi.github.io/tok</div>
 </div>
