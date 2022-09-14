@@ -116,6 +116,7 @@ html    {font-size:18px; scroll-behavior:smooth;}
 body	{background:#ffefef; font-family:'Bitter',serif; font-size:18px; font-weight:400; line-height:normal; color:#111; max-width:100%; overflow-x:hidden; padding:0; margin:0;}
 h1		{font-size:2.2em; font-weight:700; color:#736b62;}
 h2		{font-size:1.5em; font-weight:normal;}
+h3      {font-size:2.0em; font-weight:500; color:#736b62;}
 b		{font-weight:700;}
 i		{font-style:italic;}
 a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
@@ -125,17 +126,25 @@ a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
 .main_content   {min-height:400px; padding-top:20px; padding-bottom:20px;}
 .foot_content   {border-top:1px solid #918170;}
 .nav_wrap,
-.cc_wrap        {display:flex; align-items:center; justify-content:space-between; width:100%;}
+.cc_wrap,
+.funder_wrap    {display:flex; align-items:center; justify-content:space-between; width:100%;}
+.cc_wrap        {align-items:baseline; border-top:1px solid #918170; padding:20px 0 40px 0;}
+.funder_wrap    {align-items:center; padding:20px 0;}
 .nav_content    {display:flex; padding-left:30px; align-items: baseline; justify-content:space-between; width:calc(100% - 200px);}
 .logo           {height:100px; align-items:center; justify-content:center; display:flex;}
 .more           {text-align:center; width:100%; padding:30px 0; font-size:26px;}
+.about_text_zine a,
+input#add_submit,
+.post_link_text,
+.translate a,
+.top a          {font-family:Sans-Serif;}
 
 .logo a         {display:flex; align-items:center;}
 .logo a img     {height:38px; padding-right:10px;}
 .translate a    {background:#d2d2c6; padding:5px 20px; border-radius:6px; font-size:0.9rem; transition:all 0.5s ease-out;}
 .translate a:hover,
 .translate a:focus{background:#f2d3b8;}
-.on a           {font-style:italic; color:#736b62; font-weight:300;}
+.on a           {font-style:italic; color:#2d2b2a; font-weight:300;}
 .more a:hover   {color:#736b62;}
 .about a:hover  {color:#736b62;}
 .p1 a:hover     {color:#4b99b0;}
@@ -242,7 +251,7 @@ input#add_url::placeholder,
 input#add_name::placeholder     {font-family:'Bitter',serif; font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px;}
 input#add_url::placeholder      {font-size:24px; line-height:26px;}
 textarea:focus, input:focus     {outline:0;}
-input#add_submit                {font-family:'Bitter',serif; background:#111; color:#fff; padding:10px 40px; border:0; border-radius:6px; font-size:26px; transition:all 0.5s ease-out; margin-top:30px;}
+input#add_submit                {background:#111; color:#fff; padding:10px 40px; border:0; border-radius:6px; font-size:26px; transition:all 0.5s ease-out; margin-top:30px;}
 input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 
 .post_wrap      {margin-top:80px; margin-bottom:40px; width:90%; margin-left:auto; margin-right:auto;}
@@ -253,8 +262,9 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .post_name      {font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px; width:100%; padding-right:35px;}
 .post_media     {background:url('./data/media_post.svg'); background-size:cover; width:30px; height:33px;}
 .post_image     {background:url('./data/image_post.svg'); background-size:cover; width:50px; height:44px;}
-.post_foot_wrap {display:flex; width:100%; justify-content:space-between; align-items:baseline;}
-.post_info      {padding-left:20px; font-size:16px; line-height:20px; font-style:italic;}
+.post_foot_wrap {display:flex; width:100%; justify-content:space-between; align-items:center;}
+.post_info      {padding:0 100px 0 20px; font-size:16px; line-height:20px; font-style:italic;}
+.post_info a    {text-decoration:underline; color:#736b62;}
 
 .blog.box1 .img {height:250px;}
 .blog.box1      {justify-content:space-between; height:100%;}
@@ -271,26 +281,32 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .about_wrap     {margin-top:30px;}
 .about_text     {font-size:24px; padding-top:20px;letter-spacing:-0.6px; line-height:30px;}
 .about_text b   {font-weight:500;}
-.about_text_title   {font-weight:300; margin-bottom:20px;}
+.about_text_title   {font-weight:300; margin-bottom:20px; font-style:italic;}
 .about_text_zine    {font-size:18px; text-align:right;}
-.cc_wrap        {align-items:baseline; margin-top:30px; border-top:1px solid #918170; padding:20px 0 40px 0;}
-.cc_text        {font-size:16px;}
+.cc_text        {font-size:16px; line-height:24px;}
 .cc_text img    {height:22px; margin-left:3px; vertical-align:text-bottom;}
 .cc_text a      {color:#736b62;}
-a.cc_link       {display:block;}
 .code           {font-size:16px;}
 .support        {display:flex; align-items:center; font-size:16px;}
 .support img    {width:40px; padding-left:10px;}
+.funder_img     {width:100%;}
+.funder_img img {height:150px;}
+.funder_text    {font-weight:300; font-size:16px; line-height:22px; padding:0 20px 0 40px;}
+.funder_text a  {font-weight:400;}
+.funder_text a:hover,
+.funder_text a:focus  {text-decoration:underline;}
 
 /*  Print CSS */
+a.mob_print_link,
+a.print_link        {text-align:center; background:#eee6e6; border-radius:6px; margin-top:20px; padding:10px 15px;}
 a.mob_print_link:hover,
-a.print_link:hover  {cursor:pointer;}
-a.mob_print_link    {display:none; padding-top:10px;}
+a.print_link:hover  {cursor:pointer; background:#f2d3b8;}
+a.mob_print_link    {display:none; padding:15px;}
 .print >  div       {color:#000;}
 .print_cover_title  {font-size:24px; line-height:28px; padding:30px 0;}
 .print_cover_subtitle  {font-size:30px; line-height:28px; font-weight:300; padding:30px 0 0 0;}
-.print_cover_by     {font-size:16px; font-weight:300;}
-.print_cover_cc     {font-size:14px; padding-top:5px;}
+.print_cover_by     {font-size:14px; font-weight:300;}
+.print_cover_cc     {font-size:9px; padding-top:5px;}
 .print_chap         {page-break-before:always; page-break-after:avoid; page-break-inside:avoid;}
 .print_subtitle     {font-style:italic; font-weight:300;}
 .print_title span   {display:block; font-size:19px; line-height:24px; padding-top:10px;}
@@ -350,12 +366,16 @@ input#add_url,
 .post_more      {flex-flow:column;}
 .post_name      {padding:0;}
 .post_foot_wrap {align-items:center; flex-flow:column-reverse;}
-.post_info      {margin-top:20px; padding-right:20px; padding-left:0;}
+.post_info      {margin-top:20px; padding-right:0; padding-left:0;}
 input#add_submit{margin-top:20px; width:100%;}
 .cc_wrap        {display:block;}
 .cc_text,
 .support,
 .code           {margin-bottom:20px;}
+.about_text_zine  {text-align:initial;}
+.funder_wrap    {flex-flow:column;}
+.funder_img     {width:initial;}
+.funder_text    {padding:20px 0 0 0;}
 a.print_link    {display:none;}
 a.mob_print_link{display:block;}
 }
@@ -434,9 +454,11 @@ body            {background:#fff; color:#000; visibility:hidden;}
 </div>
     <div class="print_cover_title"><b>Tok Stori</b> | <b>Geschichten-Austausch</b> is a digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.
 </div>
-    <div class="print_cover_by">By Lisa Hilli &amp; shi Blank (August, 2022)</div>
-    <div class="print_cover_cc">Supported by
- Übersee-Museum Bremen
+    <div class="print_cover_by">By Lisa Hilli, Shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
+</div>
+    <div class="print_cover_cc">This prototype was developed as part of the <a href="https://medium.com/neocollections" target="_blank">NEO Collections</a> project.
+ Funded by the <a href="https://www.kulturstiftung-des-bundes.de/en/programmes_projects/film_and_new_media/detail/digital_culture.html" target="_blank">Digital Culture Programme</a> of the <a href="https://www.kulturstiftung-des-bundes.de/en" target="_blank">Kulturstiftung des Bundes</a> (German Federal Cultural Foundation).
+ Funded by the <a href="https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/staatsministerin-fuer-kultur-und-medien" target="_blank">Beauftragte der Bundesregierung für Kultur und Medien</a> (Federal Government Commissioner for Culture and the Media).
 </div>
 </div>
 <div id="p1q1" class="print_chap">
@@ -563,13 +585,10 @@ body            {background:#fff; color:#000; visibility:hidden;}
 <div class="print_footer">
     <div class="print_cc">
         Tok Stori
- | Geschichten-Austausch | Sharing Stories
-<br/>
-        by
- Lisa Hilli is licensed under
- CC BY-NC-ND 4.0
+ | Sharing Stories
+ Lisa Hilli, Shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
+
     </div>
-    <div class="print_cc">https://notshi.github.io/tok</div>
 </div></div>
 <div class="main_wrap">
     <header class="mob_content">
@@ -594,18 +613,14 @@ body            {background:#fff; color:#000; visibility:hidden;}
 </a></div></li>
         <li><div class="mob_link"><a href="./deu/pillar2.html">EN / DE</a></div></li>
         <li><div class="mob_cc_wrap">
-            <div class="mob_about">A dialogue space for Tok Stori (<i>sharing stories</i>) that allows German users to share their collective understanding of German identity and enables Pacific people to choose what they want to know about Germany.
+            <div class="mob_about">A digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.
 </div>
             <div class="mob_cc">Tok Stori
  | Sharing Stories
  by
- Lisa Hilli is licensed under
- CC BY-NC-ND 4.0</div>
-            <div class="mob_cc">Site by shi Blank
+ Lisa Hilli, Shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
 </div>
-            <div class="mob_cc">Supported by
- Übersee-Museum Bremen
-</div>
+
         </div></li>
         </ul>
     </nav>
@@ -706,32 +721,34 @@ body            {background:#fff; color:#000; visibility:hidden;}
     <footer class="foot_content" id="about_footer">
     <div class="row">
         <div class="about_wrap">
-            <div class="about"><h1>About
-</h1></div>
+            <div class="about"><h3>About
+</h3></div>
             <div class="about_text">
                 <div class="about_text_title">How would you explain Germany to people of the Pacific?
 </div>
                 <b>Tok Stori</b> | <b>Geschichten-Austausch</b> is a digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.
 
-                <div class="about_text_zine"><a class="print_link" onclick="window.print()">Download the PDF!
-</a><a class="mob_print_link" href="./data/Tok_Stori.pdf">Download the PDF!
+                <div class="about_text_zine"><a class="print_link" onclick="window.print()">Download the PDF
+</a><a class="mob_print_link" href="./data/Tok_Stori.pdf">Download the PDF
 </a></div>
             </div>
         </div>
+        <div class="funder_wrap">
+            <div class="funder_img"><img src="./data/logo_ksb.png"/></div>
+            <div class="funder_img"><img src="./data/logo_bkm.svg"/></div>
+            <div class="funder_text">This prototype was developed as part of the <a href="https://medium.com/neocollections" target="_blank">NEO Collections</a> project.
+ Funded by the <a href="https://www.kulturstiftung-des-bundes.de/en/programmes_projects/film_and_new_media/detail/digital_culture.html" target="_blank">Digital Culture Programme</a> of the <a href="https://www.kulturstiftung-des-bundes.de/en" target="_blank">Kulturstiftung des Bundes</a> (German Federal Cultural Foundation).
+ Funded by the <a href="https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/staatsministerin-fuer-kultur-und-medien" target="_blank">Beauftragte der Bundesregierung für Kultur und Medien</a> (Federal Government Commissioner for Culture and the Media).
+</div>
+        </div>
         <div class="cc_wrap">
             <div class="cc_text">
-                <a property="dct:title" rel="cc:attributionURL" href="https://lisahilli.com/2022/05/11/who-has-the-burden-of-sense-making">Tok Stori
+                Tok Stori
  | Sharing Stories
 </a> by
- <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lisahilli.com/">Lisa Hilli</a> is licensed under
-
-                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-NC-ND 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
+ Lisa Hilli, Shi Blank, Abhay Adhikari and Übersee-Museum Bremen
+                <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="cc_link">CC BY-SA 4.0<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a>
             </div>
-            <div class="code">Site by shi Blank
-</div>
-            <div class="support">Supported by
- <span role="img" aria-label="A bright red log with thick white letters, U and M
-"><img src="./data/logo_ubersee.svg"/></span></div>
             <div class="top"><a href="#">Back up
 </a></div>
         </div>
