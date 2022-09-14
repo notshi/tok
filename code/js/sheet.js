@@ -106,7 +106,6 @@ sheet.fetch=async function()
 		console.log(rows)
 		for(let r of rows)
 		{
-			r.uuid=db.uuid // always sign our data
 			await db.handle.add('answers', r )
 		}
 		await db.remove_duplicates()
