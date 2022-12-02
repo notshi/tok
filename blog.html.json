@@ -1,9 +1,12 @@
 {
  "_dirname": "{_root}",
- "_filename": "{_root}p4q3.html",
+ "_filename": "{_root}blog.html",
  "_flags": {
   "answers_example": {
    "form": "json"
+  },
+  "blog_body": {
+   "trim": "ends"
   },
   "body": {
    "trim": "ends"
@@ -36,9 +39,6 @@
    "trim": "ends"
   },
   "main_question": {
-   "trim": "ends"
-  },
-  "main_question_code": {
    "trim": "ends"
   },
   "mob_header": {
@@ -100,10 +100,10 @@
   }
  },
  "_output_chunkname": "html",
- "_output_filename": "p4q3.html",
+ "_output_filename": "blog.html",
  "_root": "./",
  "_site": "{_root}",
- "_sourcename": "p4q3.^.html",
+ "_sourcename": "blog.^.html",
  "about": "About\n",
  "about_footer": "<b>Tok Stori</b> | <b>Geschichten-Austausch</b> is a digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.\n",
  "about_footer1": "How would you explain Germany to people of the Pacific?\n",
@@ -123,8 +123,9 @@
    "question": "p1q1"
   }
  ],
+ "blog_body": "<main class=\"main_content row blog_wrap\">\n    <div class=\"blog_title\">\n        So, why would Pacific people want to know about Germany?\n    </div>\n    <div class=\"blog_author\">\n        Lisa Hilli, Etta Grotian &amp; Lisa Korge\n    </div>\n    <div class=\"blog_text\">\n        <p class=\"intro\">Between November 2021 and February 2022, a Papua New Guinean artist and three German historians began a dialogue to explore the concept – How would you explain Germany to the Pacific? What followed were difficult and illuminating conversations, that opened a space of empathy, which led to questions of curiosity and understanding.</p>\n\n        <p>So why would Pacific people, especially from former German colonies want to know about Germany?<br/><b>That’s up to Pacific people to decide.</b></p>\n\n        <p>One intended aim of Tok Stori |Geschichten-Austausch (as a prototype) is to give Pacific people the choice of what they would like to know about Germany by appealing to Pacific people’s cultural values and ways of understanding. The other aim is to get as many German citizens as possible to share stories publicly about their unique and shared German identity, culture, and history, so that both German and Pacific people can learn about each other.</p>\n\n        <p><b>Tok Stori</b> is a Melanesian concept that means spending time and connecting with someone through a conversation, a dialogue or storytelling and actively listening and relating. It implies a mutual or reciprocal relationship in sharing. We want to encourage Geschichten-Austausch among German people.</p>\n\n        <p>As part of the NEO Collections project, Tok Stori |Geschichten-Austausch is the result of a collaborative digital residency that engaged artists from the Pacific Islands region to develop a prototype for an online exhibition on the Pacific hosted by the Übersee Museum.</p>\n\n        <p>Prototype collaborators for Tok Stori | Geschichten-Austausch are Lisa Hilli, Etta Grotian, Lisa Korge, Tobias Goebel and Shi Blank.</p>\n\n        <span><a href=\"https://lisahilli.com/\" target=\"_blank\">Lisa Hilli</a> creates and curates kick arse exhibitions that shift narratives and art histories with a Melanesian feminine lens. She has specialist knowledge of lens-based practices, interpretation of museum collections, and the language of textiles. Her creativity is sparked by digging through archives, listening to human stories, and lucid dream states. She is driven to empower individuals and communities whose stories and knowledges are overlooked and to arm them with skills to share their stories their way. She is thoughtful, curious, and led by the important Pacific cultural value of reciprocity. Lisa is obsessed by the wondrous worlds of animated films and the joy and wisdom of growing plants.</span>\n\n        <span><b>NEO Collections</b> is a 4 year project about finding new ways of working with museum collections — online and onsite.</span>\n\n        <span><b><i>NEO</i></b> is based on the principles of openness and participation. It aims to provide reliable and reusable information and great digital resources to the public and wants to explore how to make the collections more human-centered and accessible.</span>\n\n        <span>It is funded by the <a href=\"https://www.kulturstiftung-des-bundes.de/en/programmes_projects/film_and_new_media/detail/digital_culture.html\" target=\"_blank\">Digital Culture Programme</a> of the <a href=\"https://www.kulturstiftung-des-bundes.de/en\" target=\"_blank\">Kulturstiftung des Bundes</a> (German Federal Cultural Foundation). Our project partners are: <a href=\"https://www.mkg-hamburg.de/en/home.html\"  target=\"_blank\">Museum für Kunst und Gewerbe Hamburg</a> (Germany), <a href=\"https://www.uebersee-museum.de/\" target=\"_blank\">Übersee-Museum Bremen</a> (Germany) and <a href=\"https://www.nationalmuseum.se/\" target=\"_blank\">National Museum</a> (Sweden). Our partner is <a href=\"https://dhyaandesign.com/\" target=\"_blank\">Digital Identities</a>.</span>\n    </div>\n</main>",
  "blog_text": "Blog\n",
- "body": "<div class=\"main_wrap\">\n    {header1}\n    {p1}\n    {p2}\n    {p3}\n    {p4_on}\n    {header2}\n    {main_question}\n    {more_questions}\n    {footer}\n</div>",
+ "body": "<div class=\"main_wrap\">\n    {header1}\n    {p1}\n    {p2}\n    {p3}\n    {p4}\n    {header2}\n    {blog_body}\n    {more_questions}\n    {footer}\n</div>",
  "cc_image": "CC BY-SA 4.0 Übersee-Museum Bremen\n",
  "cc_link": "<a hef=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\" target=\"_blank\">CC BY-SA 4.0</a>\n",
  "cc_lisa_1": "by\n",
@@ -151,14 +152,7 @@
  "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <script src=\"{_root}js/tok.js\"></script>\n    <script>\n        require(\"tok\").setup({})\n    </script>\n    {head}\n</head>\n\n<!-- Matomo -->\n<script type=\"text/javascript\">\n  var _paq = window._paq = window._paq || [];\n  /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n  _paq.push(['trackPageView']);\n  _paq.push(['enableLinkTracking']);\n  (function() {\n    var u=\"//matomo.uebersee-museum.de/\";\n    _paq.push(['setTrackerUrl', u+'matomo.php']);\n    _paq.push(['setSiteId', '2']);\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);\n  })();\n</script>\n<noscript><p><img src=\"//matomo.uebersee-museum.de/matomo.php?idsite=2&amp;rec=1\" style=\"border:0;\" alt=\"\" /></p></noscript>\n<!-- End Matomo Code -->\n\n<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-NEFJK0DRTG\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-NEFJK0DRTG');\n\n  gtag(\"consent\", \"default\", {\n  ad_storage: \"denied\",\n  analytics_storage: \"denied\",\n  functionality_storage: \"denied\",\n  personalization_storage: \"denied\",\n  security_storage: \"denied\"\n  });\n</script>\n\n<body>{print_pdf}{body}</body>\n</html>",
  "iso": "EN / DE",
  "iso_root": "{_root}",
- "main_cc_text": "{p4q3_cc}<span>{cc_image}</span>\n",
- "main_img_alt_text": "{p4q3_alt}\n",
- "main_item_text": "{p4q3_item}\n",
- "main_pillar_text": "{pillar4}\n",
  "main_question": "<main class=\"main_content row\">\n    <div class=\"list_wrap\">\n            <div class=\"question wide current\">\n            <div class=\"blog {main_question_code}\">\n                <div class=\"text_wrap\">\n                    <div class=\"type\"><span>{main_pillar_text}</span> {question} {main_question_num}</div>\n                    <div class=\"text\">{main_question_text}</div>\n                </div>\n                <div class=\"img\">\n                    <span role=\"img\" aria-label=\"{main_img_alt_text}\"></span>\n                    <div class=\"img_text\">{main_cc_text}</div>\n                </div>\n            </div>\n        </div>\n        <div class=\"info_wrap\">\n            <div class=\"item_wrap\">\n                <div class=\"item_star\">*</div>\n                <div class=\"item_text\">{main_item_text}</div>\n            </div>\n            <div class=\"post_link_wrap\">\n                <a href=\"#reply\">\n                    <div class=\"post_link_text\"><img src=\"{_root}data/post_icon.svg\">{share}</div>\n                </a>\n            </div>\n        </div>\n    </div>\n    <div id=\"answer_{main_question_code}\" class=\"comment_list_wrap\">{show_answers}</div>\n    <div class=\"post_wrap\">\n        <span id=\"reply\"></span>\n        <form id=\"add_form\">\n            <div class=\"post_area\">\n                <div class=\"post_question\"><span>{question}: </span> {main_question_text}</div>\n                <textarea type=\"text\" id=\"add_post\" name=\"add_post\" placeholder=\"{share1}\"></textarea>\n                <div class=\"post_more\">\n                    <div class=\"post_name\"><input type=\"text\" id=\"add_name\" name=\"add_name\" placeholder=\"{post_name}\"></div>\n                </div>\n            </div>\n            <div class=\"post_foot_wrap\">\n                <div class=\"post_info\">\n                    {post_info} {post_policy_link}\n                </div>\n                <input type=\"hidden\" id=\"add_que\" value=\"{main_question_code}\">\n                <input type=\"submit\" id=\"add_submit\" value=\"{post}\">\n            </div>\n        </form>\n        <div id=\"put_answers_here\"></div>\n    </div>\n</main>",
- "main_question_code": "p4q3",
- "main_question_num": "3\n",
- "main_question_text": "{p4q3}\n",
  "mob_about": "A digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.\n",
  "mob_header": "<header class=\"mob_content\">\n<div id=\"mob_nav\">\n    <div class=\"logo mob_logo\"><a href=\"{iso_root}index.html\"><span role=\"img\" aria-label=\"A vector graphic resembling an outline of a conch shell\"><img src=\"{_root}data/logo.svg\"></span><h2>{tok_stori}</h2></a></div>\n    <input id=\"mob_toggle\" type=\"checkbox\" />\n    <label for=\"mob_toggle\">\n        <span></span>\n        <span></span>\n        <span></span>\n    </label>\n    <nav>\n        <ul class=\"mob_nav_content\">\n        <li><div class=\"mob_link\"><a href=\"pillar1.html\">{pillar1}</a></div></li>\n        <li><div class=\"mob_link\"><a href=\"pillar2.html\">{pillar2}</a></div></li>\n        <li><div class=\"mob_link\"><a href=\"pillar3.html\">{pillar3}</a></div></li>\n        <li><div class=\"mob_link\"><a href=\"pillar4.html\">{pillar4}</a></div></li>\n        <li><div class=\"mob_link\"><a href=\"{switch_root}{_output_filename}\">{iso}</a></div></li>\n        <li><div class=\"mob_cc_wrap\">\n            <div class=\"mob_about\">{mob_about}</div>\n            <div class=\"mob_cc\">{tok_stori} | {sharing_stories} {cc_lisa_1} {cc_text}</div>\n\n        </div></li>\n        </ul>\n    </nav>\n</div>\n</header>",
  "more_questions": "<div class=\"row\">\n    <div><h2>{next}</h2></div>\n    <div class=\"list_wrap\">\n        <div class=\"question wide\">\n            <a href=\"{question_code_next}.html\">\n                <div class=\"blog {question_code_next} box1\">\n                    <div class=\"text_wrap\">\n                        <div class=\"type\">{pillar_text_next}</div>\n                        <div class=\"text\">{question_text_next}</div>\n                    </div>\n                    <div class=\"img\"></div>\n                </div>\n            </a>\n        </div>\n    </div>\n</div>",
@@ -301,8 +295,7 @@
  "pillar2": "Spirituality\n",
  "pillar3": "Culture\n",
  "pillar4": "Food\n",
- "pillar_text_next": "{pillar4}\n",
- "pillar_text_prev": "{pillar4}\n",
+ "pillar_text_next": "{pillar1}\n",
  "post": "Post\n",
  "post_info": "By sharing your knowledge, your responses will be available to the public. Please share responsibly.\n",
  "post_name": "What's your name?",
@@ -314,10 +307,8 @@
  "print_footer": "<div class=\"print_footer\">\n    <div class=\"print_cc\">\n        {tok_stori} | {sharing_stories} {cc_text}\n    </div>\n</div>",
  "print_pdf": "<div class=\"print\">{print_cover}{print_chunks}{print_footer}</div>\n",
  "question": "Question\n",
- "question_code_next": "p4q4\n",
- "question_code_prev": "p4q2\n",
- "question_text_next": "{p4q4}\n",
- "question_text_prev": "{p4q2}\n",
+ "question_code_next": "p1q1\n",
+ "question_text_next": "{p1q1}\n",
  "share": "Submit Answer\n",
  "share1": "Type your answer here (we support links for images and video)\n",
  "sharing_stories": "Sharing Stories\n",
@@ -325,7 +316,7 @@
  "show_answers": "{answers:show_answer}\n",
  "show_more": "Show more questions\n",
  "switch_root": "{_root}deu/",
- "title": "{tok_stori} | {pillar1} | {question} {main_question_num}",
+ "title": "{tok_stori} | {blog_text}",
  "tok_stori": "Tok Stori\n",
  "tok_stori_cc": "Tok Stori\n",
  "top": "Back up\n",
