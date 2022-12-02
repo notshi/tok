@@ -69,6 +69,9 @@ Vielleicht möchten Sie nach
 #^home2
 Hause gehen
 
+#^blog_text
+Blog
+
 #^p1q1
 Wen zählst du zu deiner Familie?
 
@@ -209,3 +212,9 @@ Gefördert im <a href="https://www.kulturstiftung-des-bundes.de/de/projekte/film
 
 #^funder_text_3
 Gefördert von der <a href="https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/staatsministerin-fuer-kultur-und-medien" target="_blank">Beauftragte der Bundesregierung für Kultur und Medien</a>.
+
+#^funder_text_4
+Gefördert im Programm Kultur Digital der Kulturstiftung des Bundes
+
+#^funder_text_5
+Gefördert von der Beauftragte der Bundesregierung für Kultur und Medien
