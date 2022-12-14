@@ -9,8 +9,7 @@
     <title>Tok Stori
  | Familie
  | Frage
- 1
-</title>
+ {main_question_num}</title>
 <style>
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}article,footer,header,main,menu,nav,section,summary{display:block;}
@@ -490,11 +489,15 @@ body            {background:#fff; color:#000; visibility:hidden;}
  1</div>
     <div class="print_title">Wen zählst du zu deiner Familie?
 </div>
+    <div id="answer_p1q1" class="comment_list_wrap">{answers:show_answer}
+</div>
 </div><div id="p1q2" class="print_chap">
     <div class="print_subtitle">Familie
  Frage
  2</div>
     <div class="print_title">Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
+</div>
+    <div id="answer_p1q2" class="comment_list_wrap">{answers:show_answer}
 </div>
 </div><div id="p1q3" class="print_chap">
     <div class="print_subtitle">Familie
@@ -502,11 +505,15 @@ body            {background:#fff; color:#000; visibility:hidden;}
  3</div>
     <div class="print_title">Wie weit kannst du deine Vorfahren zurückverfolgen? <span>Eltern, Großeltern, Urgroßeltern, weitere Generationen</span>
 </div>
+    <div id="answer_p1q3" class="comment_list_wrap">{answers:show_answer}
+</div>
 </div><div id="p1q4" class="print_chap">
     <div class="print_subtitle">Familie
  Frage
  4</div>
     <div class="print_title">Hat deine Familie immer in Deutschland gelebt? <span>Wenn nicht, woher sind sie gekommen?</span>
+</div>
+    <div id="answer_p1q4" class="comment_list_wrap">{answers:show_answer}
 </div>
 </div><div id="p1q5" class="print_chap">
     <div class="print_subtitle">Familie
@@ -514,11 +521,15 @@ body            {background:#fff; color:#000; visibility:hidden;}
  5</div>
     <div class="print_title">Wer in deiner Familie ist dir wichtig, und warum?
 </div>
+    <div id="answer_p1q5" class="comment_list_wrap">{answers:show_answer}
+</div>
 </div><div id="p2q1" class="print_chap">
     <div class="print_subtitle">Spiritualität
  Frage
  1</div>
     <div class="print_title">Wird in deiner Familie eine bestimmte religiöse oder spirituelle Praxis ausgeübt? <span>Warum ist das so oder warum nicht?</span>
+</div>
+    <div id="answer_p2q1" class="comment_list_wrap">{answers:show_answer}
 </div>
 </div><div id="p2q2" class="print_chap">
     <div class="print_subtitle">Spiritualität
@@ -526,11 +537,15 @@ body            {background:#fff; color:#000; visibility:hidden;}
  2</div>
     <div class="print_title">Ich fühle eine Verbindung zu einer höheren Macht, wenn ich …?
 </div>
+    <div id="answer_p2q2" class="comment_list_wrap">{answers:show_answer}
+</div>
 </div><div id="p2q3" class="print_chap">
     <div class="print_subtitle">Spiritualität
  Frage
  3</div>
     <div class="print_title">Welche Glaubensvorstellungen oder Religion gab es in Deutschland zu vorchristlicher Zeit?
+</div>
+    <div id="answer_p2q3" class="comment_list_wrap">{answers:show_answer}
 </div>
 </div><div id="p2q4" class="print_chap">
     <div class="print_subtitle">Spiritualität
@@ -538,11 +553,15 @@ body            {background:#fff; color:#000; visibility:hidden;}
  4</div>
     <div class="print_title">Was sind Gegenstände oder nicht-materielle Dinge, die deiner Meinung nach für Deutsche heilig sind?
 </div>
+    <div id="answer_p2q4" class="comment_list_wrap">{answers:show_answer}
+</div>
 </div><div id="p2q5" class="print_chap">
     <div class="print_subtitle">Spiritualität
  Frage
  5</div>
     <div class="print_title">Was denkst du über deutsche Missionare, die zu den pazifischen Inseln gereist sind, um ihre religiösen Ideen zu verbreiten?
+</div>
+    <div id="answer_p2q5" class="comment_list_wrap">{answers:show_answer}
 </div>
 </div><div id="p3q1" class="print_chap">
     <div class="print_subtitle">Kultur
@@ -550,11 +569,15 @@ body            {background:#fff; color:#000; visibility:hidden;}
  1</div>
     <div class="print_title">Ist das Oktoberfest ein kulturelles Ereignis für Touristen oder für Deutsche?
 </div>
+    <div id="answer_p3q1" class="comment_list_wrap">{answers:show_answer}
+</div>
 </div><div id="p3q2" class="print_chap">
     <div class="print_subtitle">Kultur
  Frage
  2</div>
     <div class="print_title">Was ist dein Lieblingswort oder -ausdruck in der deutschen Sprache? <span>Was ist damit gemeint?</span>
+</div>
+    <div id="answer_p3q2" class="comment_list_wrap">{answers:show_answer}
 </div>
 </div><div id="p3q3" class="print_chap">
     <div class="print_subtitle">Kultur
@@ -562,11 +585,15 @@ body            {background:#fff; color:#000; visibility:hidden;}
  3</div>
     <div class="print_title">Gibt es einen Ort in Deutschland, zu dem du eine besondere Verbindung hast? <span>Warum ist das so und wo liegt dieser Ort?</span>
 </div>
+    <div id="answer_p3q3" class="comment_list_wrap">{answers:show_answer}
+</div>
 </div><div id="p3q4" class="print_chap">
     <div class="print_subtitle">Spiritualität
  Frage
  4</div>
     <div class="print_title">Was sind typisch deutsche Musikinstrumente?
+</div>
+    <div id="answer_p3q4" class="comment_list_wrap">{answers:show_answer}
 </div>
 </div><div id="p3q5" class="print_chap">
     <div class="print_subtitle">Spiritualität
@@ -574,11 +601,15 @@ body            {background:#fff; color:#000; visibility:hidden;}
  5</div>
     <div class="print_title">Gibt es spezifisch deutsche Rituale oder Gebräuche zu Geburt und Tod?
 </div>
+    <div id="answer_p3q5" class="comment_list_wrap">{answers:show_answer}
+</div>
 </div><div id="p4q1" class="print_chap">
     <div class="print_subtitle">Essen
  Frage
  1</div>
     <div class="print_title">Erkläre, warum Brezeln für Deutsche wichtig sind?
+</div>
+    <div id="answer_p4q1" class="comment_list_wrap">{answers:show_answer}
 </div>
 </div><div id="p4q2" class="print_chap">
     <div class="print_subtitle">Essen
@@ -586,11 +617,15 @@ body            {background:#fff; color:#000; visibility:hidden;}
  2</div>
     <div class="print_title">Was ist der Ursprung von Bier in Deutschland? <span>Gibt es eine Geschichte dazu?</span>
 </div>
+    <div id="answer_p4q2" class="comment_list_wrap">{answers:show_answer}
+</div>
 </div><div id="p4q3" class="print_chap">
     <div class="print_subtitle">Essen
  Frage
  3</div>
     <div class="print_title">Gibt es ein Lebensmittel, ein Gericht oder ein Getränk, das für besondere Anlässe oder Zeremonien gedacht ist?
+</div>
+    <div id="answer_p4q3" class="comment_list_wrap">{answers:show_answer}
 </div>
 </div><div id="p4q4" class="print_chap">
     <div class="print_subtitle">Essen
@@ -598,11 +633,15 @@ body            {background:#fff; color:#000; visibility:hidden;}
  4</div>
     <div class="print_title">Gibt es einen Gegenstand, den man nur in einer deutschen Küche findet?
 </div>
+    <div id="answer_p4q4" class="comment_list_wrap">{answers:show_answer}
+</div>
 </div><div id="p4q5" class="print_chap">
     <div class="print_subtitle">Essen
  Frage
  5</div>
     <div class="print_title">Mein Lieblingsessen aus meiner Kindheit ist …?
+</div>
+    <div id="answer_p4q5" class="comment_list_wrap">{answers:show_answer}
 </div>
 </div>
 <div class="print_footer">
@@ -634,7 +673,7 @@ body            {background:#fff; color:#000; visibility:hidden;}
 </a></div></li>
         <li><div class="mob_link"><a href="pillar4.html">Essen
 </a></div></li>
-        <li><div class="mob_link"><a href="../p1q1.html">EN / DE</a></div></li>
+        <li><div class="mob_link"><a href="../zine.html">EN / DE</a></div></li>
         <li><div class="mob_cc_wrap">
             <div class="mob_about">Digitales Geschichtenformat, mit dem wir Menschen aus Deutschland einladen wollen, ihr persönliches oder geteiltes Verständnis von deutscher Kultur und Identität zu teilen. Unsere Fragen orientieren sich daran, was Menschen im Pazifik für das Verständnis von Deutschland interessieren könnte.
 </div>
@@ -655,7 +694,7 @@ body            {background:#fff; color:#000; visibility:hidden;}
             <div class="logo"><a href="../deu/index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="../data/logo.svg"></span><h2>Tok Stori
 </h2></a></div>
             <nav class="nav_content">
-    <div class="pillar p1 on"><a href="pillar1.html">Familie
+    <div class="pillar p1"><a href="pillar1.html">Familie
 </a></div>
     <div class="pillar p2"><a href="pillar2.html">Spiritualität
 </a></div>
@@ -665,102 +704,174 @@ body            {background:#fff; color:#000; visibility:hidden;}
 </a></div>
     <div class="about"><a href="#about_footer">Über
 </a></div>
-                <div class="translate"><a href="../p1q1.html">EN / DE</a></div>
+                <div class="translate"><a href="../zine.html">EN / DE</a></div>
             </nav>
         </div>
     </div>
 </header>
-    <main class="main_content row">
-    <div class="list_wrap">
-            <div class="question wide current">
-            <div class="blog p1q1">
-                <div class="text_wrap">
-                    <div class="type"><span>Familie
-
-</span> Frage
- 1
+    <div id="p1q1" class="print_chap">
+    <div class="print_subtitle">Familie
+ Frage
+ 1</div>
+    <div class="print_title">Wen zählst du zu deiner Familie?
 </div>
-                    <div class="text">Wen zählst du zu deiner Familie?
-
-</div>
-                </div>
-                <div class="img">
-                    <span role="img" aria-label="{p1q1_alt}
-"></span>
-                    <div class="img_text">{p1q1_cc}<span>CC BY-SA 4.0 Übersee-Museum Bremen
-</span>
-</div>
-                </div>
-            </div>
-        </div>
-        <div class="info_wrap">
-            <div class="item_wrap">
-                <div class="item_star">*</div>
-                <div class="item_text">{p1q1_item}
-</div>
-            </div>
-            <div class="post_link_wrap">
-                <a href="#reply">
-                    <div class="post_link_text"><img src="../data/post_icon.svg">Antwort senden
-</div>
-                </a>
-            </div>
-        </div>
-    </div>
     <div id="answer_p1q1" class="comment_list_wrap">{answers:show_answer}
 </div>
-    <div class="post_wrap">
-        <span id="reply"></span>
-        <form id="add_form">
-            <div class="post_area">
-                <div class="post_question"><span>Frage
-: </span> Wen zählst du zu deiner Familie?
-
+</div><div id="p1q2" class="print_chap">
+    <div class="print_subtitle">Familie
+ Frage
+ 2</div>
+    <div class="print_title">Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
 </div>
-                <textarea type="text" id="add_post" name="add_post" placeholder="Gib‘ hier bitte deine Antwort ein (Links zu Bildern und Videos sind erlaubt)
-"></textarea>
-                <div class="post_more">
-                    <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="Wie heißt du?
-"></div>
-                </div>
-            </div>
-            <div class="post_foot_wrap">
-                <div class="post_info">
-                    Wenn du hier eine Antwort einträgst, wird sie für alle sichtbar sein. Bitte teile deine Meinung verantwortungsvoll.
- <a href="https://www.uebersee-museum.de/en/privacy-policy/">Datenschutzerklärung</a>
-
-                </div>
-                <input type="hidden" id="add_que" value="p1q1">
-                <input type="submit" id="add_submit" value="Kommentar
-">
-            </div>
-        </form>
-        <div id="put_answers_here"></div>
-    </div>
-</main>
-    <div class="row">
-    <div><h2>Nächste Fragen
-</h2></div>
-    <div class="list_wrap">
-        <div class="question wide">
-            <a href="p1q2
-.html">
-                <div class="blog p1q2
- box1">
-                    <div class="text_wrap">
-                        <div class="type">Familie
-
+    <div id="answer_p1q2" class="comment_list_wrap">{answers:show_answer}
 </div>
-                        <div class="text">Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
+</div><div id="p1q3" class="print_chap">
+    <div class="print_subtitle">Familie
+ Frage
+ 3</div>
+    <div class="print_title">Wie weit kannst du deine Vorfahren zurückverfolgen? <span>Eltern, Großeltern, Urgroßeltern, weitere Generationen</span>
+</div>
+    <div id="answer_p1q3" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p1q4" class="print_chap">
+    <div class="print_subtitle">Familie
+ Frage
+ 4</div>
+    <div class="print_title">Hat deine Familie immer in Deutschland gelebt? <span>Wenn nicht, woher sind sie gekommen?</span>
+</div>
+    <div id="answer_p1q4" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p1q5" class="print_chap">
+    <div class="print_subtitle">Familie
+ Frage
+ 5</div>
+    <div class="print_title">Wer in deiner Familie ist dir wichtig, und warum?
+</div>
+    <div id="answer_p1q5" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p2q1" class="print_chap">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 1</div>
+    <div class="print_title">Wird in deiner Familie eine bestimmte religiöse oder spirituelle Praxis ausgeübt? <span>Warum ist das so oder warum nicht?</span>
+</div>
+    <div id="answer_p2q1" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p2q2" class="print_chap">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 2</div>
+    <div class="print_title">Ich fühle eine Verbindung zu einer höheren Macht, wenn ich …?
+</div>
+    <div id="answer_p2q2" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p2q3" class="print_chap">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 3</div>
+    <div class="print_title">Welche Glaubensvorstellungen oder Religion gab es in Deutschland zu vorchristlicher Zeit?
+</div>
+    <div id="answer_p2q3" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p2q4" class="print_chap">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 4</div>
+    <div class="print_title">Was sind Gegenstände oder nicht-materielle Dinge, die deiner Meinung nach für Deutsche heilig sind?
+</div>
+    <div id="answer_p2q4" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p2q5" class="print_chap">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 5</div>
+    <div class="print_title">Was denkst du über deutsche Missionare, die zu den pazifischen Inseln gereist sind, um ihre religiösen Ideen zu verbreiten?
+</div>
+    <div id="answer_p2q5" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p3q1" class="print_chap">
+    <div class="print_subtitle">Kultur
+ Frage
+ 1</div>
+    <div class="print_title">Ist das Oktoberfest ein kulturelles Ereignis für Touristen oder für Deutsche?
+</div>
+    <div id="answer_p3q1" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p3q2" class="print_chap">
+    <div class="print_subtitle">Kultur
+ Frage
+ 2</div>
+    <div class="print_title">Was ist dein Lieblingswort oder -ausdruck in der deutschen Sprache? <span>Was ist damit gemeint?</span>
+</div>
+    <div id="answer_p3q2" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p3q3" class="print_chap">
+    <div class="print_subtitle">Kultur
+ Frage
+ 3</div>
+    <div class="print_title">Gibt es einen Ort in Deutschland, zu dem du eine besondere Verbindung hast? <span>Warum ist das so und wo liegt dieser Ort?</span>
+</div>
+    <div id="answer_p3q3" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p3q4" class="print_chap">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 4</div>
+    <div class="print_title">Was sind typisch deutsche Musikinstrumente?
+</div>
+    <div id="answer_p3q4" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p3q5" class="print_chap">
+    <div class="print_subtitle">Spiritualität
+ Frage
+ 5</div>
+    <div class="print_title">Gibt es spezifisch deutsche Rituale oder Gebräuche zu Geburt und Tod?
+</div>
+    <div id="answer_p3q5" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p4q1" class="print_chap">
+    <div class="print_subtitle">Essen
+ Frage
+ 1</div>
+    <div class="print_title">Erkläre, warum Brezeln für Deutsche wichtig sind?
+</div>
+    <div id="answer_p4q1" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p4q2" class="print_chap">
+    <div class="print_subtitle">Essen
+ Frage
+ 2</div>
+    <div class="print_title">Was ist der Ursprung von Bier in Deutschland? <span>Gibt es eine Geschichte dazu?</span>
+</div>
+    <div id="answer_p4q2" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p4q3" class="print_chap">
+    <div class="print_subtitle">Essen
+ Frage
+ 3</div>
+    <div class="print_title">Gibt es ein Lebensmittel, ein Gericht oder ein Getränk, das für besondere Anlässe oder Zeremonien gedacht ist?
+</div>
+    <div id="answer_p4q3" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p4q4" class="print_chap">
+    <div class="print_subtitle">Essen
+ Frage
+ 4</div>
+    <div class="print_title">Gibt es einen Gegenstand, den man nur in einer deutschen Küche findet?
+</div>
+    <div id="answer_p4q4" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div><div id="p4q5" class="print_chap">
+    <div class="print_subtitle">Essen
+ Frage
+ 5</div>
+    <div class="print_title">Mein Lieblingsessen aus meiner Kindheit ist …?
+</div>
+    <div id="answer_p4q5" class="comment_list_wrap">{answers:show_answer}
+</div>
+</div>
 
-</div>
-                    </div>
-                    <div class="img"></div>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
+    {print_zine}
     <footer class="foot_content" id="about_footer">
     <div class="row">
         <div class="about_wrap">

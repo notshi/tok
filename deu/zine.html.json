@@ -1,6 +1,6 @@
 {
  "_dirname": "{_root}deu",
- "_filename": "{_root}deu/p3q4.html",
+ "_filename": "{_root}deu/zine.html",
  "_flags": {
   "answers_example": {
    "form": "json"
@@ -36,9 +36,6 @@
    "trim": "ends"
   },
   "main_question": {
-   "trim": "ends"
-  },
-  "main_question_code": {
    "trim": "ends"
   },
   "mob_header": {
@@ -100,10 +97,10 @@
   }
  },
  "_output_chunkname": "html",
- "_output_filename": "p3q4.html",
+ "_output_filename": "zine.html",
  "_root": "../",
  "_site": "{_root}",
- "_sourcename": "deu/p3q4.html",
+ "_sourcename": "deu/zine.html",
  "about": "Über\n",
  "about_footer": "<b>Tok-Stori</b> | <b>Geschichten-Austausch</b> ist ein digitales Geschichtenformat, mit dem wir Menschen aus Deutschland einladen wollen, ihr persönliches oder geteiltes Verständnis von deutscher Kultur und Identität zu teilen. Unsere Fragen orientieren sich daran, was Menschen im Pazifik für das Verständnis von Deutschland interessieren könnte.\n",
  "about_footer1": "Wir würdest du Menschen im Pazifik erklären, was Deutschland ist?\n",
@@ -124,7 +121,7 @@
   }
  ],
  "blog_text": "Blog\n",
- "body": "<div class=\"main_wrap\">\n    {header1}\n    {p1}\n    {p2}\n    {p3_on}\n    {p4}\n    {header2}\n    {main_question}\n    {more_questions}\n    {footer}\n</div>",
+ "body": "<div class=\"main_wrap\">\n    {header1}\n    {p1}\n    {p2}\n    {p3}\n    {p4}\n    {header2}\n    {print_chunks}\n    {print_zine}\n    {footer}\n</div>",
  "cc_image": "CC BY-SA 4.0 Übersee-Museum Bremen\n",
  "cc_link": "<a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.de\">CC BY-SA 4.0</a>\n",
  "cc_lisa_1": "von\n",
@@ -151,14 +148,7 @@
  "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <script src=\"{_root}js/tok.js\"></script>\n    <script>\n        require(\"tok\").setup({})\n    </script>\n    {head}\n</head>\n\n<!-- Matomo -->\n<script type=\"text/javascript\">\n  var _paq = window._paq = window._paq || [];\n  /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n  _paq.push(['trackPageView']);\n  _paq.push(['enableLinkTracking']);\n  (function() {\n    var u=\"//matomo.uebersee-museum.de/\";\n    _paq.push(['setTrackerUrl', u+'matomo.php']);\n    _paq.push(['setSiteId', '2']);\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);\n  })();\n</script>\n<noscript><p><img src=\"//matomo.uebersee-museum.de/matomo.php?idsite=2&amp;rec=1\" style=\"border:0;\" alt=\"\" /></p></noscript>\n<!-- End Matomo Code -->\n\n<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-NEFJK0DRTG\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-NEFJK0DRTG');\n\n  gtag(\"consent\", \"default\", {\n  ad_storage: \"denied\",\n  analytics_storage: \"denied\",\n  functionality_storage: \"denied\",\n  personalization_storage: \"denied\",\n  security_storage: \"denied\"\n  });\n</script>\n\n<body>{print_pdf}{body}</body>\n</html>",
  "iso": "EN / DE",
  "iso_root": "{_root}deu/",
- "main_cc_text": "{p3q4_cc}<span>{cc_image}</span>\n",
- "main_img_alt_text": "{p3q4_alt}\n",
- "main_item_text": "{p3q4_item}\n",
- "main_pillar_text": "{pillar3}\n",
  "main_question": "<main class=\"main_content row\">\n    <div class=\"list_wrap\">\n            <div class=\"question wide current\">\n            <div class=\"blog {main_question_code}\">\n                <div class=\"text_wrap\">\n                    <div class=\"type\"><span>{main_pillar_text}</span> {question} {main_question_num}</div>\n                    <div class=\"text\">{main_question_text}</div>\n                </div>\n                <div class=\"img\">\n                    <span role=\"img\" aria-label=\"{main_img_alt_text}\"></span>\n                    <div class=\"img_text\">{main_cc_text}</div>\n                </div>\n            </div>\n        </div>\n        <div class=\"info_wrap\">\n            <div class=\"item_wrap\">\n                <div class=\"item_star\">*</div>\n                <div class=\"item_text\">{main_item_text}</div>\n            </div>\n            <div class=\"post_link_wrap\">\n                <a href=\"#reply\">\n                    <div class=\"post_link_text\"><img src=\"{_root}data/post_icon.svg\">{share}</div>\n                </a>\n            </div>\n        </div>\n    </div>\n    <div id=\"answer_{main_question_code}\" class=\"comment_list_wrap\">{show_answers}</div>\n    <div class=\"post_wrap\">\n        <span id=\"reply\"></span>\n        <form id=\"add_form\">\n            <div class=\"post_area\">\n                <div class=\"post_question\"><span>{question}: </span> {main_question_text}</div>\n                <textarea type=\"text\" id=\"add_post\" name=\"add_post\" placeholder=\"{share1}\"></textarea>\n                <div class=\"post_more\">\n                    <div class=\"post_name\"><input type=\"text\" id=\"add_name\" name=\"add_name\" placeholder=\"{post_name}\"></div>\n                </div>\n            </div>\n            <div class=\"post_foot_wrap\">\n                <div class=\"post_info\">\n                    {post_info} {post_policy_link}\n                </div>\n                <input type=\"hidden\" id=\"add_que\" value=\"{main_question_code}\">\n                <input type=\"submit\" id=\"add_submit\" value=\"{post}\">\n            </div>\n        </form>\n        <div id=\"put_answers_here\"></div>\n    </div>\n</main>",
- "main_question_code": "p3q4",
- "main_question_num": "4\n",
- "main_question_text": "{p3q4}\n",
  "mob_about": "Digitales Geschichtenformat, mit dem wir Menschen aus Deutschland einladen wollen, ihr persönliches oder geteiltes Verständnis von deutscher Kultur und Identität zu teilen. Unsere Fragen orientieren sich daran, was Menschen im Pazifik für das Verständnis von Deutschland interessieren könnte.\n",
  "mob_header": "<header class=\"mob_content\">\n<div id=\"mob_nav\">\n    <div class=\"logo mob_logo\"><a href=\"{iso_root}index.html\"><span role=\"img\" aria-label=\"A vector graphic resembling an outline of a conch shell\"><img src=\"{_root}data/logo.svg\"></span><h2>{tok_stori}</h2></a></div>\n    <input id=\"mob_toggle\" type=\"checkbox\" />\n    <label for=\"mob_toggle\">\n        <span></span>\n        <span></span>\n        <span></span>\n    </label>\n    <nav>\n        <ul class=\"mob_nav_content\">\n        <li><div class=\"mob_link\"><a href=\"pillar1.html\">{pillar1}</a></div></li>\n        <li><div class=\"mob_link\"><a href=\"pillar2.html\">{pillar2}</a></div></li>\n        <li><div class=\"mob_link\"><a href=\"pillar3.html\">{pillar3}</a></div></li>\n        <li><div class=\"mob_link\"><a href=\"pillar4.html\">{pillar4}</a></div></li>\n        <li><div class=\"mob_link\"><a href=\"{switch_root}{_output_filename}\">{iso}</a></div></li>\n        <li><div class=\"mob_cc_wrap\">\n            <div class=\"mob_about\">{mob_about}</div>\n            <div class=\"mob_cc\">{tok_stori} | {sharing_stories} {cc_lisa_1} {cc_text}</div>\n\n        </div></li>\n        </ul>\n    </nav>\n</div>\n</header>",
  "more_questions": "<div class=\"row\">\n    <div><h2>{next}</h2></div>\n    <div class=\"list_wrap\">\n        <div class=\"question wide\">\n            <a href=\"{question_code_next}.html\">\n                <div class=\"blog {question_code_next} box1\">\n                    <div class=\"text_wrap\">\n                        <div class=\"type\">{pillar_text_next}</div>\n                        <div class=\"text\">{question_text_next}</div>\n                    </div>\n                    <div class=\"img\"></div>\n                </div>\n            </a>\n        </div>\n    </div>\n</div>",
@@ -301,23 +291,17 @@
  "pillar2": "Spiritualität\n",
  "pillar3": "Kultur\n",
  "pillar4": "Essen\n",
- "pillar_text_next": "{pillar3}\n",
- "pillar_text_prev": "{pillar3}\n",
  "post": "Kommentar\n",
  "post_info": "Wenn du hier eine Antwort einträgst, wird sie für alle sichtbar sein. Bitte teile deine Meinung verantwortungsvoll.\n",
  "post_name": "Wie heißt du?\n",
  "post_policy_link": "<a href=\"https://www.uebersee-museum.de/en/privacy-policy/\">Datenschutzerklärung</a>\n",
  "post_url": "Add a media link eg. https://web.com/image.jpg",
- "print_chunk": "<div id=\"{_it.id}\" class=\"print_chap\">\n    <div class=\"print_subtitle\">{_it.sub}</div>\n    <div class=\"print_title\">{_it.title}</div>\n</div>",
+ "print_chunk": "<div id=\"{_it.id}\" class=\"print_chap\">\n    <div class=\"print_subtitle\">{_it.sub}</div>\n    <div class=\"print_title\">{_it.title}</div>\n    <div id=\"answer_{_it.id}\" class=\"comment_list_wrap\">{show_answers}</div>\n</div>",
  "print_chunks": "{page_content:print_chunk}\n",
  "print_cover": "<div class=\"print_cover\">\n    <img src=\"{_root}data/logo.svg\">\n    <div class=\"print_cover_subtitle\">{about_footer1}</div>\n    <div class=\"print_cover_title\">{about_footer}</div>\n    <div class=\"print_cover_by\">By {cc_text}</div>\n    <div class=\"print_cover_cc\">{funder_text_1} {funder_text_2} {funder_text_3}</div>\n</div>\n",
  "print_footer": "<div class=\"print_footer\">\n    <div class=\"print_cc\">\n        {tok_stori} | {sharing_stories} {cc_text}\n    </div>\n</div>",
  "print_pdf": "<div class=\"print\">{print_cover}{print_chunks}{print_footer}</div>\n",
  "question": "Frage\n",
- "question_code_next": "p3q5\n",
- "question_code_prev": "p3q3\n",
- "question_text_next": "{p3q5}\n",
- "question_text_prev": "{p3q3}\n",
  "share": "Antwort senden\n",
  "share1": "Gib‘ hier bitte deine Antwort ein (Links zu Bildern und Videos sind erlaubt)\n",
  "sharing_stories": "Geschichten-Austausch\n",
@@ -325,7 +309,7 @@
  "show_answers": "{answers:show_answer}\n",
  "show_more": "Weitere Fragen anzeigen\n",
  "switch_root": "{_root}",
- "title": "{tok_stori} | {pillar3} | {question} {main_question_num}",
+ "title": "{tok_stori} | {pillar1} | {question} {main_question_num}",
  "tok_stori": "Tok Stori\n",
  "tok_stori_cc": "Geschichten-Austausch\n",
  "top": "Top\n",
