@@ -1,0 +1,28 @@
+
+#^------------------------------
+#^title trim=ends
+
+{tok_stori} | {pillar1} | {question} {main_question_num}
+
+#^------------------------------
+#^body trim=ends
+
+<div class="main_wrap">
+    {header1}
+    {p1}
+    {p2}
+    {p3}
+    {p4}
+    {header2}
+    {print_chunks}
+    {print_zine}
+    {footer}
+</div>
+
+
+#^print_chunk trim=ends
+<div id="{_it.id}" class="print_chap">
+    <div class="print_subtitle">{_it.sub}</div>
+    <div class="print_title">{_it.title}</div>
+    <div id="answer_{_it.id}" class="comment_list_wrap">{show_answers}</div>
+</div>
