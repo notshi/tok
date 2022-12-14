@@ -313,12 +313,20 @@ a.mob_print_link    {display:none; padding:15px;}
 .print_subtitle     {font-style:italic; font-weight:300;}
 .print_title span   {display:block; font-size:19px; line-height:24px; padding-top:10px;}
 .print_title        {font-size:30px; line-height:28px; padding:10px 0;}
-.print_answers      {}
 .print_name         {font-weight:700; padding-top:20px;}
-.print_post         {}
-.print_footer       {display:flex; justify-content:space-between; border-top:1px solid #000; padding-top:20px; position:fixed; left:0; bottom:0; width:100%; height:15mm;}
-.print_cc           {font-size:11px;}
+.print_footer       {display:flex; justify-content:space-between; border-bottom:1px solid #000; padding-bottom:0px; position:fixed; left:0px; bottom:0px; width:100%; height:5mm; transform:rotate(-90deg); transform-origin:top left;}
+.print_cc           {font-size:8px;}
 .print              {display:none;}
+
+/* Zine CSS  */
+.print_wrap         {background-color:#ffffff5e; width:calc(50% - 15px); border-left:1px solid #63a7ff; border-bottom:0; padding:4em 6em; margin-bottom:2em; box-shadow:3px 3px 3px #e1c5c51c;}
+.print_comment      {margin-top:20px;}
+.print_comment .comment_wrap{width:100%;}
+.print_comment .comment     {background-color:transparent; padding:0; box-shadow:0;}
+.print_comment .comment .comment_name {font-size:22px; line-height:24px;}
+.print_comment .comment .comment_text {font-size:22px; line-height:24px; margin-top:10px;}
+.print_info_wrap    {margin-bottom:20px; flex-wrap:wrap; justify-content:space-evenly; display:flex; width:100%; align-items:center;}
+.print_info_text    {font-size:26px; line-height:30px; width:70%;}
 
 @media (min-width: 360px) and (max-width: 767.98px) {
 html            {font-size:18px;}
@@ -413,9 +421,12 @@ a.cc_link       {display:inline;}
 }
 
 @media print {
-@page           {size:148mm 210mm; margin-top:20mm; margin-bottom:10mm;}
+@page           {size:148mm 210mm; margin-top:15mm; margin-bottom:20mm;}
 body            {background:#fff; color:#000; visibility:hidden;}
 .main_wrap      {display:none;}
 .print          {display:block; visibility:visible;}
+.print_comment .comment .comment_name {font-size:16px; line-height:18px;}
+.print_comment .comment .comment_text {font-size:18px; line-height:22px; margin-top:10px;}
 .print_footer   {display:flex;}
+
 }

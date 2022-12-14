@@ -6,7 +6,7 @@
 
 #^------------------------------
 #^body trim=ends
-
+{print_pdf}
 <div class="main_wrap">
     {header1}
     {p1}
@@ -14,15 +14,25 @@
     {p3}
     {p4}
     {header2}
-    {print_chunks}
-    {print_zine}
+    {print_zines}
     {footer}
 </div>
 
+#^print_zines
+<main class="main_content row">
+<div class="print_info_wrap">
+    <div class="print_info_text">{about_zine}</div>
+    <div>{print_zine_link}</div>
+</div>
+<div class="list_wrap">
+{page_content:print_zine}
+</div>
+</main>
 
-#^print_chunk trim=ends
-<div id="{_it.id}" class="print_chap">
+
+#^print_zine trim=ends
+<div id="{_it.id}" class="print_wrap">
     <div class="print_subtitle">{_it.sub}</div>
     <div class="print_title">{_it.title}</div>
-    <div id="answer_{_it.id}" class="comment_list_wrap">{show_answers}</div>
+    <div id="answer_{_it.id}" class="print_comment">{show_answers}</div>
 </div>
