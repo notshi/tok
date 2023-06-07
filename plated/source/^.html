@@ -53,11 +53,11 @@
 <div class="home">{home1} <a href="{iso_root}index.html">{home2}</a>.</div>
 
 #^header trim=ends
-<header class="head_content">
+<header role="menubar" aria-label="Head" class="head_content">
     <div class="row">
         <div class="nav_wrap">
             <div class="logo"><a href="{iso_root}index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img alt="{alt_tok_logo_text}" src="{_root}data/logo.svg"></span><h1>{tok_stori}</h1></a></div>
-            <nav class="nav_content">
+            <nav aria-label="Main" class="nav_content">
                 <div class="pillar p1"><a href="pillar1.html">{pillar1}</a></div>
                 <div class="pillar p2"><a href="pillar2.html">{pillar2}</a></div>
                 <div class="pillar p3"><a href="pillar3.html">{pillar3}</a></div>
@@ -71,11 +71,11 @@
 
 #^header1 trim=ends
 {mob_header}
-<header class="head_content">
+<header role="menubar" aria-label="Mobile Head" class="head_content">
     <div class="row">
         <div class="nav_wrap">
             <div class="logo"><a href="{iso_root}index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img alt="{alt_tok_logo_text}" src="{_root}data/logo.svg"></span><h1>{tok_stori}</h1></a></div>
-            <nav class="nav_content">
+            <nav aria-label="Mobile Main" class="nav_content">
 
 #^header2 trim=ends
                 <div class="about"><a href="#about_footer">{about}</a></div>
@@ -116,18 +116,19 @@
         <span class="aria-invisible">Menu navigation</span>
         <span></span>
     </label>
-    <nav>
+    <nav aria-label="Mobile Main">
         <ul class="mob_nav_content">
         <li><div class="mob_link"><a href="pillar1.html">{pillar1}</a></div></li>
         <li><div class="mob_link"><a href="pillar2.html">{pillar2}</a></div></li>
         <li><div class="mob_link"><a href="pillar3.html">{pillar3}</a></div></li>
         <li><div class="mob_link"><a href="pillar4.html">{pillar4}</a></div></li>
         <li><div class="mob_link"><a href="{switch_root}{_output_filename}">{iso}</a></div></li>
-        <li><div class="mob_cc_wrap">
+        <li>
+			<div class="mob_cc_wrap">
             <div class="mob_about">{mob_about}</div>
             <div class="mob_cc">{tok_stori} | {sharing_stories} {cc_lisa_1} {cc_text}</div>
-
-        </div></li>
+			</div>
+        </li>
         </ul>
     </nav>
 </div>
@@ -137,7 +138,7 @@
 <footer class="foot_content" id="about_footer">
     <div class="row">
         <div class="about_wrap">
-            <div class="about"><h2>{about}</h2></div>
+            <div class="about"><h3>{about}</h3></div>
             <div class="about_text">
                 <div class="about_text_title">{about_footer1}</div>
                 {about_footer}
@@ -169,8 +170,8 @@
 <a class="mob_print_link" href="{_root}data/Tok_Stori.pdf">{get_zine}</a>
 
 #^more_questions trim=ends
-<div class="row">
-    <div><h3>{next}</h3></div>
+<div role="complementary" aria-label="Next Question" class="row">
+    <div><h2>{next}</h2></div>
     <div class="list_wrap">
         <div class="question wide">
             <a href="{question_code_next}.html">
@@ -219,17 +220,17 @@
         <form id="add_form">
             <div class="post_area">
                 <div class="post_question"><span>{question}: </span> {main_question_text}</div>
-                <textarea type="text" id="add_post" name="add_post" placeholder="{share1}"></textarea>
+                <textarea title="Type your answer" type="text" id="add_post" name="add_post" placeholder="{share1}"></textarea>
                 <div class="post_more">
-                    <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="{post_name}"></div>
+                    <div class="post_name"><input title="Add a name" type="text" id="add_name" name="add_name" placeholder="{post_name}"></div>
                 </div>
             </div>
             <div class="post_foot_wrap">
                 <div class="post_info">
                     {post_info} {post_policy_link}
                 </div>
-                <input type="hidden" id="add_que" value="{main_question_code}">
-                <input type="submit" id="add_submit" value="{post}">
+                <input title="Question code number" type="hidden" id="add_que" value="{main_question_code}">
+                <input title="Submit button" type="submit" id="add_submit" value="{post}">
             </div>
         </form>
         <div id="put_answers_here"></div>
