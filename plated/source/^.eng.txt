@@ -158,7 +158,7 @@ Back up
 How would you explain Germany to people of the Pacific?
 
 #^about_footer
-<b>Tok Stori</b> | <b>Geschichten-Austausch</b> is a digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.
+Tok Stori | Geschichten-Austausch is a digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.
 
 #^about_zine
 Get a PDF of all the questions and submitted answers - handy when you want a digital zine on-the-go. <b>Best saved as an A5 size.</b>
