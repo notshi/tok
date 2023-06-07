@@ -213,3 +213,12 @@ Funded by the Digital Culture Programme of the German Federal Cultural Foundatio
 
 #^funder_text_5
 Funded by the Federal Government Commissioner for Culture and the Media
+
+#^alt_tok_logo_text
+A vector graphic resembling an outline of a conch shell
+
+#^alt_funder_text_1
+Logo for Digital Culture Programme of the German Federal Cultural Foundation
+
+#^alt_funder_text_2
+Logo for Federal Government Commissioner for Culture and the Media

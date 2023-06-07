@@ -224,3 +224,12 @@ Gefördert im Programm Kultur Digital der Kulturstiftung des Bundes
 
 #^funder_text_5
 Gefördert von der Beauftragte der Bundesregierung für Kultur und Medien
+
+#^alt_tok_logo_text
+Eine Vektorgrafik, die dem Umriss einer Muschelschale ähnelt
+
+#^alt_funder_text_1
+Logo für das Programm Digitale Kultur der Kulturstiftung des Bundes
+
+#^alt_funder_text_2
+Logo der Beauftragten der Bundesregierung für Kultur und Medien
