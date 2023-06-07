@@ -118,11 +118,20 @@
 html    {font-size:18px; scroll-behavior:smooth;}
 body	{background:#ffefef; font-family:'Bitter',serif; font-size:18px; font-weight:400; line-height:normal; color:#111; max-width:100%; overflow-x:hidden; padding:0; margin:0;}
 h1		{font-size:1.5em; font-weight:normal;}
-h2      {font-size:2.0em; font-weight:500; color:#736b62;}
-h3		{font-size:1.5em; font-weight:normal;}
+h2		{font-size:1.5em; font-weight:normal;}
+h3      {font-size:2.0em; font-weight:500; color:#736b62;}
 b		{font-weight:700;}
 i		{font-style:italic;}
 a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
+
+*:focus {outline:2px solid transparent;}
+*:focus:not(:focus-visible) {outline:2px solid transparent; box-shadow:none;}
+
+// for overriding FF's dotted outline
+*:focus-visible		{outline: 3px solid #918170;}
+
+input:focus			{outline:2px solid transparent; box-shadow: 0 0 0 2px #918170;}
+input:focus-visible {outline:2px solid #918170; background-color:#fff; border-color:#918170;}
 
 .aria-invisible {border:0; clip:rect(0 0 0 0); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px;}
 
@@ -228,9 +237,9 @@ input#add_submit,
 
 .item_wrap      {display:flex; align-items:flex-start;}
 .item_text      {width:300px; margin-right:30px; background-color:#eee6e6; padding:5px 10px;}
-.item_star      {font-size:100px; line-height:80px; margin-right:10px; color:#e6ba66;}
+.item_star      {font-size:100px; line-height:80px; margin-right:10px; color:#9f600e;}
 .post_link_wrap {min-width:500px;}
-.post_link_text {color:#fff; background-color:#32992a; padding:15px 30px; border-radius:12px; font-size:38px; border:1px solid #224f31; box-shadow:10px 10px #111; text-align:center; transition:all 0.2s ease-out;}
+.post_link_text {color:#fff; background-color:#208718; padding:15px 30px; border-radius:12px; font-size:38px; border:1px solid #224f31; box-shadow:10px 10px #111; text-align:center; transition:all 0.2s ease-out;}
 .post_link_text img     {width:45px; margin-right:10px;}
 .post_link_text:hover,
 .post_link_text:focus   {background-color:#33682f; box-shadow:0px 0px #111; transform:translateY(0.20em);}
@@ -267,7 +276,6 @@ textarea#add_post::placeholder,
 input#add_url::placeholder,
 input#add_name::placeholder     {font-family:'Bitter',serif; font-size:30px; line-height:36px; color:#777; letter-spacing:-1.2px;}
 input#add_url::placeholder      {font-size:24px; line-height:26px;}
-textarea:focus, input:focus     {outline:0;}
 input#add_submit                {background:#111; color:#fff; padding:10px 40px; border:0; border-radius:6px; font-size:26px; transition:all 0.5s ease-out; margin-top:30px;}
 input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 
@@ -280,8 +288,8 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .post_media     {background:url('./data/media_post.svg'); background-size:cover; width:30px; height:33px;}
 .post_image     {background:url('./data/image_post.svg'); background-size:cover; width:50px; height:44px;}
 .post_foot_wrap {display:flex; width:100%; justify-content:space-between; align-items:center;}
-.post_info      {padding:0 50px 0 20px; font-size:16px; line-height:20px; font-style:italic;}
-.post_info a    {text-decoration:underline; color:#736b62;}
+.post_info      {padding:0 50px 0 20px; font-size:16px; line-height:24px; font-style:italic;}
+.post_info a    {text-decoration:underline; font-style:normal;}
 
 .blog.box1 .img {height:250px;}
 .blog.box1      {justify-content:space-between; height:100%;}
@@ -289,7 +297,7 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .text_wrap      {padding:20px 35px; width:100%;}
 .type           {font-size:22px; font-style:italic; font-weight:300;}
 .text           {font-size:42px; letter-spacing:-1px; line-height:46px; margin-top:10px;}
-.type span      {font-weight:400; font-style:normal; color:#777;}
+.type span      {font-weight:400; font-style:normal; color:#555;}
 .text span      {display:block; font-size:28px; line-height:32px; padding-top:10px;}
 .box1           {flex-flow:column;}
 .box2 .type     {width:50%; border-left:1px solid; margin-left:auto; padding-left:20px; height:100px;}
@@ -302,7 +310,7 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .about_text_zine    {font-size:18px; text-align:right;}
 .cc_text        {font-size:16px; line-height:24px;}
 .cc_text img    {height:22px; margin-left:3px; vertical-align:text-bottom;}
-.cc_text a      {color:#736b62;}
+.cc_text a      {color:#444; text-decoration:underline;}
 .code           {font-size:16px;}
 .support        {display:flex; align-items:center; font-size:16px;}
 .support img    {width:40px; padding-left:10px;}
@@ -357,7 +365,7 @@ body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .blog_author,
 .blog_text p,
 .blog_text p.intro  {font-size:1.0rem; line-height:normal; letter-spacing:inherit;}
-h3              {font-size:1.2rem; line-height:inherit;}
+h2              {font-size:1.2rem; line-height:inherit;}
 .type,
 .more,
 .comment_text,
@@ -421,7 +429,7 @@ body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .wide .blog .img{height:initial;}
 .blog.full .img,
 .blog.box1 .img {height:150px;}
-h1, h3,
+h1, h2,
 .comment_name   {font-size:1.5rem; line-height:inherit;}
 .text           {font-size:1.8rem; line-height:inherit;}
 .about_text     {font-size:1.0rem; line-height:inherit;}
@@ -485,7 +493,7 @@ body            {background:#fff; color:#000; visibility:hidden;}
         <span class="aria-invisible">Menu navigation</span>
         <span></span>
     </label>
-    <nav>
+    <nav aria-label="Mobile Main">
         <ul class="mob_nav_content">
         <li><div class="mob_link"><a href="pillar1.html">Family
 </a></div></li>
@@ -496,7 +504,8 @@ body            {background:#fff; color:#000; visibility:hidden;}
         <li><div class="mob_link"><a href="pillar4.html">Food
 </a></div></li>
         <li><div class="mob_link"><a href="./deu/p2q5.html">EN / DE</a></div></li>
-        <li><div class="mob_cc_wrap">
+        <li>
+			<div class="mob_cc_wrap">
             <div class="mob_about">A digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.
 </div>
             <div class="mob_cc">Tok Stori
@@ -504,19 +513,19 @@ body            {background:#fff; color:#000; visibility:hidden;}
  by
  Lisa Hilli, Shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
 </div>
-
-        </div></li>
+			</div>
+        </li>
         </ul>
     </nav>
 </div>
 </header>
-<header class="head_content">
+<header role="menubar" aria-label="Mobile Head" class="head_content">
     <div class="row">
         <div class="nav_wrap">
             <div class="logo"><a href="./index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img alt="A vector graphic resembling an outline of a conch shell
 " src="./data/logo.svg"></span><h1>Tok Stori
 </h1></a></div>
-            <nav class="nav_content">
+            <nav aria-label="Mobile Main" class="nav_content">
     <div class="pillar p1"><a href="pillar1.html">Family
 </a></div>
     <div class="pillar p2 on"><a href="pillar2.html">Spirituality
@@ -579,10 +588,10 @@ body            {background:#fff; color:#000; visibility:hidden;}
 : </span> What are your thoughts about German missionaries travelling to the Pacific to share their ideas of spirituality?
 
 </div>
-                <textarea type="text" id="add_post" name="add_post" placeholder="Type your answer here (we support links for images and video)
+                <textarea title="Type your answer" type="text" id="add_post" name="add_post" placeholder="Type your answer here (we support links for images and video)
 "></textarea>
                 <div class="post_more">
-                    <div class="post_name"><input type="text" id="add_name" name="add_name" placeholder="What's your name?"></div>
+                    <div class="post_name"><input title="Add a name" type="text" id="add_name" name="add_name" placeholder="What's your name?"></div>
                 </div>
             </div>
             <div class="post_foot_wrap">
@@ -591,17 +600,17 @@ body            {background:#fff; color:#000; visibility:hidden;}
  <a href="https://www.uebersee-museum.de/en/privacy-policy/" target="_blank">Privacy Policy</a>
 
                 </div>
-                <input type="hidden" id="add_que" value="p2q5">
-                <input type="submit" id="add_submit" value="Post
+                <input title="Question code number" type="hidden" id="add_que" value="p2q5">
+                <input title="Submit button" type="submit" id="add_submit" value="Post
 ">
             </div>
         </form>
         <div id="put_answers_here"></div>
     </div>
 </main>
-    <div class="row">
-    <div><h3>Next question
-</h3></div>
+    <div role="complementary" aria-label="Next Question" class="row">
+    <div><h2>Next question
+</h2></div>
     <div class="list_wrap">
         <div class="question wide">
             <a href="p3q1
@@ -625,8 +634,8 @@ body            {background:#fff; color:#000; visibility:hidden;}
     <footer class="foot_content" id="about_footer">
     <div class="row">
         <div class="about_wrap">
-            <div class="about"><h2>About
-</h2></div>
+            <div class="about"><h3>About
+</h3></div>
             <div class="about_text">
                 <div class="about_text_title">How would you explain Germany to people of the Pacific?
 </div>
