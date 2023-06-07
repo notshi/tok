@@ -2,7 +2,7 @@
 #^------------------------------
 #^html trim=ends
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="{_root}js/tok.js"></script>
@@ -11,23 +11,6 @@
     </script>
     {head}
 </head>
-
-<!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//matomo.uebersee-museum.de/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '2']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//matomo.uebersee-museum.de/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEFJK0DRTG"></script>
@@ -72,7 +55,7 @@
 <header class="head_content">
     <div class="row">
         <div class="nav_wrap">
-            <div class="logo"><a href="{iso_root}index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="{_root}data/logo.svg"></span><h2>{tok_stori}</h2></a></div>
+            <div class="logo"><a href="{iso_root}index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img src="{_root}data/logo.svg"></span><h1>{tok_stori}</h1></a></div>
             <nav class="nav_content">
                 <div class="pillar p1"><a href="pillar1.html">{pillar1}</a></div>
                 <div class="pillar p2"><a href="pillar2.html">{pillar2}</a></div>
@@ -129,6 +112,7 @@
     <label for="mob_toggle">
         <span></span>
         <span></span>
+        <div class="aria-invisible">Menu navigation</div>
         <span></span>
     </label>
     <nav>

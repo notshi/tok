@@ -103,12 +103,14 @@
 
 html    {font-size:18px; scroll-behavior:smooth;}
 body	{background:#ffefef; font-family:'Bitter',serif; font-size:18px; font-weight:400; line-height:normal; color:#111; max-width:100%; overflow-x:hidden; padding:0; margin:0;}
-h1		{font-size:2.2em; font-weight:700; color:#736b62;}
+h1		{font-size:1.5em; font-weight:normal;}
 h2		{font-size:1.5em; font-weight:normal;}
 h3      {font-size:2.0em; font-weight:500; color:#736b62;}
 b		{font-weight:700;}
 i		{font-style:italic;}
 a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
+
+.aria-invisible {border:0; clip:rect(0 0 0 0); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px;}
 
 .row            {max-width:1170px; margin-right:auto; margin-left:auto; display:flex; flex-flow:row wrap;}
 .head_content   {position:sticky; top:0; background-color:#ffefef; z-index:3;}
@@ -272,7 +274,7 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .blog.box2      {align-items:center; height:100%;}
 .text_wrap      {padding:20px 35px; width:100%;}
 .type           {font-size:22px; font-style:italic; font-weight:300;}
-.text           {font-size:42px; letter-spacing:-2px; line-height:46px; margin-top:10px;}
+.text           {font-size:42px; letter-spacing:-1px; line-height:46px; margin-top:10px;}
 .type span      {font-weight:400; font-style:normal; color:#777;}
 .text span      {display:block; font-size:28px; line-height:32px; padding-top:10px;}
 .box1           {flex-flow:column;}
