@@ -117,8 +117,8 @@
 html    {font-size:18px; scroll-behavior:smooth;}
 body	{background:#ffefef; font-family:'Bitter',serif; font-size:18px; font-weight:400; line-height:normal; color:#111; max-width:100%; overflow-x:hidden; padding:0; margin:0;}
 h1		{font-size:1.5em; font-weight:normal;}
-h2		{font-size:1.5em; font-weight:normal;}
-h3      {font-size:2.0em; font-weight:500; color:#736b62;}
+h2      {font-size:2.0em; font-weight:500; color:#736b62;}
+h3		{font-size:1.5em; font-weight:normal;}
 b		{font-weight:700;}
 i		{font-style:italic;}
 a		{color:#111; text-decoration:none; transition:all 0.5s ease-out;}
@@ -295,7 +295,7 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .box2 .text     {text-align:center; margin-top:20px; margin-bottom:20px;}
 
 .about_wrap     {margin-top:30px;}
-.about_text     {font-size:24px; padding-top:20px;letter-spacing:-0.6px; line-height:30px;}
+.about_text     {font-size:24px; padding-top:20px; line-height:30px;}
 .about_text b   {font-weight:500;}
 .about_text_title   {font-weight:300; margin-bottom:20px; font-style:italic;}
 .about_text_zine    {font-size:18px; text-align:right;}
@@ -307,7 +307,7 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .support img    {width:40px; padding-left:10px;}
 .funder_img span{display:block; font-size:12px; width:85%; padding-bottom:10px;}
 .funder_img img {height:128px; max-width:300px;}
-.funder_text    {font-weight:300; font-size:16px; line-height:20px; padding:0 20px 0 40px;}
+.funder_text    {font-weight:300; font-size:16px; line-height:22px; padding:0 20px 0 40px;}
 .funder_text a  {font-weight:400;}
 .funder_text a:hover,
 .funder_text a:focus  {text-decoration:underline;}
@@ -356,7 +356,7 @@ body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .blog_author,
 .blog_text p,
 .blog_text p.intro  {font-size:1.0rem; line-height:normal; letter-spacing:inherit;}
-h2              {font-size:1.2rem; line-height:inherit;}
+h3              {font-size:1.2rem; line-height:inherit;}
 .type,
 .more,
 .comment_text,
@@ -389,6 +389,7 @@ input#add_url::placeholder,
 input#add_url,
 .comment_url_text,
 .comment_url,
+.funder_img span,
 .item_text      {font-size:0.8rem;}
 .comment_wrap:nth-of-type(2n)   {margin:initial; margin-bottom:30px;}
 .comment_wrap   {width:100%;}
@@ -419,13 +420,14 @@ body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .wide .blog .img{height:initial;}
 .blog.full .img,
 .blog.box1 .img {height:150px;}
-h1, h2,
+h1, h3,
 .comment_name   {font-size:1.5rem; line-height:inherit;}
 .text           {font-size:1.8rem; line-height:inherit;}
 .about_text     {font-size:1.0rem; line-height:inherit;}
 .text span      {font-size:1.0rem; letter-spacing:-1px;}
 .box2 .type     {height:40px;}
 a.cc_link       {display:inline;}
+.funder_img span,
 .cc_wrap > div  {font-size:0.8em;}
 .cc_text        {width:85%;}
 .comment_list_wrap      {width:100%;}
@@ -473,8 +475,8 @@ body            {background:#fff; color:#000; visibility:hidden;}
     <header class="mob_content">
 <div id="mob_nav">
     <div class="logo mob_logo"><a href="../deu/index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img alt="Eine Vektorgrafik, die dem Umriss einer Muschelschale ähnelt
-" src="../data/logo.svg"></span><h2>Tok Stori
-</h2></a></div>
+" src="../data/logo.svg"></span><h1>Tok Stori
+</h1></a></div>
     <input id="mob_toggle" type="checkbox" />
     <label for="mob_toggle">
         <span></span>
@@ -511,8 +513,8 @@ body            {background:#fff; color:#000; visibility:hidden;}
     <div class="row">
         <div class="nav_wrap">
             <div class="logo"><a href="../deu/index.html"><span role="img" aria-label="A vector graphic resembling an outline of a conch shell"><img alt="Eine Vektorgrafik, die dem Umriss einer Muschelschale ähnelt
-" src="../data/logo.svg"></span><h2>Tok Stori
-</h2></a></div>
+" src="../data/logo.svg"></span><h1>Tok Stori
+</h1></a></div>
             <nav class="nav_content">
     <div class="pillar p1"><a href="pillar1.html">Familie
 </a></div>
@@ -601,8 +603,8 @@ body            {background:#fff; color:#000; visibility:hidden;}
     </div>
 </main>
     <div class="row">
-    <div><h2>Nächste Fragen
-</h2></div>
+    <div><h3>Nächste Fragen
+</h3></div>
     <div class="list_wrap">
         <div class="question wide">
             <a href="p4q5
@@ -627,12 +629,12 @@ body            {background:#fff; color:#000; visibility:hidden;}
     <footer class="foot_content" id="about_footer">
     <div class="row">
         <div class="about_wrap">
-            <div class="about"><h3>Über
-</h3></div>
+            <div class="about"><h2>Über
+</h2></div>
             <div class="about_text">
                 <div class="about_text_title">Wir würdest du Menschen im Pazifik erklären, was Deutschland ist?
 </div>
-                <b>Tok-Stori</b> | <b>Geschichten-Austausch</b> ist ein digitales Geschichtenformat, mit dem wir Menschen aus Deutschland einladen wollen, ihr persönliches oder geteiltes Verständnis von deutscher Kultur und Identität zu teilen. Unsere Fragen orientieren sich daran, was Menschen im Pazifik für das Verständnis von Deutschland interessieren könnte.
+                Tok-Stori | Geschichten-Austausch ist ein digitales Geschichtenformat, mit dem wir Menschen aus Deutschland einladen wollen, ihr persönliches oder geteiltes Verständnis von deutscher Kultur und Identität zu teilen. Unsere Fragen orientieren sich daran, was Menschen im Pazifik für das Verständnis von Deutschland interessieren könnte.
 
                 <div class="about_text_zine"><a class="print_link" href="zine.html">Hol dir das Zine!
 </a><a class="mob_print_link" href="../data/Tok_Stori.pdf">Hol dir das Zine!
