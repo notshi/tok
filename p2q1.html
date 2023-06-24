@@ -202,7 +202,7 @@ input#add_submit,
 
 .blog           {display:flex;}
 .blog.full      {display:flex; flex-flow:column;}
-.blog .img      {background:url('./data/image01.jpg'); background-size:cover; width:100%; height:400px; position:relative;}
+.blog .img      {background:url('./data/collections/D08369-001-2022.jpg'); background-position:center 70%; background-repeat:no-repeat; background-color:#f4f4f4; background-size:70%; width:100%; height:400px; position:relative;}
 .blog.p1q1 .img {background:url('./data/p1.svg'); background-size:cover;}
 .blog.p1q2 .img {background:url('./data/p1_1.svg'); background-size:cover;}
 .blog.p1q3 .img {background:url('./data/p1.svg'); background-size:cover;}
@@ -249,7 +249,10 @@ input#add_submit,
 
 .blog.box1 .col_img	{background-position:top; background-repeat:no-repeat; background-size:cover; clip-path:circle(42% at center center); width:100%; height:100%;}
 
-
+.blog_img_wrap 		{background-color:#f4f4f4; margin-top:10px; width:100%;}
+.blog_img     		{background:url('./data/collections/D08369-001-2022.jpg'); background-position:center; background-repeat:no-repeat; background-size:contain; width:100%; height:400px;}
+.blog_img_text div	{width:30%;}
+.blog_img_text		{display:flex; font-size:16px; line-height:1.35em; justify-content:space-between; padding:20px 10px; width:100%;}
 
 .blog_wrap      {padding:40px 100px; background-color:#ffffff5e; margin-bottom:60px;}
 .blog_wrap b    {font-weight:500;}
@@ -419,7 +422,8 @@ input#add_name  {font-size:1.2rem; line-height:inherit;}
 .wide .blog     {display:flex; flex-flow:column;}
 .blog .img,
 .blog.box1 .col_img,
-.blog.box1 .img {height:150px;}
+.blog.box1 .img,
+.blog_img		{height:150px;}
 .current .blog .img,
 .current .blog.box1 .img {height:300px;}
 .text_wrap      {padding:20px;}
@@ -458,6 +462,8 @@ a.print_link    {display:none;}
 a.mob_print_link{display:block;}
 
 .img_text		{left:0;}
+.blog_img_text	{display:block;}
+.blog_img_text div	{width:100%; margin-top:5px;}
 
 .blog.p1q1 .col_img,
 .blog.p1q2 .col_img,
@@ -490,7 +496,8 @@ body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .wide .blog .img{height:initial;}
 .blog.full .img,
 .blog.box1 .col_img,
-.blog.box1 .img {height:150px;}
+.blog.box1 .img,
+.blog_img		 {height:150px;}
 h1, h2,
 .comment_name   {font-size:1.5rem; line-height:inherit;}
 .text           {font-size:1.8rem; line-height:inherit;}
@@ -510,6 +517,8 @@ a.cc_link       {display:inline;}
 .support        {flex-flow:wrap;}
 
 .img_text		{left:0;}
+.blog_img_text	{display:block;}
+.blog_img_text div	{width:100%; margin-top:5px;}
 
 .blog.p1q1 .col_img,
 .blog.p1q2 .col_img,
