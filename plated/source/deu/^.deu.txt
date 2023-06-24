@@ -181,7 +181,7 @@ Wer in deiner Familie ist dir wichtig, und warum?
 Halsschmuck, Hawaii
 
 #^p1q5_item
-Finely plaited human hair is often used or gifted by family members to make important body adornments such as this Necklace from worn by nobility of the Hawaiian Kingdom.
+Finely plaited human hair is often used or gifted by family members to make important body adornments such as this Necklace worn by nobility of the Hawaiian Kingdom.
 
 #^p2q1
 Wird in deiner Familie eine bestimmte religiöse oder spirituelle Praxis ausgeübt? <span>Warum ist das so oder warum nicht?</span>

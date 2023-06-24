@@ -274,11 +274,11 @@
 <div>
 
 #^print_pdf
-<div class="print">{print_cover}{print_chunks}{print_footer}</div>
+<div class="print">{print_cover}{print_blog}{print_chunks}{print_footer}</div>
 
 #^print_cover
 <div class="print_cover">
-    <img alt="" src="{_root}data/logo.svg">
+    <div class="print_logo"><img alt="" src="{_root}data/logo.svg"></div>
     <div class="print_cover_subtitle">{about_footer1}</div>
     <div class="print_cover_title">{about_footer}</div>
     <div class="print_cover_by">By {cc_text}</div>
@@ -289,106 +289,180 @@
     <div class="print_cover_cc">{funder_text_1} {funder_text_2} {funder_text_3}</div>
 </div>
 
+#^print_blog
+<div class="blog_text">
+	<p>{blog_text_1}</p>
+	<p>{blog_text_2}</p>
+	<p>{blog_text_3}</p>
+	<p>{blog_text_4}</p>
+	<p>{blog_text_5}</p>
+	<p class="outro">{blog_text_6}</p>
+	<span>{blog_text_7}</span>
+	<span>{blog_text_8}</span>
+	<span>{blog_text_9}</span>
+	<span>{blog_text_10}</span>
+</div>
+
 #^page_content form=json
 [
 	{
 		title: "{p1q1}",
 		sub: "{pillar1} {question} 1",
+		image:"D05744",
+		meta:"{p1q1_cc}",
+		text:"{p1q1_item}",
 		id: "p1q1",
 	},
 	{
 		title: "{p1q2}",
 		sub: "{pillar1} {question} 2",
+		image:"D05398",
+		meta:"{p1q2_cc}",
+		text:"{p1q2_item}",
 		id: "p1q2",
 	},
 	{
 		title: "{p1q3}",
 		sub: "{pillar1} {question} 3",
+		image:"D04804",
+		meta:"{p1q3_cc}",
+		text:"{p1q3_item}",
 		id: "p1q3",
 	},
 	{
 		title: "{p1q4}",
 		sub: "{pillar1} {question} 4",
+		image:"D00013",
+		meta:"{p1q4_cc}",
+		text:"{p1q4_item}",
 		id: "p1q4",
 	},
 	{
 		title: "{p1q5}",
 		sub: "{pillar1} {question} 5",
+		image:"D01079",
+		meta:"{p1q5_cc}",
+		text:"{p1q5_item}",
 		id: "p1q5",
 	},
 	{
 		title: "{p2q1}",
 		sub: "{pillar2} {question} 1",
+		image:"D06343",
+		meta:"{p2q1_cc}",
+		text:"{p2q1_item}",
 		id: "p2q1",
 	},
 	{
 		title: "{p2q2}",
 		sub: "{pillar2} {question} 2",
+		image:"D07290",
+		meta:"{p2q2_cc}",
+		text:"{p2q2_item}",
 		id: "p2q2",
 	},
 	{
 		title: "{p2q3}",
 		sub: "{pillar2} {question} 3",
+		image:"D14488",
+		meta:"{p2q3_cc}",
+		text:"{p2q3_item}",
 		id: "p2q3",
 	},
 	{
 		title: "{p2q4}",
 		sub: "{pillar2} {question} 4",
+		image:"D15249",
+		meta:"{p2q4_cc}",
+		text:"{p2q4_item}",
 		id: "p2q4",
 	},
 	{
 		title: "{p2q5}",
 		sub: "{pillar2} {question} 5",
+		image:"D06203",
+		meta:"{p2q5_cc}",
+		text:"{p2q5_item}",
 		id: "p2q5",
 	},
 	{
 		title: "{p3q1}",
 		sub: "{pillar3} {question} 1",
+		image:"D04688",
+		meta:"{p3q1_cc}",
+		text:"{p3q1_item}",
 		id: "p3q1",
 	},
 	{
 		title: "{p3q2}",
 		sub: "{pillar3} {question} 2",
+		image:"D00039",
+		meta:"{p3q2_cc}",
+		text:"{p3q2_item}",
 		id: "p3q2",
 	},
 	{
 		title: "{p3q3}",
 		sub: "{pillar3} {question} 3",
+		image:"D05833",
+		meta:"{p3q3_cc}",
+		text:"{p3q3_item}",
 		id: "p3q3",
 	},
 	{
 		title: "{p3q4}",
 		sub: "{pillar2} {question} 4",
+		image:"D03790",
+		meta:"{p3q4_cc}",
+		text:"{p3q4_item}",
 		id: "p3q4",
 	},
 	{
 		title: "{p3q5}",
 		sub: "{pillar2} {question} 5",
+		image:"D00905",
+		meta:"{p3q5_cc}",
+		text:"{p3q5_item}",
 		id: "p3q5",
 	},
 	{
 		title: "{p4q1}",
 		sub: "{pillar4} {question} 1",
+		image:"D06192",
+		meta:"{p4q1_cc}",
+		text:"{p4q1_item}",
 		id: "p4q1",
 	},
 	{
 		title: "{p4q2}",
 		sub: "{pillar4} {question} 2",
+		image:"D06111",
+		meta:"{p4q2_cc}",
+		text:"{p4q2_item}",
 		id: "p4q2",
 	},
 	{
 		title: "{p4q3}",
 		sub: "{pillar4} {question} 3",
+		image:"D00007",
+		meta:"{p4q3_cc}",
+		text:"{p4q3_item}",
 		id: "p4q3",
 	},
 	{
 		title: "{p4q4}",
 		sub: "{pillar4} {question} 4",
+		image:"D07600",
+		meta:"{p4q4_cc}",
+		text:"{p4q4_item}",
 		id: "p4q4",
 	},
 	{
 		title: "{p4q5}",
 		sub: "{pillar4} {question} 5",
+		image:"D09268",
+		meta:"{p4q5_cc}",
+		text:"{p4q5_item}",
 		id: "p4q5",
 	},
 ]
@@ -400,12 +474,20 @@
 <div id="{_it.id}" class="print_chap" class="print_set">
     <div class="print_subtitle">{_it.sub}</div>
     <div class="print_title">{_it.title}</div>
+    <div class="print_cont">
+		<div class="print_cont_left">
+			<div class="print_image"><img src="{_root}data/collections/{_it.image}.png" alt=""/></div>
+		</div><div class="print_cont_right">
+			<div class="print_meta">{_it.meta}</div>
+			<div class="print_text">{_it.text}</div>
+		</div>
+    </div>
     <div id="answer_{_it.id}" class="print_comment">{show_answers}</div>
 </div>
 
 #^print_footer trim=ends
 <div class="print_footer">
     <div class="print_cc">
-        {tok_stori} | {sharing_stories} {cc_text}
+        {tok_stori} | Geschichten-Austausch {cc_text}
     </div>
 </div>
