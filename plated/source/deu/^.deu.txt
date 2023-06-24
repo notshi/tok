@@ -75,56 +75,218 @@ Blog
 #^p1q1
 Wen zählst du zu deiner Familie?
 
+#^p1q1_alt
+
+
+#^p1q1_cc
+Halsschmuck lose, Samoa, vor 1906
+
+#^p1q1_item
+Pacific families are often centred around clans and villages, as well as your immediate family.
+
 #^p1q2
 Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
+
+#^p1q2_alt
+
+
+#^p1q2_cc
+Matte, Samoa, vor 1906
+
+#^p1q2_item
+Many Pacific people and famlies gather and sit on woven mats to socialise. They are also used to sleep on especially after a big meal or to just pass the time. 
 
 #^p1q3
 Wie weit kannst du deine Vorfahren zurückverfolgen? <span>Eltern, Großeltern, Urgroßeltern, weitere Generationen</span>
 
+#^p1q3_alt
+
+
+#^p1q3_cc
+Stabkarte, Marshall-Inseln
+
+#^p1q3_item
+An important device used to help memorise and assist Marshalles Islanders in ocean navigation. Similarly, Pacific people often recall their ancestry by memory.
+
 #^p1q4
 Hat deine Familie immer in Deutschland gelebt? <span>Wenn nicht, woher sind sie gekommen?</span>
+
+#^p1q4_alt
+
+
+#^p1q4_cc
+Boot Modell, Fidschi
+
+#^p1q4_item
+One of the largest seafaring vessels for travelling vast distances across the Pacific Ocean, with the iconic crab claw sail. Made entirely of natural materials and not a nail to be found.
 
 #^p1q5
 Wer in deiner Familie ist dir wichtig, und warum?
 
+#^p1q5_alt
+
+
+#^p1q5_cc
+Halsschmuck, Hawaii
+
+#^p1q5_item
+Finely plaited human hair is often used or gifted by family members to make important body adornments such as this Necklace from worn by nobility of the Hawaiian Kingdom.
+
 #^p2q1
 Wird in deiner Familie eine bestimmte religiöse oder spirituelle Praxis ausgeübt? <span>Warum ist das so oder warum nicht?</span>
+
+#^p2q1_alt
+
+
+#^p2q1_cc
+Schöpflöffel, Papua-Neuguinea
+
+#^p2q1_item
+It's common to see Western symbology incorporated within Indigenous desgins from the Pacific.
 
 #^p2q2
 Ich fühle eine Verbindung zu einer höheren Macht, wenn ich …?
 
+#^p2q2_alt
+
+
+#^p2q2_cc
+Federschmuck, Papua-Neuguinea
+
+#^p2q2_item
+Bird feathers worn on on the head in some Papua New Guinean cultures can symbolise a spiritual connection to higher and intangible beings.
+
 #^p2q3
 Welche Glaubensvorstellungen oder Religion gab es in Deutschland zu vorchristlicher Zeit?
+
+#^p2q3_alt
+
+
+#^p2q3_cc
+Reibetrommel (Beschnitzter Holzstamm), Papua-Neuguinea
+
+#^p2q3_item
+The haunting sound of this friction drum representing a bird call was believed to be the nexus between the physical and the spiritual world.
 
 #^p2q4
 Was sind Gegenstände oder nicht-materielle Dinge, die deiner Meinung nach für Deutsche heilig sind?
 
+#^p2q4_alt
+
+
+#^p2q4_cc
+
+
+#^p2q4_item
+
+
 #^p2q5
 Was denkst du über deutsche Missionare, die zu den pazifischen Inseln gereist sind, um ihre religiösen Ideen zu verbreiten?
+
+#^p2q5_alt
+
+
+#^p2q5_cc
+Hut, Cookinseln
+
+#^p2q5_item
+Worn specifically by women in Kūki Āirani (Cook Islands), especially if you're attending church on Sunday.
 
 #^p3q1
 Ist das Oktoberfest ein kulturelles Ereignis für Touristen oder für Deutsche?
 
+#^p3q1_alt
+
+
+#^p3q1_cc
+Figur Fisch, Papua-Neuguinea
+
+#^p3q1_item
+Sometimes Pacific art made specifically for sale can be misinterpreted as being authentic and end up in museum collections.
+
 #^p3q2
 Was ist dein Lieblingswort oder -ausdruck in der deutschen Sprache? <span>Was ist damit gemeint?</span>
+
+#^p3q2_alt
+
+
+#^p3q2_cc
+Wedel, Fidschi
+
+#^p3q2_item
+A regal item carried by Samoan tulafale (talking chief) during ceremonial speeches.
 
 #^p3q3
 Gibt es einen Ort in Deutschland, zu dem du eine besondere Verbindung hast? <span>Warum ist das so und wo liegt dieser Ort?</span>
 
+#^p3q3_alt
+
+
+#^p3q3_cc
+Obsidianblock, Papua-Neuguinea
+
+#^p3q3_item
+Much of the obsidian collected on Manus Island was traded from elsewhere, particularly areas where volcanoes are active.
+
 #^p3q4
 Was sind typisch deutsche Musikinstrumente?
+
+#^p3q4_alt
+
+
+#^p3q4_cc
+Schlitztrommel, Papua-Neuguinea
+
+#^p3q4_item
+Large slit gong durms are played with a wooden striker and used across the northern parts of Papua New Guinea part of a dance or in duet with another garamut to sonically communicate a message.
 
 #^p3q5
 Gibt es spezifisch deutsche Rituale oder Gebräuche zu Geburt und Tod?
 
+#^p3q5_alt
+
+
+#^p3q5_cc
+Flöte, Papua-Neuguinea
+
+#^p3q5_item
+Made from bamboo, the serenading sound of pan pipes in the Solomon Islands customarily ushered in a birth or death.
+
 #^p4q1
 Erkläre, warum Brezeln für Deutsche wichtig sind?
+
+#^p4q1_alt
+
+
+#^p4q1_cc
+Behälter, Aotearoa
+
+#^p4q1_item
+Tokelauan significance of fishing by able bodied men to feed families.
 
 #^p4q2
 Was ist der Ursprung von Bier in Deutschland? <span>Gibt es eine Geschichte dazu?</span>
 
+#^p4q2_alt
+
+
+#^p4q2_cc
+Stampfer, Hawaii
+
+#^p4q2_item
+
+
 #^p4q3
 Gibt es ein Lebensmittel, ein Gericht oder ein Getränk, das für besondere Anlässe oder Zeremonien gedacht ist?
+
+#^p4q3_alt
+
+
+#^p4q3_cc
+Schale, Fidschi
+
+#^p4q3_item
+An important item used in Fiji, Samoa and Tonga for the preparation, drinking of Kava, served by a coconut shell cup.
 
 #^p4q4
 Gibt es einen Gegenstand, den man nur in einer deutschen Küche findet?
@@ -133,13 +295,22 @@ Gibt es einen Gegenstand, den man nur in einer deutschen Küche findet?
 The coconut scraper is a three legged contraption made of wood with a curved top for sitting on and a seashell attached by rope at the tip
 
 #^p4q4_cc
-D07600 Papua New Guinea Coconut scraper, Manus Province
+Kokosraspel; Schemel, Papua-Neuguinea
 
 #^p4q4_item
-A short description of the role and use of the <i>kina</i> in Papua New Guinea communities.
+An essential item found across most Pacific Islands, used to grate the coconut flesh to create coconut milk for cooking.
 
 #^p4q5
 Mein Lieblingsessen aus meiner Kindheit ist …?
+
+#^p4q5_alt
+
+
+#^p4q5_cc
+Fischkorb Frau, Papua-Neuguinea
+
+#^p4q5_item
+
 
 #^share
 Antwort senden

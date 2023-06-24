@@ -61,56 +61,218 @@ Blog
 #^p1q1
 Who do you classify as people in your family?
 
+#^p1q1_alt
+
+
+#^p1q1_cc
+Cowrie shells, Samoa, before 1906
+
+#^p1q1_item
+Pacific families are often centred around clans and villages, as well as your immediate family.
+
 #^p1q2
 What are important moments for your family to gather?
+
+#^p1q2_alt
+
+
+#^p1q2_cc
+Pandanus mat, Samoa, before 1906
+
+#^p1q2_item
+Many Pacific people and famlies gather and sit on woven mats to socialise. They are also used to sleep on especially after a big meal or to just pass the time.
 
 #^p1q3
 How far back can you trace your ancestry? <span>Parents, Grandparents, Great grandparents, Several generations</span>
 
+#^p1q3_alt
+
+
+#^p1q3_cc
+Rebbilib, Marshall Islands
+
+#^p1q3_item
+An important device used to help memorise and assist Marshalles Islanders in ocean navigation. Similarly, Pacific people often recall their ancestry by memory.
+
 #^p1q4
 Has your family always lived in Germany? <span>If not, where did they migrate from?</span>
+
+#^p1q4_alt
+
+
+#^p1q4_cc
+Drua, Fiji
+
+#^p1q4_item
+One of the largest seafaring vessels for travelling vast distances across the Pacific Ocean, with the iconic crab claw sail. Made entirely of natural materials and not a nail to be found.
 
 #^p1q5
 Who is someone in your family that is important to you and why?
 
+#^p1q5_alt
+
+
+#^p1q5_cc
+Lei Nehi Palaoa, Hawaii
+
+#^p1q5_item
+Finely plaited human hair is often used or gifted by family members to make important body adornments such as this Necklace from worn by nobility of the Hawaiian Kingdom.
+
 #^p2q1
 Do you have a family tradition of religion or spirituality practice? <span>Explain why or why not?</span>
+
+#^p2q1_alt
+
+
+#^p2q1_cc
+Coconut ladle with cross, Papua New Guinea
+
+#^p2q1_item
+It's common to see Western symbology incorporated within Indigenous desgins from the Pacific.
 
 #^p2q2
 I feel a sense of connection to the spiritual or a greater power when I …?
 
+#^p2q2_alt
+
+
+#^p2q2_cc
+Bilas, Papua New Guinea
+
+#^p2q2_item
+Bird feathers worn on on the head in some Papua New Guinean cultures can symbolise a spiritual connection to higher and intangible beings.
+
 #^p2q3
 What type of spiritual beliefs did German’s have pre-Christian times?
+
+#^p2q3_alt
+
+
+#^p2q3_cc
+Lunet / Livika, Papua New Guinea
+
+#^p2q3_item
+The haunting sound of this friction drum representing a bird call was believed to be the nexus between the physical and the spiritual world.
 
 #^p2q4
 Can you think of any physical or intangible things that are considered sacred to German folks?
 
+#^p2q4_alt
+
+
+#^p2q4_cc
+
+
+#^p2q4_item
+
+
 #^p2q5
 What are your thoughts about German missionaries travelling to the Pacific to share their ideas of spirituality?
+
+#^p2q5_alt
+
+
+#^p2q5_cc
+Church hat, Cook Islands
+
+#^p2q5_item
+Worn specifically by women in Kūki Āirani (Cook Islands), especially if you're attending church on Sunday.
 
 #^p3q1
 Is Oktoberfest a cultural event for German’s or tourists?
 
+#^p3q1_alt
+
+
+#^p3q1_cc
+Tuna Fish carving, Papua New Guinea
+
+#^p3q1_item
+Sometimes Pacific art made specifically for sale can be misinterpreted as being authentic and end up in museum collections.
+
 #^p3q2
 What is your favorite German expression or idiom? <span>Explain what this means?</span>
+
+#^p3q2_alt
+
+
+#^p3q2_cc
+Fue, Fiji
+
+#^p3q2_item
+A regal item carried by Samoan tulafale (talking chief) during ceremonial speeches.
 
 #^p3q3
 Do you have a strong connection to a particular place in Germany? <span>Describe where this is and why?</span>
 
+#^p3q3_alt
+
+
+#^p3q3_cc
+Obsidian, Papua New Guinea
+
+#^p3q3_item
+Much of the obsidian collected on Manus Island was traded from elsewhere, particularly areas where volcanoes are active.
+
 #^p3q4
 What are some typical German musical instruments?
+
+#^p3q4_alt
+
+
+#^p3q4_cc
+Garamut, Papua New Guinea
+
+#^p3q4_item
+Large slit gong durms are played with a wooden striker and used across the northern parts of Papua New Guinea part of a dance or in duet with another garamut to sonically communicate a message.
 
 #^p3q5
 Are there any specific German rituals or customs related to birth or death?
 
+#^p3q5_alt
+
+
+#^p3q5_cc
+Pan Pipes, Papua New Guinea
+
+#^p3q5_item
+Made from bamboo, the serenading sound of pan pipes in the Solomon Islands customarily ushered in a birth or death.
+
 #^p4q1
 Explain why pretzels are important to Germany?
+
+#^p4q1_alt
+
+
+#^p4q1_cc
+Fishing box, Aotearoa
+
+#^p4q1_item
+Tokelauan significance of fishing by able bodied men to feed families.
 
 #^p4q2
 What is the origin of beer in Germany? <span>Does it have an origin story?</span>
 
+#^p4q2_alt
+
+
+#^p4q2_cc
+Poi pounder, Hawaii
+
+#^p4q2_item
+
+
 #^p4q3
 Are there certain foods or drinks that are used for special or ceremonial purposes?
+
+#^p4q3_alt
+
+
+#^p4q3_cc
+Kava bowl, Fiji
+
+#^p4q3_item
+An important item used in Fiji, Samoa and Tonga for the preparation, drinking of Kava, served by a coconut shell cup.
 
 #^p4q4
 Is there a specific type of utensil you would only find in a German kitchen?
@@ -119,13 +281,22 @@ Is there a specific type of utensil you would only find in a German kitchen?
 The coconut scraper is a three legged contraption made of wood with a curved top for sitting on and a seashell attached by rope at the tip
 
 #^p4q4_cc
-D07600 Papua New Guinea Coconut scraper, Manus Province
+Coconut scraper, Papua New Guinea
 
 #^p4q4_item
-A short description of the role and use of the <i>kina</i> in Papua New Guinea communities.
+An essential item found across most Pacific Islands, used to grate the coconut flesh to create coconut milk for cooking.
 
 #^p4q5
 A favorite meal from my childhood is ...?
+
+#^p4q5_alt
+
+
+#^p4q5_cc
+Women's Fishing Basket, Papua New Guinea
+
+#^p4q5_item
+
 
 #^share
 Submit Answer
