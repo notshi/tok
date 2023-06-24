@@ -409,8 +409,8 @@ input#add_name  {font-size:1.2rem; line-height:inherit;}
 .wide .blog     {display:flex; flex-flow:column;}
 .blog .img,
 .blog.box1 .col_img,
-.blog.box1 .img,
-.blog_img		{height:150px;}
+.blog.box1 .img	{height:150px;}
+.blog_img		{height:200px; background-position:center;}
 .current .blog .img,
 .current .blog.box1 .img {height:300px;}
 .text_wrap      {padding:20px;}
@@ -484,8 +484,8 @@ body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .wide .blog .img{height:initial;}
 .blog.full .img,
 .blog.box1 .col_img,
-.blog.box1 .img,
-.blog_img		 {height:150px;}
+.blog.box1 .img	{height:150px;}
+.blog_img		{height:200px; background-position:center;}
 h1, h2,
 .comment_name   {font-size:1.5rem; line-height:inherit;}
 .text           {font-size:1.8rem; line-height:inherit;}
