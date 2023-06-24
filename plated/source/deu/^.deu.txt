@@ -94,7 +94,7 @@ Zu welchen besonderen Anlässen kommt ihr als Familie zusammen?
 Matte, Samoa, vor 1906
 
 #^p1q2_item
-Many Pacific people and famlies gather and sit on woven mats to socialise. They are also used to sleep on especially after a big meal or to just pass the time. 
+Many Pacific people and families gather and sit on woven mats to socialise. They are also used to sleep on especially after a big meal or to just pass the time. 
 
 #^p1q3
 Wie weit kannst du deine Vorfahren zurückverfolgen? <span>Eltern, Großeltern, Urgroßeltern, weitere Generationen</span>
@@ -142,7 +142,7 @@ Wird in deiner Familie eine bestimmte religiöse oder spirituelle Praxis ausgeü
 Schöpflöffel, Papua-Neuguinea
 
 #^p2q1_item
-It's common to see Western symbology incorporated within Indigenous desgins from the Pacific.
+It's common to see Western symbology incorporated within Indigenous designs from the Pacific.
 
 #^p2q2
 Ich fühle eine Verbindung zu einer höheren Macht, wenn ich …?
@@ -238,7 +238,7 @@ Was sind typisch deutsche Musikinstrumente?
 Schlitztrommel, Papua-Neuguinea
 
 #^p3q4_item
-Large slit gong durms are played with a wooden striker and used across the northern parts of Papua New Guinea part of a dance or in duet with another garamut to sonically communicate a message.
+Large slit gong drums are played with a wooden striker and used across the northern parts of Papua New Guinea part of a dance or in duet with another garamut to sonically communicate a message.
 
 #^p3q5
 Gibt es spezifisch deutsche Rituale oder Gebräuche zu Geburt und Tod?
@@ -356,6 +356,9 @@ Hol dir das Zine!
 
 #^mob_about
 Digitales Geschichtenformat, mit dem wir Menschen aus Deutschland einladen wollen, ihr persönliches oder geteiltes Verständnis von deutscher Kultur und Identität zu teilen. Unsere Fragen orientieren sich daran, was Menschen im Pazifik für das Verständnis von Deutschland interessieren könnte.
+
+#^cc_text
+Lisa Hilli, shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
 
 #^cc_lisa_1
 von

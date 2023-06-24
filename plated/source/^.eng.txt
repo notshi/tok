@@ -80,7 +80,7 @@ What are important moments for your family to gather?
 Pandanus mat, Samoa, before 1906
 
 #^p1q2_item
-Many Pacific people and famlies gather and sit on woven mats to socialise. They are also used to sleep on especially after a big meal or to just pass the time.
+Many Pacific people and families gather and sit on woven mats to socialise. They are also used to sleep on especially after a big meal or to just pass the time.
 
 #^p1q3
 How far back can you trace your ancestry? <span>Parents, Grandparents, Great grandparents, Several generations</span>
@@ -344,7 +344,7 @@ Get the zine!
 A digital storytelling space that invites German people to share their individual and collective understanding of German culture and identity through questions based upon key Pacific cultural ways of understanding.
 
 #^cc_text
-Lisa Hilli, Shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
+Lisa Hilli, shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
 
 #^cc_lisa_1
 by
