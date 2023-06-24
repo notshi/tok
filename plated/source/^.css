@@ -337,9 +337,12 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .funder_img img {height:128px; max-width:300px;}
 .funder_text    {font-weight:300; font-size:16px; line-height:22px; padding:0 20px 0 40px;}
 .about_text a,
+.mob_about a,
 .funder_text a  {font-weight:400; background-color:#fff; padding:2px 5px; border-radius:6px;}
 .about_text a:hover,
 .about_text a:focus,
+.mob_about a:hover,
+.mob_about a:focus,
 .funder_text a:hover,
 .funder_text a:focus  {text-decoration:underline;}
 

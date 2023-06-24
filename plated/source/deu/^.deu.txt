@@ -345,6 +345,9 @@ Wir würdest du Menschen im Pazifik erklären, was Deutschland ist?
 #^about_footer
 Tok-Stori | Geschichten-Austausch ist ein digitales Geschichtenformat, mit dem wir Menschen aus Deutschland einladen wollen, ihr persönliches oder geteiltes Verständnis von deutscher Kultur und Identität zu teilen. Unsere Fragen orientieren sich daran, was Menschen im Pazifik für das Verständnis von Deutschland interessieren könnte.
 
+#^about_footer_more
+Weiterlesen
+
 #^about_zine
 Erhalten Sie ein PDF mit allen Fragen und eingereichten Antworten – praktisch, wenn Sie unterwegs ein digitales Zine haben möchten. <b>Am besten im A5-Format aufbewahren.</b>
 
