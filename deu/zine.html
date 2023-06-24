@@ -210,7 +210,7 @@ input#add_submit,
 .blog.p2q2 .img {background:url('../data/p2_1.svg'); background-size:cover;}
 .blog.p2q3 .img {background:url('../data/p2.svg'); background-size:cover;}
 .blog.p2q4 .img {background:url('../data/p2_1.svg'); background-size:cover;}
-.blog.p2q5 .img {background:url('../data/p2_2.png'); background-size:cover;}
+.blog.p2q5 .img {background:url('../data/p2.svg'); background-size:cover;}
 .blog.p3q1 .img {background:url('../data/p3.svg'); background-size:cover;}
 .blog.p3q2 .img {background:url('../data/p3_1.svg'); background-size:cover;}
 .blog.p3q3 .img {background:url('../data/p3.svg'); background-size:cover;}
@@ -221,6 +221,33 @@ input#add_submit,
 .blog.p4q3 .img {background:url('../data/p4.svg'); background-size:cover;}
 .blog.p4q4 .img {background:url('../data/p4q4.png'); background-size:cover;}
 .blog.p4q5 .img {background:url('../data/p4_1.svg'); background-size:cover;}
+
+.blog .col_img	{background:url('..//data/collections/D05744.png'); clip-path:circle(50% at center center); width:100%; height:100%;}
+
+.blog.p1q1 .col_img {background:url('..//data/collections/D05744.png'); background-position:center; background-repeat:no-repeat; background-size:95%;}
+.blog.p1q2 .col_img {background:url('..//data/collections/D05398.png'); background-position:center; background-repeat:no-repeat; background-size:95%;}
+.blog.p1q3 .col_img {background:url('..//data/collections/D04804.png'); background-position:center; background-repeat:no-repeat; background-size:contain;}
+.blog.p1q4 .col_img {background:url('..//data/collections/D00013.png'); background-position:center; background-repeat:no-repeat; background-size:95%;}
+.blog.p1q5 .col_img {background:url('..//data/collections/D01079.png'); background-position:center; background-repeat:no-repeat; background-size:110%;}
+.blog.p2q1 .col_img {background:url('..//data/collections/D06343.png'); background-position:center; background-repeat:no-repeat; background-size:contain;}
+.blog.p2q2 .col_img {background:url('..//data/collections/D07290.png'); background-position:center; background-repeat:no-repeat; background-size:110%;}
+.blog.p2q3 .col_img {background:url('..//data/collections/D14488.png'); background-position:center; background-repeat:no-repeat; background-size:110%;}
+.blog.p2q4 .col_img {background:url('..//data/collections/D15249.png'); background-position:center; background-repeat:no-repeat; background-size:110%;}
+.blog.p2q5 .col_img {background:url('..//data/collections/D06203.png'); background-position:center; background-repeat:no-repeat; background-size:100%;}
+.blog.p3q1 .col_img {background:url('..//data/collections/D04688.png'); background-position:center; background-repeat:no-repeat; background-size:110%; clip-path:ellipse(50% 40% at 52% 58%);}
+.blog.p3q2 .col_img {background:url('..//data/collections/D00039.png'); background-position:center; background-repeat:no-repeat; background-size:110%;}
+.blog.p3q3 .col_img {background:url('..//data/collections/D05833.png'); background-position:center; background-repeat:no-repeat; background-size:contain; clip-path:circle(38% at center center);}
+.blog.p3q4 .col_img {background:url('..//data/collections/D03790.png'); background-position:center; background-repeat:no-repeat; background-size:contain; clip-path:ellipse(60% 22% at 50% 52%);}
+.blog.p3q5 .col_img {background:url('..//data/collections/D00905.png'); background-position:center; background-repeat:no-repeat; background-size:110%; clip-path:circle(50% at 48% 66%);}
+.blog.p4q1 .col_img {background:url('..//data/collections/D06192.png'); background-position:center; background-repeat:no-repeat; background-size:110%;}
+.blog.p4q2 .col_img {background:url('..//data/collections/D06111.png'); background-position:center; background-repeat:no-repeat; background-size:contain;}
+.blog.p4q3 .col_img {background:url('..//data/collections/D00007.png'); background-position:center; background-repeat:no-repeat; background-size:110%; clip-path:ellipse(50% 45% at 50% 60%);}
+.blog.p4q4 .col_img {background:transparent; background-position:center; background-repeat:no-repeat; background-size:contain;}
+.blog.p4q5 .col_img {background:url('..//data/collections/D09268.png'); background-position:center; background-repeat:no-repeat; background-size:contain;}
+
+.blog.box1 .col_img	{background-position:top; background-repeat:no-repeat; background-size:cover; clip-path:circle(42% at center center); width:100%; height:100%;}
+
+
 
 .blog_wrap      {padding:40px 100px; background-color:#ffffff5e; margin-bottom:60px;}
 .blog_wrap b    {font-weight:500;}
@@ -290,6 +317,7 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 .post_info      {padding:0 50px 0 20px; font-size:16px; line-height:24px; font-style:italic;}
 .post_info a    {text-decoration:underline; font-style:normal;}
 
+.blog.box1 .col_img,
 .blog.box1 .img {height:250px;}
 .blog.box1      {justify-content:space-between; height:100%;}
 .blog.box2      {align-items:center; height:100%;}
@@ -384,6 +412,7 @@ input#add_name  {font-size:1.2rem; line-height:inherit;}
 .pillar_wrap    {font-size:2.5rem; line-height:inherit;}
 .wide .blog     {display:flex; flex-flow:column;}
 .blog .img,
+.blog.box1 .col_img,
 .blog.box1 .img {height:150px;}
 .current .blog .img,
 .current .blog.box1 .img {height:300px;}
@@ -398,8 +427,9 @@ input#add_url,
 .comment_url_text,
 .comment_url,
 .funder_img span,
+.img_text span,
 .item_text      {font-size:0.8rem;}
-.item_text      {width:100%; margin:0; background:transparent; padding:0 0 10px 0;}
+.item_text      {width:100%; margin:0; background:transparent; padding:0 0 20px 0;}
 .comment_wrap:nth-of-type(2n)   {margin:initial; margin-bottom:30px;}
 .comment_wrap   {width:100%;}
 .post_link_wrap {min-width:initial;}
@@ -428,6 +458,7 @@ body            {padding:0.5em 1.5em; font-size:1.0rem;}
 .blog_wrap      {padding:40px;}
 .wide .blog .img{height:initial;}
 .blog.full .img,
+.blog.box1 .col_img,
 .blog.box1 .img {height:150px;}
 h1, h2,
 .comment_name   {font-size:1.5rem; line-height:inherit;}
@@ -486,7 +517,7 @@ body            {background:#fff; color:#000; visibility:hidden;}
 </div>
     <div class="print_cover_title">Tok-Stori | Geschichten-Austausch ist ein digitales Geschichtenformat, mit dem wir Menschen aus Deutschland einladen wollen, ihr persönliches oder geteiltes Verständnis von deutscher Kultur und Identität zu teilen. Unsere Fragen orientieren sich daran, was Menschen im Pazifik für das Verständnis von Deutschland interessieren könnte.
 </div>
-    <div class="print_cover_by">By Lisa Hilli, Shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
+    <div class="print_cover_by">By Lisa Hilli, shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
 </div>
     <div class="print_cover_img">
         <div class="print_cover_cc">Gefördert im Programm Kultur Digital der Kulturstiftung des Bundes
@@ -664,7 +695,7 @@ body            {background:#fff; color:#000; visibility:hidden;}
     <div class="print_cc">
         Tok Stori
  | Geschichten-Austausch
- Lisa Hilli, Shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
+ Lisa Hilli, shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
 
     </div>
 </div></div>
@@ -700,7 +731,7 @@ body            {background:#fff; color:#000; visibility:hidden;}
             <div class="mob_cc">Tok Stori
  | Geschichten-Austausch
  von
- Lisa Hilli, Shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
+ Lisa Hilli, shi Blank, Abhay Adhikari &amp; Übersee-Museum Bremen CC BY-SA 4.0
 </div>
 			</div>
         </li>
