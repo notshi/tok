@@ -103,8 +103,16 @@ tok.show_answers=async function(que)
 	if(w.length>0)
 	{
 		let answers = await db.list({question:que})
+		for(let idx=answers.length-1 ; idx>=0 ; idx-- )
+		{
+			let v=answers[idx]
+			if(v.language!=tok.args.language) // only show our language
+			{
+				answers.splice(idx,1)
+			}
+		}
 		answers.reverse()
-		for(v of answers)
+		for(let v of answers)
 		{
 			v.date_fix=v.date.toISOString().split('T')[0]
 		}
