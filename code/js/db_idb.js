@@ -6,8 +6,9 @@ let idb = require( "idb" )
 let sheet = require( "./sheet.js" )
 
 
-db.setup=async function()
+db.setup=async function(args)
 {
+	db.args=args
 
 	db.handle = await idb.openDB("tok", 3, {
 		upgrade(handle) {
@@ -35,6 +36,7 @@ db.setup=async function()
 db.add=async function(it)
 {
 	it.uuid=db.uuid // always sign our data
+	it.language=db.args.language // remember current language
 	await db.handle.add('answers', it )
 	sheet.send(it)
 }
