@@ -1,4 +1,4 @@
-#^iso trim=ends
+#^isolang trim=ends
 eng
 
 #^iso_root trim=ends

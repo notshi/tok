@@ -32,6 +32,7 @@ sheet.googleform={
 	uuid:"entry.651258802", // need this generated uuid to uniquely identify each user
 	question:"entry.1393996306",
 	author:"entry.1946140261",
+	language:"entry.1072140922",
 	body:"entry.806007134",
 }
 

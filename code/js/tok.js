@@ -25,14 +25,30 @@ tok.setup=function(args)
 tok.start=async function()
 {
 
-	await db.setup()
+	tok.args.language=(tok.args.language || "eng").toLowerCase()
+	if( tok.args.language == "eng" )
+	{
+		// is english
+	}
+	else
+	if( tok.args.language == "deu" )
+	{
+		// is german
+	}
+	else // force to english if none of the above
+	{
+		tok.args.language == "eng"
+	}
+
+
+	await db.setup(tok.args)
 	await plate.setup()
 	await sheet.setup()
 
 	tok.binds()
 	await tok.show_all_answers()
 	
-	console.log("TOK has started")
+	console.log("TOK has started ("+tok.args.language+")")
 }
 
 tok.show_all_answers=async function()
