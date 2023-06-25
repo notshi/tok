@@ -408,6 +408,12 @@ PDF zum Download (~2mb)
 #^get_zine
 Hol dir das Zine!
 
+#^get_zine_en
+Das Zine (EN) !
+
+#^get_zine_de
+Das Zine (DE) !
+
 #^mob_about
 Digitales Geschichtenformat, mit dem wir Menschen aus Deutschland einladen wollen, ihr persönliches oder geteiltes Verständnis von deutscher Kultur und Identität zu teilen. Unsere Fragen orientieren sich daran, was Menschen im Pazifik für das Verständnis von Deutschland interessieren könnte.
 
