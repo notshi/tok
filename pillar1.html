@@ -360,9 +360,12 @@ input#add_submit:hover          {background:#7b5330; cursor:pointer;}
 
 /*  Print CSS */
 a.mob_print_link,
+a.desk_print_link,
 a.print_link        {text-align:center; background:#eee6e6; border-radius:6px; margin-top:20px; padding:10px 15px;}
+a.desk_print_link	{font-size:32px; padding:20px 120px;}
 .about_text_zine a:hover,
 a.mob_print_link:hover,
+a.desk_print_link:hover,
 a.print_link:hover  {cursor:pointer; background:#f2d3b8;}
 a.mob_print_link    {display:none; padding:15px;}
 .print >  div       {color:#000;}
@@ -389,15 +392,10 @@ a.mob_print_link    {display:none; padding:15px;}
 .print              {display:none;}
 
 /* Zine CSS  */
-.print_wrap         {background-color:#ffffff5e; width:calc(50% - 15px); border-left:1px solid #63a7ff; border-bottom:0; padding:4em 6em; margin-bottom:2em; box-shadow:3px 3px 3px #e1c5c51c;}
-.print_comment      {margin-top:20px;}
-.print_comment .comment_wrap{width:100%;}
-.print_comment .comment     {background-color:transparent; padding:0; box-shadow:0;}
-.print_comment .comment .comment_name {font-size:22px; line-height:24px;}
-.print_comment .comment .comment_text {font-size:22px; line-height:24px; margin-top:10px;}
 .print_info_wrap    	{width:100%; margin-top:40px;}
 .print_zine_link_wrap	{width:100%; margin:0 auto; text-align:center; margin-top:40px;}
-.print_zine_link_wrap a	{font-size:32px; padding:20px 120px;}
+.print_zine_link_wrap a:hover,
+.print_zine_link_wrap a:focus	{text-decoration:underline;}
 .print_info_text    	{font-size:26px; line-height:30px; width:70%; text-align:center; margin:0 auto;}
 
 @media (min-width: 360px) and (max-width: 767.98px) {
