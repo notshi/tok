@@ -20,15 +20,16 @@
 
 #^print_zines
 <main class="main_content row">
-<div class="print_info_wrap">
-    <div class="print_info_text">{about_zine}</div>
-    <div>{print_zine_link}</div>
-</div>
+	<div class="print_info_wrap">
+		<div class="print_info_text">{about_zine}</div>
+		<div class="print_zine_link_wrap">{print_zine_link}</div>
+	</div>
+</main>
+
+#^print_zine_wrap
 <div class="list_wrap">
 {page_content:print_zine}
 </div>
-</main>
-
 
 #^print_zine trim=ends
 <div id="{_it.id}" class="print_wrap">

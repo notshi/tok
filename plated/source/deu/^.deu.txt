@@ -403,7 +403,7 @@ Weiterlesen
 Erhalten Sie ein PDF mit allen Fragen und eingereichten Antworten – praktisch, wenn Sie unterwegs ein digitales Zine haben möchten. <b>Am besten im A5-Format aufbewahren.</b>
 
 #^download_zine
-PDF zum Download
+PDF zum Download (~2mb)
 
 #^get_zine
 Hol dir das Zine!

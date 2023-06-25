@@ -389,7 +389,7 @@ Read more
 Get a PDF of all the questions and submitted answers - handy when you want a digital zine on-the-go. <b>Best saved as an A5 size.</b>
 
 #^download_zine
-Download the PDF
+Download the PDF (~2mb)
 
 #^get_zine
 Get the zine!
