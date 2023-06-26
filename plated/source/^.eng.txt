@@ -215,10 +215,10 @@ Can you think of any physical or intangible things that are considered sacred to
 
 
 #^p2q4_cc
-
+Fale, Samoa, before January 1979
 
 #^p2q4_item
-
+A reverential space where many formal ceremonies occur, some of which include, the practice of Tatau or meetings between chiefly councils.
 
 #^p2q5
 What are your thoughts about German missionaries travelling to the Pacific to share their ideas of spirituality?
@@ -227,7 +227,7 @@ What are your thoughts about German missionaries travelling to the Pacific to sh
 
 
 #^p2q5_cc
-Church hat, Cook Islands
+Church hat, Cook Islands, before 1907
 
 #^p2q5_item
 Worn specifically by women in Kūki Āirani (Cook Islands), especially if you're attending church on Sunday.

@@ -229,10 +229,10 @@ Was sind Gegenstände oder nicht-materielle Dinge, die deiner Meinung nach für 
 
 
 #^p2q4_cc
-
+Haus Modell, Samoa, vor Januar 1979
 
 #^p2q4_item
-
+A reverential space where many formal ceremonies occur, some of which include, the practice of Tatau or meetings between chiefly councils.
 
 #^p2q5
 Was denkst du über deutsche Missionare, die zu den pazifischen Inseln gereist sind, um ihre religiösen Ideen zu verbreiten?
@@ -241,7 +241,7 @@ Was denkst du über deutsche Missionare, die zu den pazifischen Inseln gereist s
 
 
 #^p2q5_cc
-Hut, Cookinseln
+Hut, Cookinseln, vor 1907
 
 #^p2q5_item
 Worn specifically by women in Kūki Āirani (Cook Islands), especially if you're attending church on Sunday.
