@@ -229,10 +229,10 @@ Was sind Gegenstände oder nicht-materielle Dinge, die deiner Meinung nach für 
 
 
 #^p2q4_cc
-Haus Modell, Samoa, vor Januar 1979
+Anhänger, Aotearoa
 
 #^p2q4_item
-A reverential space where many formal ceremonies occur, some of which include, the practice of Tatau or meetings between chiefly councils.
+Found only on the south island of New Zealand, pounamu (jade / greenstone) is treasured and of spiritual significance to the Māori.
 
 #^p2q5
 Was denkst du über deutsche Missionare, die zu den pazifischen Inseln gereist sind, um ihre religiösen Ideen zu verbreiten?
@@ -313,10 +313,10 @@ Erkläre, warum Brezeln für Deutsche wichtig sind?
 
 
 #^p4q1_cc
-Behälter, Aotearoa
+Behälter, Tokelau-Ins eln
 
 #^p4q1_item
-Tokelauan significance of fishing by able bodied men to feed families.
+Used by able bodied men whilst at sea and carved entirely of wood, a Tuluma was used to keep fishing tackle and personal items dry.
 
 #^p4q2
 Was ist der Ursprung von Bier in Deutschland? <span>Gibt es eine Geschichte dazu?</span>
@@ -328,7 +328,7 @@ Was ist der Ursprung von Bier in Deutschland? <span>Gibt es eine Geschichte dazu
 Stampfer, Hawaii
 
 #^p4q2_item
-
+Made purely from stone (basalt), these pounders were are used for making poi, pounded kalo (Taro) that was steamed or baked. A primary food source for Hawaiian's.
 
 #^p4q3
 Gibt es ein Lebensmittel, ein Gericht oder ein Getränk, das für besondere Anlässe oder Zeremonien gedacht ist?
@@ -364,7 +364,7 @@ Mein Lieblingsessen aus meiner Kindheit ist …?
 Fischkorb Frau, Papua-Neuguinea
 
 #^p4q5_item
-
+How many meals were made from the fish collected in this basket and brought home to eat for a family in the Solomon Islands?
 
 #^share
 Antwort senden

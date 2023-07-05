@@ -215,10 +215,10 @@ Can you think of any physical or intangible things that are considered sacred to
 
 
 #^p2q4_cc
-Fale, Samoa, before January 1979
+Kuru (ear pendant), Aotearoa
 
 #^p2q4_item
-A reverential space where many formal ceremonies occur, some of which include, the practice of Tatau or meetings between chiefly councils.
+Found only on the south island of New Zealand, pounamu (jade / greenstone) is treasured and of spiritual significance to the Māori.
 
 #^p2q5
 What are your thoughts about German missionaries travelling to the Pacific to share their ideas of spirituality?
@@ -299,10 +299,10 @@ Explain why pretzels are important to Germany?
 
 
 #^p4q1_cc
-Fishing box, Aotearoa
+Tuluma (fishing tackle box), Tokelau Islands
 
 #^p4q1_item
-Tokelauan significance of fishing by able bodied men to feed families.
+Used by able bodied men whilst at sea and carved entirely of wood, a Tuluma was used to keep fishing tackle and personal items dry.
 
 #^p4q2
 What is the origin of beer in Germany? <span>Does it have an origin story?</span>
@@ -311,10 +311,10 @@ What is the origin of beer in Germany? <span>Does it have an origin story?</span
 
 
 #^p4q2_cc
-Poi pounder, Hawaii
+Pohaku Ku'i Poi (pounder), Hawaii
 
 #^p4q2_item
-
+Made purely from stone (basalt), these pounders were are used for making poi, pounded kalo (Taro) that was steamed or baked. A primary food source for Hawaiian's.
 
 #^p4q3
 Are there certain foods or drinks that are used for special or ceremonial purposes?
@@ -350,7 +350,7 @@ A favorite meal from my childhood is ...?
 Women's Fishing Basket, Papua New Guinea
 
 #^p4q5_item
-
+How many meals were made from the fish collected in this basket and brought home to eat for a family in the Solomon Islands?
 
 #^share
 Submit Answer
