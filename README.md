@@ -10,8 +10,8 @@ Funded by the <a href="https://www.bundesregierung.de/breg-de/bundesregierung/bu
 
 
 -----------------
-https://github.com/xriss/plated Static site generator by Kriss & shi Blank  
-https://github.com/solmatas/Bitter Typeface by Sol Matas for Huerta Tipográfica  
-https://www.huertatipografica.com/en/fonts/cambo-ht Typeface by Carolina Giovagnoli and Andrés Torresi for Huerta Tipográfica  
+[plated^](https://github.com/xriss/plated) Static site generator by Kriss & shi Blank  
+[Bitter](https://github.com/solmatas/Bitter) Typeface by Sol Matas for Huerta Tipográfica  
+[Cambo](https://www.huertatipografica.com/en/fonts/cambo-ht) Typeface by Carolina Giovagnoli and Andrés Torresi for Huerta Tipográfica  
 Images are [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) Übersee-Museum Bremen  
 Additional graphics are created using free and open source tools [Inkscape](https://inkscape.org/) and [Gimp](https://www.gimp.org/)
